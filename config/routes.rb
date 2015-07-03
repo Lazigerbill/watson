@@ -14,7 +14,7 @@ RailsStarter::Application.routes.draw do
   root :to => 'entry#index'
 
   # Sample resource route (maps HTTP verbs to controller actions automatically):
-    resources :entries
+    resources :entry
 
   # Sample resource route with options:
   #   resources :products do

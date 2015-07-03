@@ -6,6 +6,7 @@ class EntryController < ApplicationController
   end
 
   def new
+    # @entry = Entry.new
   end
 
   def edit
