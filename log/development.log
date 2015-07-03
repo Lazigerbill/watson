@@ -17,6 +17,7 @@ Started GET "/assets/application.self.js?body=1" for ::1 at 2015-06-30 19:02:35 
 
 
 Started GET "/assets/newapp-icon.png" for ::1 at 2015-06-30 19:02:35 -0400
+<<<<<<< HEAD
 DEPRECATION WARNING: You didn't set `secret_key_base`. Read the upgrade documentation to learn more about this new config option. (called from service at /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138)
 
 
@@ -1312,3 +1313,5 @@ Started GET "/assets/entry.self.js?body=1" for ::1 at 2015-07-02 23:55:51 -0400
 
 
 Started GET "/assets/application.self.js?body=1" for ::1 at 2015-07-02 23:55:51 -0400
+=======
+>>>>>>> parent of d45ba28... created controller for entry
