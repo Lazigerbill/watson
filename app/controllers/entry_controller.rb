@@ -6,7 +6,7 @@ class EntryController < ApplicationController
   end
 
   def new
-    # @entry = Entry.new
+    @input = params[:input]
   end
 
   def edit
@@ -14,4 +14,18 @@ class EntryController < ApplicationController
 
   def delete
   end
+
 end
+
+private
+  def analysssss
+    url="https://gateway.watsonplatform.net/personality-insights/api"
+    profile_api_url = "#{url}/v2/profile"
+
+    client = RestClient::Resource.new(profile_api_url, @username, @password)
+    insights = client.post test_input, :content_type => "text/plain"
+
+    pipeline = JSON.load(insights.body)[0]
+
+  end
+
