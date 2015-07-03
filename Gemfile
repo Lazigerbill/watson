@@ -18,14 +18,15 @@ gem 'jquery-rails'
 gem 'rest-client'
 gem 'rails_12factor'
 gem 'figaro'
+# Use unicorn as the app server
+gem 'unicorn'
 
 
 gem 'quiet_assets', group: :development
+gem 'pry', group: :development
 # To use Jbuilder templates for JSON
 # gem 'jbuilder'
 
-# Use unicorn as the app server
-# gem 'unicorn'
 
 # Deploy with Capistrano
 # gem 'capistrano'
