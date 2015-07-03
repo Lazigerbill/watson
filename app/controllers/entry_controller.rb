@@ -20,10 +20,9 @@ end
 
 private
   def analyse(input)
-    url="https://gateway.watsonplatform.net/personality-insights/api"
-    profile_api_url = "#{url}/v2/profile"
+    profile_api_url = "#{Figaro.env.bluemix_url}/v2/profile"
 
-    client = RestClient::Resource.new(profile_api_url, username, password)
+    client = RestClient::Resource.new(profile_api_url, Figaro.env.bluemix_username, Figaro.env.bluemix_password)
     insights = client.post input, :content_type => "text/plain"
 
     pipeline = JSON.load(insights.body)[0]
