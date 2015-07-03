@@ -1,11 +1,11 @@
-<h1>Entry#index</h1>
-<p>Find me in app/views/entry/index.html.erb</p>
+<h1>Watson NLP pilot project</h1>
+<p>Enter text to be analysed below:</p>
 
 <%= form_tag(new_entry_path, method: "get") do %>
 	<%= label_tag :input %> <br>
 	<%= text_area_tag :input %> <br>
-	<%= submit_tag :submit, :id=>"submitButton" %>
+	<%= submit_tag "Go Analyse", :id=>"submitButton" %>
 <% end %>
 
 
-<%= link_to 'Create new entry here', new_entry_path %>
+<%#= link_to 'Create new entry here', new_entry_path %>

@@ -17,6 +17,7 @@ gem 'jquery-rails'
 
 gem 'rest-client'
 gem 'rails_12factor'
+gem 'figaro'
 
 # To use Jbuilder templates for JSON
 # gem 'jbuilder'

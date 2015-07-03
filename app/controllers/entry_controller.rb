@@ -7,6 +7,7 @@ class EntryController < ApplicationController
 
   def new
     @input = params[:input]
+    analyse(@input)
   end
 
   def edit
@@ -18,12 +19,12 @@ class EntryController < ApplicationController
 end
 
 private
-  def analysssss
+  def analyse(input)
     url="https://gateway.watsonplatform.net/personality-insights/api"
     profile_api_url = "#{url}/v2/profile"
 
-    client = RestClient::Resource.new(profile_api_url, @username, @password)
-    insights = client.post test_input, :content_type => "text/plain"
+    client = RestClient::Resource.new(profile_api_url, username, password)
+    insights = client.post input, :content_type => "text/plain"
 
     pipeline = JSON.load(insights.body)[0]
 
