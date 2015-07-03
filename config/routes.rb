@@ -13,11 +13,9 @@ RailsStarter::Application.routes.draw do
   root :to => 'say#hello'
 
   # Sample resource route (maps HTTP verbs to controller actions automatically):
-<<<<<<< HEAD
+
     resources :entry
-=======
-  #   resources :products
->>>>>>> parent of d45ba28... created controller for entry
+
 
   # Sample resource route with options:
   #   resources :products do
