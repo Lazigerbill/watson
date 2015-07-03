@@ -1315,3 +1315,58 @@ Started GET "/assets/entry.self.js?body=1" for ::1 at 2015-07-02 23:55:51 -0400
 Started GET "/assets/application.self.js?body=1" for ::1 at 2015-07-02 23:55:51 -0400
 =======
 >>>>>>> parent of d45ba28... created controller for entry
+DEPRECATION WARNING: You didn't set `secret_key_base`. Read the upgrade documentation to learn more about this new config option. (called from service at /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138)
+
+
+Started GET "/" for ::1 at 2015-07-03 00:36:48 -0400
+Processing by EntryController#index as HTML
+  Rendered entry/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 168ms (Views: 168.2ms)
+
+
+Started GET "/assets/jquery.self.js?body=1" for ::1 at 2015-07-03 00:36:48 -0400
+
+
+Started GET "/assets/application.self.js?body=1" for ::1 at 2015-07-03 00:36:48 -0400
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for ::1 at 2015-07-03 00:36:48 -0400
+
+
+Started GET "/assets/entry.self.js?body=1" for ::1 at 2015-07-03 00:36:48 -0400
+
+
+Started GET "/entry/new" for ::1 at 2015-07-03 00:36:50 -0400
+Processing by EntryController#new as HTML
+  Rendered entry/new.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 13ms (Views: 13.3ms)
+
+
+Started GET "/assets/jquery.self.js?body=1" for ::1 at 2015-07-03 00:36:50 -0400
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for ::1 at 2015-07-03 00:36:50 -0400
+
+
+Started GET "/assets/application.self.js?body=1" for ::1 at 2015-07-03 00:36:50 -0400
+
+
+Started GET "/assets/entry.self.js?body=1" for ::1 at 2015-07-03 00:36:50 -0400
+
+
+Started GET "/entry/new" for ::1 at 2015-07-03 00:37:25 -0400
+Processing by EntryController#new as HTML
+  Rendered entry/new.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 12ms (Views: 11.6ms)
+
+
+Started GET "/assets/jquery.self.js?body=1" for ::1 at 2015-07-03 00:37:25 -0400
+
+
+Started GET "/assets/application.self.js?body=1" for ::1 at 2015-07-03 00:37:25 -0400
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for ::1 at 2015-07-03 00:37:25 -0400
+
+
+Started GET "/assets/entry.self.js?body=1" for ::1 at 2015-07-03 00:37:25 -0400
