@@ -8,14 +8,15 @@ gem 'rails', '>= 4.2.3'
 # Gems used only for assets and not required
 # in production environments by default.
 
-gem 'sass-rails'
-gem 'coffee-rails'
+gem 'sass-rails', '>= 5.0.3'
+gem 'coffee-rails', '>=4.1.0'
 
 
 gem 'uglifier'
 gem 'jquery-rails'
 
 gem 'rest-client'
+gem 'rails_12factor'
 
 # To use Jbuilder templates for JSON
 # gem 'jbuilder'
