@@ -19,6 +19,8 @@ gem 'rest-client'
 gem 'rails_12factor'
 gem 'figaro'
 
+
+gem 'quiet_assets', group: :development
 # To use Jbuilder templates for JSON
 # gem 'jbuilder'
 
