@@ -1,7 +1,7 @@
 <h1>Watson NLP pilot project</h1>
 <p>Enter text to be analysed below:</p>
 
-<%= form_tag entry_index_path do %>
+<%= form_tag entries_path do %>
 	<%= label_tag :input %> <br>
 	<%= text_area_tag :input %> <br>
 	<%= submit_tag "Go Analyse", :id=>"submitButton" %>
