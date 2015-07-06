@@ -1,17 +1,26 @@
 class EntriesController < ApplicationController
   def index
+    @entries = Entry.all
   end
 
   def show
   end
 
   def new
+    @entry = Entry.new
   end
 
   def create
-    @input = params[:input]
-    analyse(@input)
-    render new_entry_path
+    # @input = params[:input]
+    # analyse(@input)
+
+    @entry = Entry.new(entry_params)  
+
+    if @entry.save
+      redirect_to entries_path
+    else
+      render :new
+    end
   end
 
   def edit
@@ -32,3 +41,6 @@ private
     @pipeline = JSON.load(insights.body)
   end
 
+  def entry_params
+      params.require(:entry).permit(:first_name, :last_name, :input)
+    end

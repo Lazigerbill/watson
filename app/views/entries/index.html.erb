@@ -1,9 +1,12 @@
 <h1>Watson NLP pilot project</h1>
 <p>Enter text to be analysed below:</p>
 
-<%= form_tag entries_path do %>
-	<%= label_tag :input %> <br>
-	<%= text_area_tag :input %> <br>
-	<%= submit_tag "Go Analyse", :id=>"submitButton" %>
+
+<% @entries.each do |e| %>
+	<%= e.first_name %>
+	<%= e.last_name %>
+	<%= e.input %>
+	<br>
 <% end %>
-<%#= link_to 'Create new entry here', new_entry_path %>
+
+<%= link_to 'Create new entry here', new_entry_path %>

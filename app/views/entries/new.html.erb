@@ -1,6 +1,15 @@
 <h1>Result</h1>
 <p>Input is processed by Watson and here is the result:</p>
 
+<%= form_for(@entry) do |f| %>
+	<%= f.label :first_name %> <br>
+	<%= f.text_field :first_name %> <br>
+	<%= f.label :last_name %> <br>
+	<%= f.text_field :last_name %> <br>
+	<%= f.label :input %> <br>
+	<%= f.text_field :input %> <br>
+	<%= f.submit "Go Analyse", :id=>"submitButton" %>
+<% end %>
 
 <%= @input %>
 
