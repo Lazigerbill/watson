@@ -5,7 +5,6 @@ require "action_mailer/railtie"
 #require "active_resource/railtie"
 require "rails/test_unit/railtie"
 require "sprockets/railtie" # Uncomment this line for Rails 3.1+
-require 'mongoid'
 
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
@@ -27,8 +26,9 @@ module RailsStarter
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
     # config.active_record.raise_in_transactional_callbacks = true
-    Mongoid.load!(File.expand_path('mongoid.yml', './config'))
-
+    # Mongoid.load!("config/mongoid.yml", :production)
+    # Mongoid.load!(Rails.root.join("/config/mongoid.yml"), :production)
+    
     config.mongoid.logger = Logger.new($stdout, :warn)
     # config.mongoid.persist_in_safe_mode = true
     config.mongoid.preload_models = false

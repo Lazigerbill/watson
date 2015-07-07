@@ -37,7 +37,6 @@ build/
 
 # Ignore all all API access tokens
 /config/secrets.yml
-/config/mongoid.yml
 
 # Ignore application configuration
 /config/application.yml
