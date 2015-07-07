@@ -5,7 +5,6 @@ development:
     default:
       # Defines the name of the default database that Mongoid can connect to.
       # (required).
-      uri: <%= Figaro.env.mongolab_url %>
       database: rails_starter_development
       # Provides the hosts the default session can connect to. Must be an array
       # of host:port pairs. (required)
@@ -91,7 +90,6 @@ development:
 test:
   sessions:
     default:
-      uri: <%= Figaro.env.mongolab_url %>
       database: rails_starter_test
       hosts:
         - localhost:27017
@@ -107,7 +105,7 @@ production:
     default:
       # The standard MongoDB connection URI allows for easy replica set connection setup. 
       # Use environment variables or a config file to keep your credentials safe.
-      uri: <%= Figaro.env.mongolab_url %>
+      uri: "mongodb://IbmCloud_lh7vv65n_1set5c9t_6rtjr9n4:ymkBiTKHzgEAHGBJmOKc6RNTD0Tc8Lks@ds055190.mongolab.com:55190/IbmCloud_lh7vv65n_1set5c9t"
 
       options: 
         # The default consistency is :eventual, which reads from secondaries when possible. 
