@@ -26,7 +26,7 @@ module RailsStarter
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
     # config.active_record.raise_in_transactional_callbacks = true
-    Mongoid.load!("/mongoid.yml", :production)
+    Mongoid.load!("config/mongoid.yml", :production)
     config.mongoid.logger = Logger.new($stdout, :warn)
     # config.mongoid.persist_in_safe_mode = true
     config.mongoid.preload_models = false
