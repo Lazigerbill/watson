@@ -105,7 +105,7 @@ production:
     default:
       # The standard MongoDB connection URI allows for easy replica set connection setup. 
       # Use environment variables or a config file to keep your credentials safe.
-      uri: Figaro.env.mongolab_url
+      uri: <%= Figaro.env.mongolab_url %>
 
       options: 
         # The default consistency is :eventual, which reads from secondaries when possible. 
