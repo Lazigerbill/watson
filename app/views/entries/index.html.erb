@@ -6,6 +6,7 @@
 	<%= e.first_name %>
 	<%= e.last_name %>
 	<%= e.input %>
+	<%= link_to '<<delete>>', e, method: :delete, data: {confirm: 'Are you sure?'} %>
 	<br>
 <% end %>
 

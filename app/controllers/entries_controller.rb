@@ -26,7 +26,10 @@ class EntriesController < ApplicationController
   def edit
   end
 
-  def delete
+  def destroy 
+    @entry = Entry.find(params[:id])
+    @entry.delete
+    redirect_to entries_path
   end
 
 end

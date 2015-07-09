@@ -3,6 +3,7 @@
 // # You can use CoffeeScript in this file: http://coffeescript.org/
 
 $(document).on('page:load ready', function(){
+	// The following is a test only
 	$('#submitButton').click(function(){
 		alert('hello!')
 	})
