@@ -32,6 +32,12 @@ class EntriesController < ApplicationController
     redirect_to entries_path
   end
 
+  def upload
+    uploaded_file = params[:file]
+    @file_content = uploaded_file.read
+    redirect_to new_entry_path
+  end
+
 end
 
 private
