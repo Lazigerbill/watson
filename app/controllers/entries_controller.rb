@@ -38,10 +38,14 @@ class EntriesController < ApplicationController
     raw = data.split(/[\r\n]+|\={2}|\-{2}/).reject{|s| s.empty?}
     # binding.pry
     @entry = Entry.new
-    @result = raw.first(10)
-    @entry.company_name = @result[2]
-    @entry.event_name = @result[3]
-    @entry.date = @result[4]
+    splitup(raw)
+
+    @entry.company_name = @transcript_info[2]
+    @entry.event_name = @transcript_info[3]
+    @entry.date = @transcript_info[4]
+    @result = @transcript_info
+
+    corp_participants(raw)
     render :new
   end
 
@@ -61,8 +65,22 @@ private
       params.require(:entry).permit(:company_name, :event_name, :date)
     end
 
-  def process(data)
-    raw = data.split(/[\r\n]+|\={2}|\-{2}/)
-    @result = raw.first(10)
-    
+  def splitup(data)
+    @transcript_info = data.take(5)
+  end
+
+  def corp_participants(data)
+    data.shift(6)
+    list = data.take(data.index("Conference Call Participants"))
+    list.each do |item|
+      item.sub!('*', '')
+      item.strip!
+    end
+    # binding.pry
+
+    @participants = []
+
+    (0..list.size-1).step(2).each do |i|
+        @participants.push(list[i..i+1].join(" - "))
+    end
   end

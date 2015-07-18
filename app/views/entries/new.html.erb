@@ -13,3 +13,15 @@
   <%= file_field_tag "file" %> <br> <br>
   <%= submit_tag 'Proceed' %>
 <% end %>
+
+<br>
+
+<% if @participants %>
+	<h3>Corporate Participants</h3>
+	<% @participants.each do |person| %>
+		<%= radio_button_tag(:selection, person) %>
+		<%= label_tag(:selection, person) %>
+		<br>
+	<% end %>	
+	<%#= @participants %>
+<% end %>	
