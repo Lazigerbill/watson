@@ -1,0 +1,9 @@
+<%= form_for(@entry) do |f| %>
+	<%= f.label :company_name %> <br>
+	<%= f.text_field :company_name %> <br>
+	<%= f.label :event_name %> <br>
+	<%= f.text_field :event_name %> <br>
+	<%= f.label :date %> <br>
+	<%= f.text_field :date %> <br>
+	<%= f.submit "Go Analyse", :id=>"submitButton" %>
+<% end %>

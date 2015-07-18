@@ -34,8 +34,15 @@ class EntriesController < ApplicationController
 
   def upload
     uploaded_file = params[:file]
-    @file_content = uploaded_file.read
-    redirect_to new_entry_path
+    data = uploaded_file.read
+    raw = data.split(/[\r\n]+|\={2}|\-{2}/).reject{|s| s.empty?}
+    # binding.pry
+    @entry = Entry.new
+    @result = raw.first(10)
+    @entry.company_name = @result[2]
+    @entry.event_name = @result[3]
+    @entry.date = @result[4]
+    render :new
   end
 
 end
@@ -51,5 +58,11 @@ private
   end
 
   def entry_params
-      params.require(:entry).permit(:first_name, :last_name, :input)
+      params.require(:entry).permit(:company_name, :event_name, :date)
     end
+
+  def process(data)
+    raw = data.split(/[\r\n]+|\={2}|\-{2}/)
+    @result = raw.first(10)
+    
+  end
