@@ -63,7 +63,7 @@ private
   end
 
   def entry_params
-      params.require(:entry).permit(:company_name, :event_name, :date)
+      params.require(:entry).permit(:company_name, :event_name, :date, :speaker, :transcript)
     end
 
   def splitup(data)

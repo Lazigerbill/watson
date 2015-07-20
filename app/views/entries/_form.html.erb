@@ -11,14 +11,14 @@
 
 	<h3>Corporate Participants</h3>
 	<% @result.each do |person| %>
-		<%= f.radio_button(:speaker, person[0]) %>
-		<%= f.label(:speaker, person[0]) %>
+		<%= f.radio_button(:speaker, person[0], :class => "speakerRadio") %>
+		<%= f.label(:speaker, person[0], :value => person[0]) %>
 		<br>
 	<% end %>	
 
 	
 	<%= tag("div", :id => "transcript", :"data-content" => @result.to_h.to_json) %>
-	<%= f.text_area :transcript %>
+	<%= f.text_area :transcript, :id => 'transBox' %>
 	<p>Word count: <span id = 'wcount'></span></p>
 	<br>
 	<%= f.submit "Go Analyse", :id=>"submitButton" %>

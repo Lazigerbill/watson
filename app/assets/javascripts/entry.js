@@ -5,7 +5,12 @@
 $(document).on('page:load ready', function(){
 	// The following is a test only
 	$('#submitButton').click(function(){
-		alert('hello!')
 	})
+
+	// When radio button is clicked, text area will show corresponding speech of that speaker
+	$("input[type='radio'][name='entry[speaker]']").change(function(){
+		$('#transBox').val($('#transcript').data('content')[$(this).val()]);
+		$('#wcount').html($('#transBox').val().split(' ').length);
+	});
 
 });
