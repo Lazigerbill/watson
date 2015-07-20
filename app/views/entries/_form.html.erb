@@ -1,3 +1,5 @@
+
+<p>Please verify your input</p>
 <%= form_for(@entry) do |f| %>
 	<%= f.label :company_name %> <br>
 	<%= f.text_field :company_name %> <br>
@@ -5,5 +7,19 @@
 	<%= f.text_field :event_name %> <br>
 	<%= f.label :date %> <br>
 	<%= f.text_field :date %> <br>
+
+
+	<h3>Corporate Participants</h3>
+	<% @result.each do |person| %>
+		<%= f.radio_button(:speaker, person[0]) %>
+		<%= f.label(:speaker, person[0]) %>
+		<br>
+	<% end %>	
+
+	
+	<%= tag("div", :id => "transcript", :"data-content" => @result.to_h.to_json) %>
+	<%= f.text_area :transcript %>
+	<p>Word count: <span id = 'wcount'></span></p>
+	<br>
 	<%= f.submit "Go Analyse", :id=>"submitButton" %>
 <% end %>

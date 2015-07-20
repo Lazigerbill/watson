@@ -3,8 +3,9 @@ class Entry
   field :company_name
   field :event_name
   field :date
-
+  field :speaker
+  field :transcript
 
   # validations
-  validates_presence_of :company_name
+  validates_presence_of :company_name, :event_name, :date, :speaker, :transcript
 end

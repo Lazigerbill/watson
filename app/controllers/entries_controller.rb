@@ -43,7 +43,7 @@ class EntriesController < ApplicationController
     @entry.company_name = @transcript_info[2]
     @entry.event_name = @transcript_info[3]
     @entry.date = @transcript_info[4]
-    @result = @transcript_info
+
 
     corp_participants(raw)
     mark_conversations(raw)
@@ -93,25 +93,28 @@ private
     markers.each do |marker|
       marker_index << @presentation.index(marker)
     end
-    # marker_index << @presentation.count 
 
-    result = []
+    #producing result of arrays of conversations, each element = [speaker, content], combining contents to unique speakers
+    @result = []
     index_counter = 0
     marker_index.each do |para|
       if index_counter < marker_index.count-1
-        result << [@presentation[para][/([^\[]+)/].strip, @presentation[para+1..marker_index[index_counter+1]-1]]
+        if @result.assoc(@presentation[para][/([^\[]+)/].strip) 
+          @result[@result.index(@result.assoc(@presentation[para][/([^\[]+)/].strip))][1] << @presentation[para+1..marker_index[index_counter+1]-1].join
+        else
+          @result << [@presentation[para][/([^\[]+)/].strip, @presentation[para+1..marker_index[index_counter+1]-1].join]
+        end
       else 
-        result << [@presentation[para][/([^\[]+)/].strip, @presentation[para+1..@presentation.count-1]]
+        if @result.assoc(@presentation[para][/([^\[]+)/].strip)
+          @result[@result.index(@result.assoc(@presentation[para][/([^\[]+)/].strip))][1] << @presentation[para+1..@presentation.count-1].join
+        else
+          @result << [@presentation[para][/([^\[]+)/].strip, @presentation[para+1..@presentation.count-1].join]
+        end
       end
       index_counter+=1
     end
-    # merging converstaions under the same index, and slide into hashes
-    # conv_hash = {}
-    # marker_index.reverse.each do |i|
-    #     @presentation[@presentation[i+1]+1..i-1].join
-    # end
-    # markers.each do |i|
-    #   conv_hash[i[/([^\[]+)/].strip] = "hello"
-    # end
-    binding.pry
+
+    # Turning that @result array into JSON
+    # binding.pry
+    # @json = @result.to_h.to_json
   end
