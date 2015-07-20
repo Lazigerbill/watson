@@ -8,6 +8,7 @@ class EntriesController < ApplicationController
 
   def new
     @entry = Entry.new
+    @result = []
   end
 
   def create

@@ -28,6 +28,7 @@ gem "mongoid", "~> 4.0.0"
 # Use unicorn as the app server
 gem 'unicorn'
 
+gem "jquery-fileupload-rails"
 
 gem 'quiet_assets', group: :development
 gem 'pry', group: :development

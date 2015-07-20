@@ -1370,3 +1370,168 @@ Started GET "/assets/jquery_ujs.self.js?body=1" for ::1 at 2015-07-03 00:37:25 -
 
 
 Started GET "/assets/entry.self.js?body=1" for ::1 at 2015-07-03 00:37:25 -0400
+
+
+Started GET "/" for ::1 at 2015-07-20 18:33:47 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 284ms (Views: 260.2ms)
+
+
+Started GET "/entries/new" for ::1 at 2015-07-20 18:33:52 -0400
+Processing by EntriesController#new as HTML
+  Rendered entries/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 21ms (Views: 20.2ms)
+
+
+Started POST "/entries/upload" for ::1 at 2015-07-20 18:33:57 -0400
+Processing by EntriesController#upload as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qB8H+z4sLY3mljGJbB/qupQSe+hrD+GkVMDsNweZ62mUjvuhu+OTODzmwrwH/cd/vYVACxnXD9hQHNMYDPkWcQ==", "file"=>#<ActionDispatch::Http::UploadedFile:0x007ff3ca542778 @tempfile=#<Tempfile:/var/folders/04/b_scn3ms0nj9jnbm_y5b07w00000gn/T/RackMultipart20150720-27111-o6k7ol.txt>, @original_filename="CRI-Transcript-2012-10-25T12_30.txt", @content_type="text/plain", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"CRI-Transcript-2012-10-25T12_30.txt\"\r\nContent-Type: text/plain\r\n">, "commit"=>"Proceed"}
+  Rendered entries/_form.html.erb (34.2ms)
+  Rendered entries/new.html.erb within layouts/application (39.2ms)
+Completed 200 OK in 62ms (Views: 56.0ms)
+
+
+Started POST "/entries" for ::1 at 2015-07-20 18:33:59 -0400
+Processing by EntriesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Fbvpp/6JDA+eQ5q2f+NEhZLP5NaEhCy35831A3Ru+T8pKhX9e0ayukQzaYMUAWlAu1jfNfZcwsvjEcosfw4EJw==", "entry"=>{"company_name"=>"CRI - Carter's Inc", "event_name"=>"Q3 2012 Carter's, Inc. Earnings Conference Call", "date"=>"October 25, 2012 / 12:30PM  GMT ", "transcript"=>""}, "commit"=>"Go Analyse"}
+  Rendered entries/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 23ms (Views: 19.7ms)
+
+
+Started GET "/" for ::1 at 2015-07-20 18:35:13 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 44ms (Views: 38.6ms)
+
+
+Started GET "/entries/new" for ::1 at 2015-07-20 18:35:14 -0400
+Processing by EntriesController#new as HTML
+  Rendered entries/_form.html.erb (7.0ms)
+  Rendered entries/new.html.erb within layouts/application (9.2ms)
+Completed 500 Internal Server Error in 14ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    10: 
+    11: 
+    12: 	<h3>Corporate Participants</h3>
+    13: 	<% @result.each do |person| %>
+    14: 		<%= f.radio_button(:speaker, person[0], :class => "speakerRadio") %>
+    15: 		<%= f.label(:speaker, person[0], :value => person[0]) %>
+    16: 		<br>
+  app/views/entries/_form.html.erb:13:in `block in _app_views_entries__form_html_erb__1630784481022089440_70342490819120'
+  app/views/entries/_form.html.erb:3:in `_app_views_entries__form_html_erb__1630784481022089440_70342490819120'
+  app/views/entries/new.html.erb:10:in `_app_views_entries_new_html_erb__220000752534757215_70342475113400'
+
+
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.5ms)
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (74.5ms)
+
+
+Started GET "/" for ::1 at 2015-07-20 18:36:07 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 27ms (Views: 22.3ms)
+
+
+Started GET "/entries/new" for ::1 at 2015-07-20 18:36:09 -0400
+Processing by EntriesController#new as HTML
+  Rendered entries/_form.html.erb (2.0ms)
+  Rendered entries/new.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 22ms (Views: 20.9ms)
+
+
+Started POST "/entries/upload" for ::1 at 2015-07-20 18:36:15 -0400
+Processing by EntriesController#upload as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uVR1x2cHk7QoUbVnibLg2LgRGz8VCI0SYs7T52b+0NGFxYmd4sgtAfIhRlLiUM0dkYYg3GfQY25mEuzIbZ4tyQ==", "file"=>#<ActionDispatch::Http::UploadedFile:0x007ff3ca3a8048 @tempfile=#<Tempfile:/var/folders/04/b_scn3ms0nj9jnbm_y5b07w00000gn/T/RackMultipart20150720-27111-2k9l0f.txt>, @original_filename="ARB-Transcript-2012-10-24T14_00.txt", @content_type="text/plain", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"ARB-Transcript-2012-10-24T14_00.txt\"\r\nContent-Type: text/plain\r\n">, "commit"=>"Proceed"}
+Completed 500 Internal Server Error in 6ms
+
+NoMethodError (undefined method `assoc' for nil:NilClass):
+  app/controllers/entries_controller.rb:102:in `block in mark_conversations'
+  app/controllers/entries_controller.rb:100:in `each'
+  app/controllers/entries_controller.rb:100:in `mark_conversations'
+  app/controllers/entries_controller.rb:50:in `upload'
+
+
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.9ms)
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (70.7ms)
+
+
+Started GET "/" for ::1 at 2015-07-20 18:36:40 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 36ms (Views: 30.1ms)
+
+
+Started GET "/entries/new" for ::1 at 2015-07-20 18:36:42 -0400
+Processing by EntriesController#new as HTML
+  Rendered entries/_form.html.erb (2.3ms)
+  Rendered entries/new.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 24ms (Views: 23.0ms)
+
+
+Started POST "/entries/upload" for ::1 at 2015-07-20 18:36:46 -0400
+Processing by EntriesController#upload as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IR+qTVksMjGN4TP7WwFkLt8T8zN6tbY/ZWpJpu72cBgdjlYX3OOMhFeRwM4w40nr9oTI0AhtWENhtnaJ5ZaNAA==", "file"=>#<ActionDispatch::Http::UploadedFile:0x007ff3ca42e170 @tempfile=#<Tempfile:/var/folders/04/b_scn3ms0nj9jnbm_y5b07w00000gn/T/RackMultipart20150720-27111-g1jaox.txt>, @original_filename="FR-Transcript-2012-10-25T15_00.txt", @content_type="text/plain", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"FR-Transcript-2012-10-25T15_00.txt\"\r\nContent-Type: text/plain\r\n">, "commit"=>"Proceed"}
+  Rendered entries/_form.html.erb (3.2ms)
+  Rendered entries/new.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 30ms (Views: 24.3ms)
+
+
+Started POST "/entries" for ::1 at 2015-07-20 18:37:03 -0400
+Processing by EntriesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+RkHU6r5AZB9lTMNvyahVIjTecTRUMX9rTNYrQZxs//FiPsJLza/JaflwDjUxIyRoURCJ6OIK4Gp72eCDRFO5w==", "entry"=>{"company_name"=>"FR - First Industrial Realty Trust Inc", "event_name"=>"Q3 2012 First Industrial Realty Trust Earnings Conference Call", "date"=>"October 25, 2012 / 03:00PM  GMT ", "speaker"=>"Bruce Duncan,  First Industrial Realty Trust, Inc. - President, CEO", "transcript"=>" Thanks, Art, and thank you to everyone for joining us today. Since we spoke to you on our last call, we continued to execute on our strategic plan. In my remarks today, I'll take some time to reflect on some of the strides we have made in strengthening our balance sheet and reshaping our portfolio. Overall, we are pleased with our progress, and I would like to thank my teammates for their many contributions. We have more work to do, which is an opportunity for us and for our shareholders. On the capital side, we completed a $117 million equity offering in August. The proceeds from this offering will help fund our growth through the three developments and the building expansion we started in the third quarter. They will also keep our leverage at the low end of our target range of 6.5 times debt-to-EBITDA. We also closed on the $100.6 million 10-year 4.03% secured financing that we told you about on our last call. This financing effectively funds in advance the higher cost debt we plan to repay in the fourth quarter and throughout 2013, and provides additional proceeds for growth. We would like thank our banking and lending partners for their continued support in executing these transactions. On the portfolio side, we made significant progress on our sales of nonstrategic assets, or as we like to call it, improving our portfolio through addition by subtraction. We completed $56.5 million of sales during the quarter, bringing our total for 2012 to $80.4 million. The largest sale in the quarter was our Columbus, Ohio portfolio for $39 million. We also sold our land parcel in that market for $5.3 million. As we discussed on past calls, Columbus has been a difficult market for us. We expect rent growth for that market to be below average as the supply and demand fundamentals will remain challenging there for the foreseeable future. As a group, these assets also significantly lag our overall portfolio in terms of functionality. Our total sales proceeds for the portfolio and land combined exceeded our written down book value by about $6.6 million, or about 18%. During the quarter we sold seven additional buildings for $12.2 million, or approximately 36% above our written-down basis. I'd like to recap what we've accomplished in our portfolio improvement efforts since the fourth quarter of 2010, from both a sales and investment perspective. Since that time we have sold 6.9 million square feet and four land parcels for a total of $175 million. The sales prices we have achieved exceeded our written-down book value on these assets by 35%. The sales cap rate was 6.4%, including land. Excluding land, the cap rate was 7.7%. On the investment side during the same time frame, we completed and committed to a total of more than $200 million of new investments comprised of $52 million through two acquisitions, totaling 1.1 million square feet in Houston and central Pennsylvania; $36 million through our 692,000 square foot First Inland Logistics Center development in Southern California that we leased during the quarter; and the $115 million we will invest through the development and building expansion we talked about on our last call, namely, First Bandini Logistics Center, a 489,000 square foot distribution center in LA County, First Chino Logistics Center, a 300,000 square foot building in the West Inland Empire, First Logistics Center at I-83, a 708,000 square foot distribution center in central Pennsylvania, and the 156,000 square foot building expansion in Minneapolis. We continue to look for additional investment and development opportunities that will deliver sustainable cash flow, meet our return criteria, and help in our mission to upgrade our portfolio. While we are pleased with this progress, it is also important to note that the investment market, particularly for the type of assets we are focused on, remains very competitive. We will maintain our discipline on pricing so our main avenue for growth and new investments may continue to be development and value-add acquisition opportunities using our platform. Turning now to leasing. We finished the quarter with occupancy at 88.5%, up from 87.9% as of the second quarter, and 86.6% a year ago. Sales accounted for 80 basis points of the gain quarter-over-quarter, so the rest of our portfolio was down 20 basis points. When we spoke to you last time, we talked about the summer lull we were experiencing. For us, that lull continued throughout much of the quarter, so our average occupancy was less than we expected, which will also impact our fourth quarter. Scott will walk you through the details. Leasing activity picked up late in the third quarter and has continued in the fourth quarter across a range of tenants and industries, although decision-making remains measured. Activity doesn't pay the bills, so our job is to convert this activity into signed leases. For the quarter, we delivered good growth in same store cash NOI, which was positive 4.3% excluding termination fees. We also made further headway on our top 10 vacancies from our Investor Day last November. As of the end of the third quarter, these properties represented 830 square feet of occupancy opportunity, or 130 basis points on our current portfolio base, compared to 325 basis points at investor day. We still have short-term leases in place at some of these properties so we can generate additional cash flow by stabilizing them with long-term leases. Leasing is at the heart of our plan to drive value from our existing buildings and our new development, and our team is focused on those opportunities. With that, let me turn it over to Scott. Scott? Thanks, Scott. Before we open it up to questions, let me just say that we have been working over the past few years to reposition our balance sheet and our portfolio and improve our cash flow. We are making good progress with our new developments, which represent $115 million of quality investments, and we are out seeking additional opportunities that meet our criteria. We have been reshaping our portfolio through our disciplined sales process. Our balance sheet is in good shape, and we will continue to look for ways to further strengthen it and lower our capital costs. We can grow cash flow through leasing, both from our existing assets and our new developments. We do all of these levers as great opportunities for our Company and for our shareholders, and as a team we are focused on continuing to execute and enhance shareholder value. Finally, becoming a dividend-paying REIT remains a key goal for our Company. We have reached a number of milestones to that end, but as we previously noted, more leasing is essential to recommending the reinstatement to our board. Our team is comprised of many shareholders who also look forward to return of the dividend. So, we are all focused on improving occupancy and cash flow. We will now be happy to take your questions. As a courtesy to our other callers, we ask that you limit your question to one plus a follow-up, in order to give other participants a chance to get their questions answered. You are most welcome to get back into the queue. And so, now, Operator, may we open it up for questions?"}, "commit"=>"Go Analyse"}
+Redirected to http://localhost:3000/entries
+Completed 302 Found in 7ms
+
+
+Started GET "/entries" for ::1 at 2015-07-20 18:37:03 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 18ms (Views: 18.0ms)
+
+
+Started GET "/entries/new" for ::1 at 2015-07-20 18:37:31 -0400
+Processing by EntriesController#new as HTML
+  Rendered entries/_form.html.erb (2.0ms)
+  Rendered entries/new.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 22ms (Views: 21.8ms)
+
+
+Started POST "/entries/upload" for ::1 at 2015-07-20 18:37:38 -0400
+Processing by EntriesController#upload as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZLQec2A7D+EGljwBkcL3kXpzwcOAX7psm/X2EDhWn6VYJeIp5fSxVNzmzzT6INpUU+T6IPKHVBCfKck/MzZivQ==", "file"=>#<ActionDispatch::Http::UploadedFile:0x007ff3c6499410 @tempfile=#<Tempfile:/var/folders/04/b_scn3ms0nj9jnbm_y5b07w00000gn/T/RackMultipart20150720-27111-1jkpwex.txt>, @original_filename="RSO-Transcript-2012-10-31T12_30.txt", @content_type="text/plain", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"RSO-Transcript-2012-10-31T12_30.txt\"\r\nContent-Type: text/plain\r\n">, "commit"=>"Proceed"}
+  Rendered entries/_form.html.erb (4.0ms)
+  Rendered entries/new.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 27ms (Views: 22.6ms)
+
+
+Started POST "/entries" for ::1 at 2015-07-20 18:37:41 -0400
+Processing by EntriesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ngTaB0XVDOR8T2Chjg2CG59Hv7kiVodDj1cNsy2xTdGilSZdwBqyUaY/k5Tl76/ettCEWlCOaT+LizKcJtGwyQ==", "entry"=>{"company_name"=>"RSO - Resource Capital Corp", "event_name"=>"Q3 2012 Resource Capital Corp Earnings Conference Call", "date"=>"October 31, 2012 / 12:30PM  GMT ", "transcript"=>""}, "commit"=>"Go Analyse"}
+  Rendered entries/_form.html.erb (2.8ms)
+  Rendered entries/new.html.erb within layouts/application (4.4ms)
+Completed 500 Internal Server Error in 10ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    10: 
+    11: 
+    12: 	<h3>Corporate Participants</h3>
+    13: 	<% @result.each do |person| %>
+    14: 		<%= f.radio_button(:speaker, person[0], :class => "speakerRadio") %>
+    15: 		<%= f.label(:speaker, person[0], :value => person[0]) %>
+    16: 		<br>
+  app/views/entries/_form.html.erb:13:in `block in _app_views_entries__form_html_erb__1630784481022089440_70342490819120'
+  app/views/entries/_form.html.erb:3:in `_app_views_entries__form_html_erb__1630784481022089440_70342490819120'
+  app/views/entries/new.html.erb:10:in `_app_views_entries_new_html_erb__220000752534757215_70342475113400'
+  app/controllers/entries_controller.rb:23:in `create'
+
+
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.3ms)
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.3ms)
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (77.9ms)
