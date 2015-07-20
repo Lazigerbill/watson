@@ -29,6 +29,7 @@ gem "mongoid", "~> 4.0.0"
 gem 'unicorn'
 
 gem "jquery-fileupload-rails"
+gem "twitter-bootstrap-rails"
 
 gem 'quiet_assets', group: :development
 gem 'pry', group: :development
