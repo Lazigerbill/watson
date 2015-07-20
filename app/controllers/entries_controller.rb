@@ -46,6 +46,7 @@ class EntriesController < ApplicationController
     @result = @transcript_info
 
     corp_participants(raw)
+    mark_conversations(raw)
     render :new
   end
 
@@ -76,11 +77,41 @@ private
       item.sub!('*', '')
       item.strip!
     end
-    # binding.pry
-
     @participants = []
-
     (0..list.size-1).step(2).each do |i|
         @participants.push(list[i..i+1].join(" - "))
     end
+  end
+
+  def mark_conversations(data)
+    data.shift(data.index("Presentation")+1)
+    @presentation = data.take(data.index("Questions and Answers"))
+    markers = @presentation.select{|i| i.match(/\[[0-9]+\]/)}
+    
+    #create marker index, starts at [0], ends at the last+1 index
+    marker_index = []
+    markers.each do |marker|
+      marker_index << @presentation.index(marker)
+    end
+    # marker_index << @presentation.count 
+
+    result = []
+    index_counter = 0
+    marker_index.each do |para|
+      if index_counter < marker_index.count-1
+        result << [@presentation[para][/([^\[]+)/].strip, @presentation[para+1..marker_index[index_counter+1]-1]]
+      else 
+        result << [@presentation[para][/([^\[]+)/].strip, @presentation[para+1..@presentation.count-1]]
+      end
+      index_counter+=1
+    end
+    # merging converstaions under the same index, and slide into hashes
+    # conv_hash = {}
+    # marker_index.reverse.each do |i|
+    #     @presentation[@presentation[i+1]+1..i-1].join
+    # end
+    # markers.each do |i|
+    #   conv_hash[i[/([^\[]+)/].strip] = "hello"
+    # end
+    binding.pry
   end
