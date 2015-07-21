@@ -55,7 +55,7 @@ end
 
 private
   def analyse(input)
-    # binding.pry
+    binding.pry
     profile_api_url = "#{Figaro.env.bluemix_url}/v2/profile"
 
     client = RestClient::Resource.new(profile_api_url, Figaro.env.bluemix_username, Figaro.env.bluemix_password)
