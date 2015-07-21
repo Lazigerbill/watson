@@ -35,19 +35,19 @@ class EntriesController < ApplicationController
   def upload
     @entry = Entry.new
     uploaded_file = params[:file]
-    data = uploaded_file.read
-    raw = data.split(/[\r\n]+|\={2}|\-{2}/).reject{|s| s.empty?}
-    splitup(raw)
-    @entry.company_name = @transcript_info[2]
-    @entry.event_name = @transcript_info[3]
-    @entry.date = @transcript_info[4]
-
-
-    corp_participants(raw)
-    mark_conversations(raw)
+    # split of text files into array of sections
+    data = uploaded_file.read.split(/[\r\n]+|\={2}|\-{2}/).reject{|s| s.empty?}
+ 
+    # extract event details
+    @entry.company_name = data[2]
+    @entry.event_name = data[3]
+    @entry.date = data[4]
+  
+    # extract speaker and presentations
+    parse_presentation(data)
+    
     render :new
   end
-
 end
 
 private
@@ -64,37 +64,21 @@ private
       params.require(:entry).permit(:company_name, :event_name, :date, :speaker, :transcript)
     end
 
-  def splitup(data)
-    @transcript_info = data.take(5)
-  end
-
-  def corp_participants(data)
-    data.shift(6)
-    list = data.take(data.index("Conference Call Participants"))
-    list.each do |item|
-      item.sub!('*', '')
-      item.strip!
-    end
-    @participants = []
-    (0..list.size-1).step(2).each do |i|
-        @participants.push(list[i..i+1].join(" - "))
-    end
-  end
-
-  def mark_conversations(data)
+  def parse_presentation(data)
     @result = []
+
     # presentation will only contain the presentation section
     data.shift(data.index("Presentation")+1)
     presentation = data.take(data.index("Questions and Answers"))
     
     #create speaker index, starts at [0](usually operator)
-    speakers = presentation.select{|i| i.match(/\[[0-9]+\]/)}.strip!
+    speakers = presentation.select{|i| i.match(/\[[0-9]+\]/)}
     speaker_index = []
-    speakers.each do |marker|
-      speaker_index << presentation.index(marker)
+    speakers.each do |speaker|
+      speaker_index << presentation.index(speaker)
     end
 
-    #producing result of arrays of conversations, each element = [speaker, content], combining contents to unique speakers
+    #producing arrays of conversations, each element = [speaker, content], combining contents to unique speakers
     i = 0
     speaker_index.each do |sentence|
       if i < speaker_index.count-1
@@ -112,5 +96,4 @@ private
       end
       i+=1
     end
-      binding.pry
   end

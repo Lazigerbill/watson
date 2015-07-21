@@ -4022,3 +4022,103 @@ Processing by EntriesController#upload as HTML
   Rendered entries/_form.html.erb (4.0ms)
   Rendered entries/new.html.erb within layouts/application (5.6ms)
 Completed 200 OK in 101319ms (Views: 311.7ms)
+
+
+Started GET "/" for ::1 at 2015-07-21 12:06:52 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 261ms (Views: 253.7ms)
+
+
+Started GET "/entries/new" for ::1 at 2015-07-21 12:06:54 -0400
+Processing by EntriesController#new as HTML
+  Rendered entries/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 232ms (Views: 231.4ms)
+
+
+Started POST "/entries/upload" for ::1 at 2015-07-21 12:06:58 -0400
+Processing by EntriesController#upload as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GuzYmU79O4LO4DjIy014cpjSrYyi+3rWu+baXCS1NdkmfSTDyzKFNxSQy/2gr1W3sUWWb9AjlKq/OuVzL9XIwQ==", "file"=>#<ActionDispatch::Http::UploadedFile:0x007fe9f22c1f80 @tempfile=#<Tempfile:/var/folders/04/b_scn3ms0nj9jnbm_y5b07w00000gn/T/RackMultipart20150721-29180-8il1he.txt>, @original_filename="BGS-Transcript-2012-10-18T20_30.txt", @content_type="text/plain", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"BGS-Transcript-2012-10-18T20_30.txt\"\r\nContent-Type: text/plain\r\n">, "commit"=>"Upload"}
+Completed 500 Internal Server Error in 7ms
+
+NoMethodError (undefined method `strip!' for #<Array:0x007fe9f223e9a0>):
+  app/controllers/entries_controller.rb:91:in `mark_conversations'
+  app/controllers/entries_controller.rb:49:in `upload'
+
+
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.1ms)
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (72.3ms)
+
+
+Started GET "/" for ::1 at 2015-07-21 12:08:50 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 249ms (Views: 242.9ms)
+
+
+Started GET "/entries/new" for ::1 at 2015-07-21 12:08:51 -0400
+Processing by EntriesController#new as HTML
+  Rendered entries/new.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 235ms (Views: 234.6ms)
+
+
+Started POST "/entries/upload" for ::1 at 2015-07-21 12:08:55 -0400
+Processing by EntriesController#upload as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wLRx8TxD7CsDsuZL66/eoKp8p06kNRA6vXwmseBXHX/8JY2ruYxSntnCFX6ATfNlg+ucrdbt/ka5oBme6zfgZw==", "file"=>#<ActionDispatch::Http::UploadedFile:0x007fe9ee398c78 @tempfile=#<Tempfile:/var/folders/04/b_scn3ms0nj9jnbm_y5b07w00000gn/T/RackMultipart20150721-29180-l26uoj.txt>, @original_filename="SFG-Transcript-2012-10-23T16_00.txt", @content_type="text/plain", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"SFG-Transcript-2012-10-23T16_00.txt\"\r\nContent-Type: text/plain\r\n">, "commit"=>"Upload"}
+  Rendered entries/_form.html.erb (3.4ms)
+  Rendered entries/new.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 242ms (Views: 231.5ms)
+
+
+Started GET "/" for ::1 at 2015-07-21 12:14:12 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 257ms (Views: 250.0ms)
+
+
+Started GET "/entries/new" for ::1 at 2015-07-21 12:14:14 -0400
+Processing by EntriesController#new as HTML
+  Rendered entries/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 283ms (Views: 282.3ms)
+
+
+Started POST "/entries/upload" for ::1 at 2015-07-21 12:14:18 -0400
+Processing by EntriesController#upload as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YZYnF5Ax9N0tuXyio/assm0tacCCVyE17ydQIhUwYe1dB9tNFf5KaPfJj5fIFIF3RLpSI/CPz0nr+28NHlCc9Q==", "file"=>#<ActionDispatch::Http::UploadedFile:0x007fe9ee426640 @tempfile=#<Tempfile:/var/folders/04/b_scn3ms0nj9jnbm_y5b07w00000gn/T/RackMultipart20150721-29180-c1whfd.txt>, @original_filename="NUVA-Transcript-2012-10-24T12_00.txt", @content_type="text/plain", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"NUVA-Transcript-2012-10-24T12_00.txt\"\r\nContent-Type: text/plain\r\n">, "commit"=>"Upload"}
+  Rendered entries/_form.html.erb (5.5ms)
+  Rendered entries/new.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 242ms (Views: 233.9ms)
+
+
+Started GET "/" for ::1 at 2015-07-21 12:16:52 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 240ms (Views: 234.4ms)
+
+
+Started GET "/entries" for ::1 at 2015-07-21 12:16:53 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 231ms (Views: 230.7ms)
+
+
+Started GET "/entries/new" for ::1 at 2015-07-21 12:16:53 -0400
+Processing by EntriesController#new as HTML
+  Rendered entries/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 243ms (Views: 242.3ms)
+
+
+Started POST "/entries/upload" for ::1 at 2015-07-21 12:16:57 -0400
+Processing by EntriesController#upload as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uz4FJNU9yDfRSKOyglrxsB11A3yG63xZZdh/Xm8xM+qHr/l+UPJ2ggs4UIfpuNx1NOI4n/QzkiVhBEBxZFHO8g==", "file"=>#<ActionDispatch::Http::UploadedFile:0x007fe9ebc64d28 @tempfile=#<Tempfile:/var/folders/04/b_scn3ms0nj9jnbm_y5b07w00000gn/T/RackMultipart20150721-29180-e9rr04.txt>, @original_filename="RUTH-Transcript-2012-10-30T12_30.txt", @content_type="text/plain", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"RUTH-Transcript-2012-10-30T12_30.txt\"\r\nContent-Type: text/plain\r\n">, "commit"=>"Upload"}
+  Rendered entries/_form.html.erb (3.9ms)
+  Rendered entries/new.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 241ms (Views: 236.3ms)
+
+
+Started GET "/" for ::1 at 2015-07-21 12:19:00 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (11.4ms)
+Completed 200 OK in 243ms (Views: 242.2ms)
