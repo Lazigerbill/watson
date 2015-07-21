@@ -6,7 +6,8 @@ class Entry
   field :speaker
   field :transcript
   field :wcount, type: Integer
+  field :insights, type: Hash
 
   # validations
-  validates_presence_of :company_name, :event_name, :date, :speaker, :transcript
+  validates_presence_of :company_name, :event_name, :date, :speaker, :transcript, :wcount
 end

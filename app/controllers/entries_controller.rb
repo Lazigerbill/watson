@@ -4,6 +4,7 @@ class EntriesController < ApplicationController
   end
 
   def show
+    @entry = Entry.find(params[:id])
   end
 
   def new
@@ -11,13 +12,15 @@ class EntriesController < ApplicationController
   end
 
   def create
-    # @input = params[:input]
-    # analyse(@input)
+
+    @input = params[:transcript]
+    analyse(@input)
 
     @entry = Entry.new(entry_params)  
+    @entry.insights = @watson_says
 
     if @entry.save
-      redirect_to entries_path, :notice => "Transcript successfully analysed and saved!!"
+      redirect_to entry_path(@entry.id), :notice => "Transcript successfully analysed and saved!!"
     else
       render :new, :alert => "booboo!"
     end
@@ -45,23 +48,24 @@ class EntriesController < ApplicationController
   
     # extract speaker and presentations
     parse_presentation(data)
-    
+
     render :new
   end
 end
 
 private
   def analyse(input)
+    # binding.pry
     profile_api_url = "#{Figaro.env.bluemix_url}/v2/profile"
 
     client = RestClient::Resource.new(profile_api_url, Figaro.env.bluemix_username, Figaro.env.bluemix_password)
     insights = client.post input, :content_type => "text/plain"
 
-    @pipeline = JSON.load(insights.body)
+    @watson_says = JSON.load(insights.body)
   end
 
   def entry_params
-      params.require(:entry).permit(:company_name, :event_name, :date, :speaker, :transcript)
+      params.require(:entry).permit(:company_name, :event_name, :date, :speaker, :transcript, :wcount)
     end
 
   def parse_presentation(data)

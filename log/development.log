@@ -4122,3 +4122,130 @@ Started GET "/" for ::1 at 2015-07-21 12:19:00 -0400
 Processing by EntriesController#index as HTML
   Rendered entries/index.html.erb within layouts/application (11.4ms)
 Completed 200 OK in 243ms (Views: 242.2ms)
+
+
+Started GET "/entries/new" for ::1 at 2015-07-21 12:19:42 -0400
+Processing by EntriesController#new as HTML
+  Rendered entries/new.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 230ms (Views: 229.6ms)
+
+
+Started GET "/entries/new" for ::1 at 2015-07-21 12:19:42 -0400
+Processing by EntriesController#new as HTML
+  Rendered entries/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 234ms (Views: 233.6ms)
+
+
+Started POST "/entries/upload" for ::1 at 2015-07-21 12:19:47 -0400
+Processing by EntriesController#upload as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zvPmY12SaUHYebpyfcgPfWejQ34PJ953bQl01omXK6ryYho52F3X9AIJSUcWKiK4TjR4nX3/MAtp1Uv5gvfWsg==", "file"=>#<ActionDispatch::Http::UploadedFile:0x007fe9f28575d0 @tempfile=#<Tempfile:/var/folders/04/b_scn3ms0nj9jnbm_y5b07w00000gn/T/RackMultipart20150721-29180-lft4nt.txt>, @original_filename="RRGB-Transcript-2012-10-29T14_00.txt", @content_type="text/plain", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"RRGB-Transcript-2012-10-29T14_00.txt\"\r\nContent-Type: text/plain\r\n">, "commit"=>"Upload"}
+  Rendered entries/_form.html.erb (3.9ms)
+  Rendered entries/new.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 253ms (Views: 245.6ms)
+
+
+Started GET "/" for ::1 at 2015-07-21 12:23:35 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 256ms (Views: 250.5ms)
+
+
+Started GET "/entries/new" for ::1 at 2015-07-21 12:23:37 -0400
+Processing by EntriesController#new as HTML
+  Rendered entries/new.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 278ms (Views: 277.3ms)
+
+
+Started POST "/entries/upload" for ::1 at 2015-07-21 12:23:40 -0400
+Processing by EntriesController#upload as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"COtjIO5Yrd+N0EBCuMjxugWzDbOrGh6KbwJNemq5qtA0ep96a5cTalegs3fTKtx/LCQ2UNnC8PZr3nJVYdlXyA==", "file"=>#<ActionDispatch::Http::UploadedFile:0x007fe9eb799168 @tempfile=#<Tempfile:/var/folders/04/b_scn3ms0nj9jnbm_y5b07w00000gn/T/RackMultipart20150721-29180-1sljsgn.txt>, @original_filename="RPM-Transcript-2012-10-03T14_00.txt", @content_type="text/plain", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"RPM-Transcript-2012-10-03T14_00.txt\"\r\nContent-Type: text/plain\r\n">, "commit"=>"Upload"}
+  Rendered entries/_form.html.erb (3.6ms)
+  Rendered entries/new.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 253ms (Views: 244.2ms)
+
+
+Started POST "/entries" for ::1 at 2015-07-21 12:23:43 -0400
+Processing by EntriesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Y8SfFxfdFhPjSdzNI3xSe31T043YMWq8M4rYIMW73/NfVWNNkhKopjk5L/hInn++VMTobqrphMA3VucPztsi6w==", "entry"=>{"company_name"=>"RPM - RPM International Inc", "event_name"=>"Q1 2013 RPM International Inc Earnings Conference Call", "date"=>"October 03, 2012 / 02:00PM  GMT ", "speaker"=>"Operator", "wcount"=>"166", "transcript"=>"Welcome to RPM International's conference call for the fiscal 2013 first quarter. Today's call is being recorded. This call is also being webcast and can be accessed live or replayed on the RPM website at www.RPMinc.com. Comments made on this call may include forward-looking statements based on current expectations that involve risks and uncertainties, which could cause actual results to be materially different. For more information on these risks and uncertainties, please review RPM's reports filed with the SEC. During this conference call, references may be made to non-GAAP financial measures. To assist you in understanding these non-GAAP terms, RPM has posted reconciliations to the most directly comparable GAAP financial measures on the RPM website. Following today's presentation, there will be a question and answer session. (Operator Instructions) Please note that only financial analysts will be permitted to ask questions. At this time, I would like to turn the call over to RPM's chairman and CEO, Mr. Frank Sullivan, for opening remarks. Please go ahead, sir."}, "commit"=>"Capture"}
+Unpermitted parameter: wcount
+Redirected to http://localhost:3000/entries/55ae720f77696671fc000004
+Completed 302 Found in 13ms
+
+
+Started GET "/entries/55ae720f77696671fc000004" for ::1 at 2015-07-21 12:23:43 -0400
+Processing by EntriesController#show as HTML
+  Parameters: {"id"=>"55ae720f77696671fc000004"}
+  Rendered entries/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 243ms (Views: 238.4ms)
+
+
+Started GET "/" for ::1 at 2015-07-21 12:36:41 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 248ms (Views: 241.7ms)
+
+
+Started GET "/entries/new" for ::1 at 2015-07-21 12:36:44 -0400
+Processing by EntriesController#new as HTML
+  Rendered entries/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 232ms (Views: 231.2ms)
+
+
+Started POST "/entries/upload" for ::1 at 2015-07-21 12:36:47 -0400
+Processing by EntriesController#upload as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"n1hP1c4QFRFl9h8JaOuHHm+AqxUjyzvlVyE3YRjG7r6jybOPS9+rpL+G7DwDCarbRheQ9lET1ZlT/QhOE6YTpg==", "file"=>#<ActionDispatch::Http::UploadedFile:0x007fe9ee82a0c0 @tempfile=#<Tempfile:/var/folders/04/b_scn3ms0nj9jnbm_y5b07w00000gn/T/RackMultipart20150721-29180-rq3mjw.txt>, @original_filename="RRGB-Transcript-2012-10-29T14_00.txt", @content_type="text/plain", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"RRGB-Transcript-2012-10-29T14_00.txt\"\r\nContent-Type: text/plain\r\n">, "commit"=>"Upload"}
+  Rendered entries/_form.html.erb (4.3ms)
+  Rendered entries/new.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 305ms (Views: 296.4ms)
+
+
+Started POST "/entries" for ::1 at 2015-07-21 12:36:51 -0400
+Processing by EntriesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9ioDu2pvHydC8+9MjSVzpERXZ9hd5ZCm8qMFipVXfG/Ku//h76ChkpiDHHnmx15hbcBcOy89ftr2fzqlnjeBdw==", "entry"=>{"company_name"=>"RRGB - Red Robin Gourmet Burgers Inc", "event_name"=>"Q3 2012 Red Robin Gourmet Burgers, Inc. Earnings Conference Call", "date"=>"October 29, 2012 / 02:00PM  GMT ", "speaker"=>"Operator", "wcount"=>"310", "transcript"=>"Good morning, ladies and gentlemen. Welcome to the Red Robin Gourmet Burgers third-quarter 2012 conference call. At this time all participants have been placed in a listen-only mode and the lines will be open for your questions following the presentation. As a reminder, part of today's discussion will include forward-looking statements within the meaning of federal securities laws. These statements are commonly identified by words such as continue, plan, expect, will, and other terms with similar meaning. These statements will include, but will not be limited to, statements that reflect the Company's current expectations with respect to the financial condition of the Company; results of operations, plans, objectives, future performance and business, including the Company's traffic and revenue driving initiatives; intentions with respect to expense management and plans for deployment of capital; and other expectations discussed during the course of this call. Although the Company believes the assumptions upon which preliminary or initial results, financial information, and forward-looking statements are based are reasonable as of today's date, these forward-looking statements are not guarantees of future performance and, therefore, investors should not place undue reliance on them. Also, these statements are based on facts known and expected as of the date of this conference call and the Company undertakes no obligation to update these statements to reflect events or circumstances that might arise after this call. Participants on the call today should refer to the Company's Form 10-K and other filings with the SEC for a more detailed discussion of the risks, uncertainties, and other factors that could impact the Company's future operating results and financial condition. The Company has posted its fiscal third-quarter 2012 press release and supplemental financial information related to the quarter's results on its website, www.RedRobin.com, in the Investors section. I want out turn the call over to Mr. Steve Carley, Chief Executive Officer of Red Robin."}, "commit"=>"Capture"}
+Completed 500 Internal Server Error in 153896ms
+
+RestClient::BadRequest (400 Bad Request):
+  app/controllers/entries_controller.rb:60:in `analyse'
+  app/controllers/entries_controller.rb:17:in `create'
+
+
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.3ms)
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (73.6ms)
+
+
+Started GET "/" for ::1 at 2015-07-21 12:42:39 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 223ms (Views: 217.4ms)
+
+
+Started GET "/entries/new" for ::1 at 2015-07-21 12:42:41 -0400
+Processing by EntriesController#new as HTML
+  Rendered entries/new.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 241ms (Views: 240.1ms)
+
+
+Started POST "/entries/upload" for ::1 at 2015-07-21 12:42:45 -0400
+Processing by EntriesController#upload as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SyircE+16Jxsb1o3g1tLcHaVE784bCzfgRne1i8ntwh3uVcqynpWKbYfqQLouWa1XwIoXEq0wqOFxeH5JEdKEA==", "file"=>#<ActionDispatch::Http::UploadedFile:0x007fe9f1c787c8 @tempfile=#<Tempfile:/var/folders/04/b_scn3ms0nj9jnbm_y5b07w00000gn/T/RackMultipart20150721-29180-1v3w8jf.txt>, @original_filename="RUTH-Transcript-2012-10-30T12_30.txt", @content_type="text/plain", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"RUTH-Transcript-2012-10-30T12_30.txt\"\r\nContent-Type: text/plain\r\n">, "commit"=>"Upload"}
+  Rendered entries/_form.html.erb (3.8ms)
+  Rendered entries/new.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 241ms (Views: 236.3ms)
+
+
+Started POST "/entries" for ::1 at 2015-07-21 12:42:51 -0400
+Processing by EntriesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Z5t1PlwsApYhPiZZ4E+md0LnqRuLnwgnU+DAhKb1bvhbColk2eO8I/tO1WyLrYuya3CS+PlH5ltXPP+rrZWT4A==", "entry"=>{"company_name"=>"RUTH - Ruth's Hospitality Group Inc", "event_name"=>"Q3 2012 Ruth's Hospitality Group, Inc. Earnings Conference Call", "date"=>"October 30, 2012 / 12:30PM  GMT ", "speaker"=>"Operator", "wcount"=>"92", "transcript"=>"Hello. Good morning, ladies and gentlemen, and thank you for standing by. Welcome to today's Ruth's Hospitality Group's third-quarter 2012 earnings conference call. At this time, all participants are in a listen-only mode. Following the formal remarks, we will conduct a question and answer session, and instructions will be provided at that time for you to queue for questions. As a reminder, today's conference is being recorded. I would now like to turn the conference over to Mr. Arne Haak, Executive Vice President and Chief Financial Officer. Mr. Haak, please go ahead."}, "commit"=>"Capture"}
+Completed 500 Internal Server Error in 8177ms
+
+RestClient::BadRequest (400 Bad Request):
+  app/controllers/entries_controller.rb:61:in `analyse'
+  app/controllers/entries_controller.rb:17:in `create'
+
+
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.6ms)
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (71.0ms)
