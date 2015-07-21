@@ -27,6 +27,7 @@ gem "mongoid", "~> 4.0.0"
 
 # Use unicorn as the app server
 gem 'unicorn'
+gem 'rails_serve_static_assets'
 
 gem "jquery-fileupload-rails"
 gem "twitter-bootstrap-rails"
