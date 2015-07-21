@@ -8,7 +8,6 @@ class EntriesController < ApplicationController
 
   def new
     @entry = Entry.new
-    @result = []
   end
 
   def create
@@ -18,9 +17,9 @@ class EntriesController < ApplicationController
     @entry = Entry.new(entry_params)  
 
     if @entry.save
-      redirect_to entries_path
+      redirect_to entries_path, :notice => "Transcript successfully analysed and saved!!"
     else
-      render :new
+      render :new, :alert => "booboo!"
     end
   end
 
@@ -34,13 +33,11 @@ class EntriesController < ApplicationController
   end
 
   def upload
+    @entry = Entry.new
     uploaded_file = params[:file]
     data = uploaded_file.read
     raw = data.split(/[\r\n]+|\={2}|\-{2}/).reject{|s| s.empty?}
-    # binding.pry
-    @entry = Entry.new
     splitup(raw)
-
     @entry.company_name = @transcript_info[2]
     @entry.event_name = @transcript_info[3]
     @entry.date = @transcript_info[4]
@@ -85,37 +82,35 @@ private
   end
 
   def mark_conversations(data)
+    @result = []
+    # presentation will only contain the presentation section
     data.shift(data.index("Presentation")+1)
-    @presentation = data.take(data.index("Questions and Answers"))
-    markers = @presentation.select{|i| i.match(/\[[0-9]+\]/)}
+    presentation = data.take(data.index("Questions and Answers"))
     
-    #create marker index, starts at [0], ends at the last+1 index
-    marker_index = []
-    markers.each do |marker|
-      marker_index << @presentation.index(marker)
+    #create speaker index, starts at [0](usually operator)
+    speakers = presentation.select{|i| i.match(/\[[0-9]+\]/)}.strip!
+    speaker_index = []
+    speakers.each do |marker|
+      speaker_index << presentation.index(marker)
     end
 
     #producing result of arrays of conversations, each element = [speaker, content], combining contents to unique speakers
-    @result = []
-    index_counter = 0
-    marker_index.each do |para|
-      if index_counter < marker_index.count-1
-        if @result.assoc(@presentation[para][/([^\[]+)/].strip) 
-          @result[@result.index(@result.assoc(@presentation[para][/([^\[]+)/].strip))][1] << @presentation[para+1..marker_index[index_counter+1]-1].join
+    i = 0
+    speaker_index.each do |sentence|
+      if i < speaker_index.count-1
+        if @result.assoc(presentation[sentence][/([^\[]+)/].strip!) 
+          @result[@result.index(@result.assoc(presentation[sentence][/([^\[]+)/].strip!))][1] << presentation[sentence+1..speaker_index[i+1]-1].join.strip!
         else
-          @result << [@presentation[para][/([^\[]+)/].strip, @presentation[para+1..marker_index[index_counter+1]-1].join]
+          @result << [presentation[sentence][/([^\[]+)/].strip!, presentation[sentence+1..speaker_index[i+1]-1].join.strip!]
         end
       else 
-        if @result.assoc(@presentation[para][/([^\[]+)/].strip)
-          @result[@result.index(@result.assoc(@presentation[para][/([^\[]+)/].strip))][1] << @presentation[para+1..@presentation.count-1].join
+        if @result.assoc(presentation[sentence][/([^\[]+)/].strip!)
+          @result[@result.index(@result.assoc(presentation[sentence][/([^\[]+)/].strip!))][1] << presentation[sentence+1..presentation.count-1].join.strip!
         else
-          @result << [@presentation[para][/([^\[]+)/].strip, @presentation[para+1..@presentation.count-1].join]
+          @result << [presentation[sentence][/([^\[]+)/].strip!, presentation[sentence+1..presentation.count-1].join.strip!]
         end
       end
-      index_counter+=1
+      i+=1
     end
-
-    # Turning that @result array into JSON
-    # binding.pry
-    # @json = @result.to_h.to_json
+      binding.pry
   end

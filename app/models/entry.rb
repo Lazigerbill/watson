@@ -5,6 +5,7 @@ class Entry
   field :date
   field :speaker
   field :transcript
+  field :wcount, type: Integer
 
   # validations
   validates_presence_of :company_name, :event_name, :date, :speaker, :transcript
