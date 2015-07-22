@@ -1,16 +1,37 @@
-<h1>Watson NLP pilot project</h1>
-<p>Enter text to be analysed below:</p>
 
+<div class = 'page-header'>
+	<h1>Imported transcripts</h1>
+</div>
 
-<% @entries.each do |e| %>
-	<%= e.company_name %>
-	<%= e.event_name %>
-	<%= e.date %>
-	<%= e.speaker %>
-	<%= link_to '<<delete>>', e, method: :delete, data: {confirm: 'Are you sure?'} %>
-	<br>
-<% end %>
+<table class = 'table table-striped table-bordered'>
+	<thead>
+		<tr>
+			<td>Company</td>
+			<td>Event</td>
+			<td>Date</td>
+			<td>Speaker</td>
+			<td></td>
+			<td></td>
+		</tr>
+	</thead>
+	<tbody>
+		<% @entries.each do |e| %>
+		<tr>
+				<td><%= e.company_name %></td>
+				<td><%= e.event_name %></td>
+				<td><%= e.date %></td>
+				<td><%= e.speaker %></td>
+				<td>
+					<%= button_to 'Show', entry_path(e.id), method: :get, :class => "btn btn-primary" %> 
+				</td>	
+				<td>
+					<%= button_to 'Delete', e, method: :delete, data: {confirm: 'Are you sure?'}, :class => "btn btn-danger" %>
+				</td>
+		</tr>
+		<% end %>
+	</tbody>
+</table>
 
-<%= link_to 'Create new entry here', new_entry_path %>
+<%= button_to 'Upload New File', new_entry_path, method: :get, :class => 'btn btn-primary btn-lg' %>
 
 

@@ -45,10 +45,10 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#">Watson Pilot Project 1.0</a>
+        <%= link_to "Watson Pilot Project", root_path, :class => "navbar-brand"  %>
         <div class="navbar-collapse collapse navbar-responsive-collapse">
           <ul class="nav navbar-nav">
-            <li><%= link_to "Transcript Index", entries_path  %></li>
+            <li><%= link_to "Home", entries_path  %></li>
             <li><%= link_to "Upload new file", new_entry_path  %></li>
             <!-- <li><%#= link_to "About", "/path3"  %></li> -->
           </ul>
@@ -58,11 +58,11 @@
 
     <div class="container">
       <div class="row">
-        <div class="col-lg-9">
+        <!-- <div class="col-lg-9"> -->
           <%= bootstrap_flash %>
           <%= yield %>
-        </div>
-        <div class="col-lg-3">
+        <!-- </div> -->
+        <!-- <div class="col-lg-3"> -->
 <!--           <div class="well sidebar-nav">
             <h3>Sidebar</h3>
             <ul class="nav nav-list">
@@ -72,7 +72,7 @@
               <li><%#= link_to "Link3", "/path3"  %></li>
             </ul>
           </div>/.well -->
-        </div><!--/span--> 
+        <!-- </div><!--/span-->  
       </div><!--/row-->
 
      

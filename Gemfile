@@ -21,7 +21,7 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'spring',        group: :development
 
 gem 'rest-client'
-# gem 'rails_12factor'
+gem 'rails_12factor'
 gem 'figaro'
 gem "mongoid", "~> 4.0.0"
 

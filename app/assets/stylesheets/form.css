@@ -1,3 +1,8 @@
-#transBox{
+.transBox{
 	min-height: 20em;
+}
+
+.jumbotron{
+	background-image: url("http://www.txmq.com/wp-content/uploads/2014/09/Watson_Planet.jpg");
+	background-size: cover;
 }

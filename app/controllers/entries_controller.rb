@@ -1,4 +1,7 @@
 class EntriesController < ApplicationController
+  def landing
+    
+  end
   def index
     @entries = Entry.all
   end
@@ -13,7 +16,6 @@ class EntriesController < ApplicationController
 
   def create
     @input = params[:entry]["transcript"]
-    # binding.pry 
     analyse(@input)
 
     @entry = Entry.new(entry_params)  
@@ -58,7 +60,6 @@ private
     profile_api_url = "#{Figaro.env.bluemix_url}/v2/profile"
 
     client = RestClient::Resource.new(profile_api_url, Figaro.env.bluemix_username, Figaro.env.bluemix_password)
-    binding.pry
     insights = client.post input, :content_type => "text/plain;charset=utf-8"
 
     @watson_says = JSON.load(insights.body)

@@ -1,5 +1,20 @@
-Hello!
+<div class="page-header">
+	<h1><%= @entry.company_name %></h1>
+</div>
+<h3><%= @entry.event_name %> <small><%= @entry.date %></small></h3>
+<label>Speaker: </label> <%= @entry.speaker %>
+<br>
+<label>Transcript: </label>
+<br>
+<%= text_area_tag 'transcript', @entry.transcript, :class => 'form-control transBox' %>
+<p class="text-right">word count: <span class="badge"><%= @entry.wcount %></span></p>
+<br>
 
-<%= @entry.company_name %>
-
-<%= @entry.insights %>
+<div class="panel panel-info">
+  <div class="panel-heading">
+    <h3 class="panel-title">Results from Watson in JSON</h3>
+  </div>
+  <div class="panel-body">
+		<%= @entry.insights.to_json %>
+  </div>
+</div>

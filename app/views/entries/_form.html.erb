@@ -24,7 +24,7 @@
 		<%= f.label :wcount, "Word count:" %>
 		<%= f.text_field :wcount, :id => 'wcount' %>
 	</div>
-	<%= f.text_area :transcript, :id => 'transBox', :class => "form-control", :placeholder => "Please select speaker." %>
+	<%= f.text_area :transcript, :class => "form-control transBox", :placeholder => "Please select speaker." %>
 	<br>
 	<%= f.submit "Capture", :id=>"submitButton", :class => "btn btn-success" %>
 <% end %>

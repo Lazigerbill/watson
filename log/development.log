@@ -4782,3 +4782,1586 @@ Processing by EntriesController#show as HTML
   Parameters: {"id"=>"55aecf43776966a49a000000"}
   Rendered entries/show.html.erb within layouts/application (1.9ms)
 Completed 200 OK in 236ms (Views: 230.7ms)
+
+
+Started GET "/" for ::1 at 2015-07-21 22:21:40 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (23.2ms)
+Completed 200 OK in 407ms (Views: 373.2ms)
+
+
+Started GET "/" for ::1 at 2015-07-21 22:21:41 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 241ms (Views: 240.3ms)
+
+
+Started GET "/" for ::1 at 2015-07-21 22:22:53 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 237ms (Views: 236.9ms)
+
+
+Started GET "/" for ::1 at 2015-07-21 22:22:59 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 250ms (Views: 249.6ms)
+
+
+Started GET "/" for ::1 at 2015-07-21 22:23:02 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 267ms (Views: 266.1ms)
+
+
+Started GET "/" for ::1 at 2015-07-21 22:23:07 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 241ms (Views: 240.7ms)
+
+
+Started GET "/" for ::1 at 2015-07-21 22:23:28 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 235ms (Views: 234.0ms)
+
+
+Started GET "/" for ::1 at 2015-07-21 22:23:33 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 249ms (Views: 248.2ms)
+
+
+Started GET "/" for ::1 at 2015-07-21 22:25:25 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 241ms (Views: 240.3ms)
+
+
+Started GET "/" for ::1 at 2015-07-21 22:26:02 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 243ms (Views: 241.8ms)
+
+
+Started GET "/" for ::1 at 2015-07-21 22:27:45 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 242ms (Views: 241.2ms)
+
+
+Started GET "/" for ::1 at 2015-07-21 22:27:47 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 255ms (Views: 254.2ms)
+
+
+Started GET "/" for ::1 at 2015-07-21 22:27:53 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 236ms (Views: 235.3ms)
+
+
+Started GET "/" for ::1 at 2015-07-21 22:28:12 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 249ms (Views: 248.4ms)
+
+
+Started GET "/" for ::1 at 2015-07-21 22:28:28 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 249ms (Views: 248.3ms)
+
+
+Started GET "/" for ::1 at 2015-07-21 22:31:20 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 243ms (Views: 242.1ms)
+
+
+Started GET "/" for ::1 at 2015-07-21 22:31:41 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 239ms (Views: 237.7ms)
+
+
+Started GET "/" for ::1 at 2015-07-21 22:31:53 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 238ms (Views: 237.5ms)
+
+
+Started GET "/entries/new" for ::1 at 2015-07-21 22:32:40 -0400
+Processing by EntriesController#new as HTML
+  Rendered entries/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 235ms (Views: 234.6ms)
+
+
+Started GET "/entries" for ::1 at 2015-07-21 22:32:50 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 228ms (Views: 227.7ms)
+
+
+Started DELETE "/entries/55a9c3c97769663742000004" for ::1 at 2015-07-21 22:33:08 -0400
+Processing by EntriesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"meOY1tUnBzmyYL0hb3VKOrfPggVa1pxqGrYyrjh4AKWlcmSMUOi5jGgQThQEl2f/nli55igOchYeag2BMxj9vQ==", "id"=>"55a9c3c97769663742000004"}
+Redirected to http://localhost:3000/entries
+Completed 302 Found in 20ms
+
+
+Started GET "/entries" for ::1 at 2015-07-21 22:33:08 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 245ms (Views: 244.2ms)
+
+
+Started DELETE "/entries/55a9c3de7769663742000005" for ::1 at 2015-07-21 22:33:10 -0400
+Processing by EntriesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"zrCdml4pO//TO5fX3+IGFGHjKnIV3HJCXUi1Byh8gOzyIWHA2+aFSglLZOK0ACvRSHQRkWcEnD5ZlIooIxx99A==", "id"=>"55a9c3de7769663742000005"}
+Redirected to http://localhost:3000/entries
+Completed 302 Found in 3ms
+
+
+Started GET "/entries" for ::1 at 2015-07-21 22:33:10 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 250ms (Views: 249.2ms)
+
+
+Started DELETE "/entries/55a9c3ff7769663742000006" for ::1 at 2015-07-21 22:33:13 -0400
+Processing by EntriesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"JSa0z1LatmuMxMjpmfXmN+TiGHq6G+3/VswptmOQQD4Zt0iV1xUI3la0O9zyF8vyzXUjmcjDA4NSEBaZaPC9Jg==", "id"=>"55a9c3ff7769663742000006"}
+Redirected to http://localhost:3000/entries
+Completed 302 Found in 3ms
+
+
+Started GET "/entries" for ::1 at 2015-07-21 22:33:13 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (14.9ms)
+Completed 200 OK in 252ms (Views: 251.8ms)
+
+
+Started GET "/entries/new" for ::1 at 2015-07-21 22:33:58 -0400
+Processing by EntriesController#new as HTML
+  Rendered entries/new.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 236ms (Views: 235.5ms)
+
+
+Started GET "/entries" for ::1 at 2015-07-21 22:33:59 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 244ms (Views: 243.1ms)
+
+
+Started GET "/entries" for ::1 at 2015-07-21 22:34:56 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 243ms (Views: 242.7ms)
+
+
+Started GET "/entries/new" for ::1 at 2015-07-21 22:35:01 -0400
+Processing by EntriesController#new as HTML
+  Rendered entries/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 239ms (Views: 238.4ms)
+
+
+Started GET "/entries/new" for ::1 at 2015-07-21 22:35:09 -0400
+Processing by EntriesController#new as HTML
+  Rendered entries/new.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 241ms (Views: 240.0ms)
+
+
+Started POST "/entries/upload" for ::1 at 2015-07-21 22:35:15 -0400
+Processing by EntriesController#upload as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hm181D1T6Ly/wKtEX9tBZf3FAw+nyO+OwZlwnt7vKA26/ICOuJxWCWWwWHE0OWyg1FI47NUQAfLFRU+x1Y/VFQ==", "file"=>#<ActionDispatch::Http::UploadedFile:0x007fdef8ed9098 @tempfile=#<Tempfile:/var/folders/04/b_scn3ms0nj9jnbm_y5b07w00000gn/T/RackMultipart20150721-42138-1kcbup4.txt>, @original_filename="HTLF-Transcript-2012-10-29T21_00.txt", @content_type="text/plain", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"HTLF-Transcript-2012-10-29T21_00.txt\"\r\nContent-Type: text/plain\r\n">, "commit"=>"Upload"}
+  Rendered entries/_form.html.erb (4.7ms)
+  Rendered entries/new.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 251ms (Views: 243.5ms)
+
+
+Started POST "/entries" for ::1 at 2015-07-21 22:35:35 -0400
+Processing by EntriesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"y8ODBKdejmaYhAFODzUgW91Oq8gQ9E0mIHtMOyCFYe33Un9eIpEw00L08ntk1w2e9NmQK2Iso1okp3MUK+Wc9Q==", "entry"=>{"company_name"=>"HTLF - Heartland Financial USA Inc", "event_name"=>"Q3 2012 Heartland Financial USA, Inc. Earnings Conference Call", "date"=>"October 29, 2012 / 09:00PM  GMT ", "speaker"=>"Lynn Fuller,  Heartland Financial USA, Inc. - Chairman, President & CEO", "wcount"=>"1184", "transcript"=>"Thank you and good afternoon, everyone. We certainly appreciate everyone joining us this afternoon as we review Heartland's excellent performance for the third quarter of 2012. For the next few minutes, I will touch on the highlights for the quarter. I will then turn the color over to John Schmidt, our Chief Operating Officer and CFO, who will provide additional color on Heartland's quarterly results. Then Ken Erickson, our EVP and Chief Credit Officer, will offer insights on credit-related topics. Well, Heartland has continued its streak of excellent quarterly earnings, reporting our second-best quarter in our 31-year-history, nearly double last year's third quarter. While we just missed setting a new record, our exceptional quarterly earnings of $13.6 million was 85% over last year's third-quarter earnings of $7.3 million. Year-to-date, net income stands at $40.4 million, once again nearly double the $21.8 million earned through three quarters of 2011. On a per-share basis, Heartland earned $0.75 per diluted common share in the third quarter compared to $0.20 per share in the third quarter of 2011. Year-to-date, Heartland has earned $2.24 per diluted common share compared to $0.92 per share for the first nine months in 2011. Heartland's annualized return on average common equity for the quarter was a superb 16.8% and stands at 17.4% year to date. As we had expected, Heartland's net interest margin slipped below 4% in the quarter to 3.84%. Our margin reflected the realities of this low rate environment; however, net interest income in dollars remains solid, topping both the third quarter and nine months of operations last year. Our pretext preprovision earnings were also very strong at $64.9 million year-to-date compared to $52 million for 2011. One of the factors contributing to Heartland's earnings momentum is loan growth, which continued in the third quarter. Despite a slight dip in commercial outstandings, our pipeline is strong as we expect to maintain a year-over-year increase in the area of 11%. Our growth strategy emphasizes proactive business development, calling on potential commercial, agribusiness, and small-business clients. It is also worth noting that with $87 million of net growth in qualifying small-business loans, we have nearly achieved our goal of approximately $92 million. At this level, our preferred dividend rate drops to 2% and, upon achievement of our goal, 1% through 2015. Mortgage loan originations continued to provide a significant positive impact to Heartland earnings. With interest rates remaining at historic lows, refinance activity dominates with an origination mix of 64% refi and 36% purchased. While we welcome the refi business, our Heartland mortgage unit is building programs to attract more purchase business. We believe our longer-term success in residential real estate financing depends on our continued shift towards purchase originations, which will drive revenue when the refi boom comes to an end. Currently Heartland Mortgage is operating in all nine Heartland subsidiary banks with our National Residential Mortgage unit serving San Diego from four locations, along with Reno, Nevada; Minot, North Dakota; Boise, Idaho; and Buffalo, Wyoming. Year-to-date, mortgage banking revenue, the combination of gain on sale of loans and loan servicing income was $41.3 million versus $8.1 million for the first three quarters of 2011. Now, that's an increase of 410% year over year. Discussion of Heartland's exceptional year would not be complete without favorable comments on our steady improvement in credit quality. I am extremely pleased to report more good news on that front as our nonperforming loans have been reduced by nearly $32 million from last year's third quarter, a 44% reduction. Over the last 12 months, the percentage of nonperforming loans and leases to total loans and leases has been reduced from 3.1% to 1.5%. With this reduction, our allowance as a percent of nonperforming loans has increased to 99%. We feel very good about our reserve position and with the continued sale of OREO very close to our marks. Now that being said, net loss on repossessed assets did increase this quarter, mostly as a result of lower appraisals on two properties. Looking at the balance sheet, total assets increased by $166 million in the third quarter to $4.6 billion at quarter end. This increase was driven in part by both the acquisition of Liberty Bank branches and loan growth. In terms of deposits, we experienced growth in all categories, partly as a result of the Liberty acquisition, as well as excellent results from our calling efforts. Year-to-date deposits have increased by $293 million with demand deposits growing by $140 million. At September 30, demand deposits, savings and money markets represented 77% of total deposits. Now moving on to capital, our tangible capital ratio increased to 6.18%. Our regulatory capital ratios and risk-based capital and tier 1 capital continue well above required levels, and again, I would emphasize our very shareholder-friendly equity structure. John Schmidt will provide more details on our balance sheet and income statement in his comments. Well, possibly the biggest story of Heartland's third quarter would be our growth initiatives. During the quarter, we closed on the branch purchase from Liberty Bank FSB, adding three offices and over $50 million in deposits to our flagship bank, Dubuque Bank and Trust. Subsequently we consolidated one of the Liberty offices into a nearby DB&T location. Soon after the Liberty closing, we announced the acquisition of First Shares Inc. That's the parent company of First National Bank of Platteville, Wisconsin. This transaction will add three more locations and over $130 million in assets to our Wisconsin bank and trust subsidiary. We began the fourth quarter with our third M&A announcement for 2012, the acquisition of Heritage Bank in Phoenix, Arizona. This transaction is scheduled to close in December and will add over $100 million to our Arizona Bank & Trust subsidiary when the merger is completed in March of 2013. During the third quarter, we also added two branch locations to our footprint. In early August, Rocky Mountain Bank opened its new main banking office in downtown Billings, Montana. That's its 10th location, and in early September, Arizona Bank & Trust added its seventh location, opening up the attractive Scottsdale market. We continue to seriously evaluate multiple M&A opportunities within all of our markets. Now that being said, we would consider attractive transactions that open new and attractive geographic markets in the Midwest and the West. Moving on to our consumer finance subsidiary, Citizens Finance Company continued at an impressive pace in the third quarter, with net earnings of $695,000. Year-to-date, Citizens' return on equity is a lofty 23.6%, with year-to-date net income of $2.3 million compared to $1.8 million for the first three quarters of 2011. In concluding my comments today, I am pleased to report that at its October board meeting the Heartland Board of Directors elected to maintain our dividend at $0.10 per common share payable on December 7, 2012. I will now turn the call over to John Schmidt for more detail on our quarterly results, and then John will introduce Ken Erickson, who will provide commentary on the credit side. John?Thank you, Ken. Now we will open the phone lines for your questions."}, "commit"=>"Capture"}
+Redirected to http://localhost:3000/entries/55af017d776966a49a000001
+Completed 302 Found in 5813ms
+
+
+Started GET "/entries/55af017d776966a49a000001" for ::1 at 2015-07-21 22:35:41 -0400
+Processing by EntriesController#show as HTML
+  Parameters: {"id"=>"55af017d776966a49a000001"}
+  Rendered entries/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 239ms (Views: 236.8ms)
+
+
+Started GET "/entries" for ::1 at 2015-07-21 22:35:57 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 249ms (Views: 248.8ms)
+
+
+Started DELETE "/entries/55aecc987769669d82000000" for ::1 at 2015-07-21 22:36:24 -0400
+Processing by EntriesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Qz8x2srWUTi+KQ6yIlP+EroPYPgiywFfx+5XFUf+2Et/rs2ATxnvjWRZ/YdJsdPXk5hbG1AT7yPDMmg6TJ4lUw==", "id"=>"55aecc987769669d82000000"}
+Redirected to http://localhost:3000/entries
+Completed 302 Found in 4ms
+
+
+Started GET "/entries" for ::1 at 2015-07-21 22:36:24 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 251ms (Views: 250.7ms)
+
+
+Started DELETE "/entries/55ae720f77696671fc000004" for ::1 at 2015-07-21 22:36:26 -0400
+Processing by EntriesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"+D2JobWNf4lH+O1Z/mUIFgo90nieEHpGdvvKLBlec0jErHX7MELBPJ2IHmyVhyXTI6rpm+zIlDpyJ/UDEj6OUA==", "id"=>"55ae720f77696671fc000004"}
+Redirected to http://localhost:3000/entries
+Completed 302 Found in 3ms
+
+
+Started GET "/entries" for ::1 at 2015-07-21 22:36:26 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 245ms (Views: 245.0ms)
+
+
+Started GET "/entries" for ::1 at 2015-07-21 22:36:46 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (9.1ms)
+Completed 200 OK in 248ms (Views: 247.5ms)
+
+
+Started GET "/entries" for ::1 at 2015-07-21 22:38:22 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 244ms (Views: 243.1ms)
+
+
+Started GET "/entries" for ::1 at 2015-07-21 22:38:50 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 265ms (Views: 264.7ms)
+
+
+Started GET "/entries" for ::1 at 2015-07-21 22:39:38 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (9.9ms)
+Completed 200 OK in 279ms (Views: 278.8ms)
+
+
+Started GET "/entries" for ::1 at 2015-07-21 22:40:25 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 247ms (Views: 246.8ms)
+
+
+Started GET "/entries" for ::1 at 2015-07-21 23:01:06 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 260ms (Views: 259.5ms)
+
+
+Started GET "/entries" for ::1 at 2015-07-21 23:01:32 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 251ms (Views: 250.2ms)
+
+
+Started GET "/entries" for ::1 at 2015-07-21 23:01:41 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 246ms (Views: 245.6ms)
+
+
+Started GET "/entries" for ::1 at 2015-07-21 23:01:49 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 236ms (Views: 234.9ms)
+
+
+Started GET "/entries" for ::1 at 2015-07-21 23:02:32 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 247ms (Views: 246.6ms)
+
+
+Started GET "/entries" for ::1 at 2015-07-21 23:02:46 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 249ms (Views: 248.7ms)
+
+
+Started GET "/entries" for ::1 at 2015-07-21 23:03:14 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 237ms (Views: 236.8ms)
+
+
+Started GET "/entries" for ::1 at 2015-07-21 23:03:42 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 238ms (Views: 237.6ms)
+
+
+Started GET "/entries" for ::1 at 2015-07-21 23:03:52 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 240ms (Views: 239.6ms)
+
+
+Started GET "/entries" for ::1 at 2015-07-21 23:03:54 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 244ms (Views: 243.4ms)
+
+
+Started GET "/entries" for ::1 at 2015-07-21 23:04:25 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 237ms (Views: 236.6ms)
+
+
+Started GET "/entries" for ::1 at 2015-07-21 23:05:19 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (7.5ms)
+Completed 500 Internal Server Error in 13ms
+
+ActionView::Template::Error (wrong number of arguments (4 for 0..3)):
+    19: 				<td><%= e.date %></td>
+    20: 				<td><%= e.speaker %></td>
+    21: 				<td>
+    22: 					<%= button_to 'Show', e, entry_path(e.id), :class => "btn btn-primary" %> 
+    23: 				</td>	
+    24: 				<td>
+    25: 					<%= button_to 'Delete', e, method: :delete, data: {confirm: 'Are you sure?'}, :class => "btn btn-danger" %>
+  app/views/entries/index.html.erb:22:in `block in _app_views_entries_index_html_erb__3657368461658497665_70297865438140'
+  app/views/entries/index.html.erb:15:in `_app_views_entries_index_html_erb__3657368461658497665_70297865438140'
+
+
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.3ms)
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.1ms)
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (80.1ms)
+
+
+Started GET "/entries" for ::1 at 2015-07-21 23:05:29 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 232ms (Views: 231.6ms)
+
+
+Started POST "/entries/55aecf43776966a49a000000" for ::1 at 2015-07-21 23:05:32 -0400
+
+ActionController::RoutingError (No route matches [POST] "/entries/55aecf43776966a49a000000"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.4ms)
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (8.0ms)
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (100.3ms)
+
+
+Started GET "/entries" for ::1 at 2015-07-21 23:05:47 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 239ms (Views: 238.4ms)
+
+
+Started POST "/entries/55aecf43776966a49a000000" for ::1 at 2015-07-21 23:05:49 -0400
+
+ActionController::RoutingError (No route matches [POST] "/entries/55aecf43776966a49a000000"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.7ms)
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (90.5ms)
+
+
+Started GET "/" for ::1 at 2015-07-21 23:06:41 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 239ms (Views: 238.3ms)
+
+
+Started GET "/entries/55adc71777696671fc000000" for ::1 at 2015-07-21 23:06:43 -0400
+Processing by EntriesController#show as HTML
+  Parameters: {"id"=>"55adc71777696671fc000000"}
+  Rendered entries/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 235ms (Views: 233.2ms)
+
+
+Started GET "/entries/55af017d776966a49a000001" for ::1 at 2015-07-21 23:06:49 -0400
+Processing by EntriesController#show as HTML
+  Parameters: {"id"=>"55af017d776966a49a000001"}
+  Rendered entries/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 243ms (Views: 235.6ms)
+
+
+Started GET "/entries/55aecf43776966a49a000000" for ::1 at 2015-07-21 23:06:53 -0400
+Processing by EntriesController#show as HTML
+  Parameters: {"id"=>"55aecf43776966a49a000000"}
+  Rendered entries/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 244ms (Views: 240.2ms)
+
+
+Started GET "/entries/55adc71777696671fc000000" for ::1 at 2015-07-21 23:06:55 -0400
+Processing by EntriesController#show as HTML
+  Parameters: {"id"=>"55adc71777696671fc000000"}
+  Rendered entries/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 242ms (Views: 240.7ms)
+
+
+Started GET "/entries/55ad762542696c1ca0000005" for ::1 at 2015-07-21 23:06:57 -0400
+Processing by EntriesController#show as HTML
+  Parameters: {"id"=>"55ad762542696c1ca0000005"}
+  Rendered entries/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 242ms (Views: 240.2ms)
+
+
+Started DELETE "/entries/55ad762542696c1ca0000005" for ::1 at 2015-07-21 23:07:01 -0400
+Processing by EntriesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"6IMleFW/OnPHxS2V3gDeM/lJDlU5MN5XHaTqbMkTao3UEtki0HCExh213qC14vP20N41tkvoMCsZeNVDwnOXlQ==", "id"=>"55ad762542696c1ca0000005"}
+Redirected to http://localhost:3000/entries
+Completed 302 Found in 3ms
+
+
+Started GET "/entries" for ::1 at 2015-07-21 23:07:01 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 246ms (Views: 245.8ms)
+
+
+Started DELETE "/entries/55adc71777696671fc000000" for ::1 at 2015-07-21 23:07:05 -0400
+Processing by EntriesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"9ingiMPfbf1/TRU0qPbFYybyhGL2q59b3cxHmpan0TfKuBzSRhDTSKU95gHDFOimD2W/gYRzcSfZEHi1nccsLw==", "id"=>"55adc71777696671fc000000"}
+Redirected to http://localhost:3000/entries
+Completed 302 Found in 3ms
+
+
+Started GET "/entries" for ::1 at 2015-07-21 23:07:05 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 246ms (Views: 245.1ms)
+
+
+Started GET "/entries" for ::1 at 2015-07-21 23:07:31 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 229ms (Views: 228.2ms)
+
+
+Started GET "/entries" for ::1 at 2015-07-21 23:07:56 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (15.3ms)
+Completed 200 OK in 239ms (Views: 238.2ms)
+
+
+Started GET "/entries" for ::1 at 2015-07-21 23:08:16 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 242ms (Views: 241.0ms)
+
+
+Started GET "/entries/55af017d776966a49a000001" for ::1 at 2015-07-21 23:10:14 -0400
+Processing by EntriesController#show as HTML
+  Parameters: {"id"=>"55af017d776966a49a000001"}
+  Rendered entries/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 237ms (Views: 232.8ms)
+
+
+Started GET "/entries" for ::1 at 2015-07-21 23:10:49 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 245ms (Views: 244.2ms)
+
+
+Started GET "/entries/55af017d776966a49a000001" for ::1 at 2015-07-21 23:10:55 -0400
+Processing by EntriesController#show as HTML
+  Parameters: {"id"=>"55af017d776966a49a000001"}
+  Rendered entries/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 240ms (Views: 235.8ms)
+
+
+Started GET "/entries/55af017d776966a49a000001" for ::1 at 2015-07-21 23:13:05 -0400
+Processing by EntriesController#show as HTML
+  Parameters: {"id"=>"55af017d776966a49a000001"}
+  Rendered entries/show.html.erb within layouts/application (3.4ms)
+Completed 500 Internal Server Error in 12ms
+
+ActionView::Template::Error (undefined method `event' for #<Entry:0x007fdefb494508>):
+    1: <h1><%= @entry.company_name %></h1>
+    2: <h3><%= @entry.event %><small><%= @entry.date %></small></h3>
+    3: 
+    4: 
+    5: <%= @entry.insights %>
+  app/views/entries/show.html.erb:2:in `_app_views_entries_show_html_erb___207942259872652023_70297822385640'
+
+
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.7ms)
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (77.2ms)
+
+
+Started GET "/entries/55af017d776966a49a000001" for ::1 at 2015-07-21 23:13:37 -0400
+Processing by EntriesController#show as HTML
+  Parameters: {"id"=>"55af017d776966a49a000001"}
+  Rendered entries/show.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 241ms (Views: 237.0ms)
+
+
+Started GET "/entries/55af017d776966a49a000001" for ::1 at 2015-07-21 23:14:01 -0400
+Processing by EntriesController#show as HTML
+  Parameters: {"id"=>"55af017d776966a49a000001"}
+  Rendered entries/show.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 246ms (Views: 243.2ms)
+
+
+Started GET "/entries/55af017d776966a49a000001" for ::1 at 2015-07-21 23:14:52 -0400
+Processing by EntriesController#show as HTML
+  Parameters: {"id"=>"55af017d776966a49a000001"}
+  Rendered entries/show.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 242ms (Views: 238.7ms)
+
+
+Started GET "/entries/55af017d776966a49a000001" for ::1 at 2015-07-21 23:15:51 -0400
+Processing by EntriesController#show as HTML
+  Parameters: {"id"=>"55af017d776966a49a000001"}
+  Rendered entries/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 251ms (Views: 234.6ms)
+
+
+Started GET "/entries/55af017d776966a49a000001" for ::1 at 2015-07-21 23:15:55 -0400
+Processing by EntriesController#show as HTML
+  Parameters: {"id"=>"55af017d776966a49a000001"}
+  Rendered entries/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 238ms (Views: 234.3ms)
+
+
+Started GET "/entries" for ::1 at 2015-07-21 23:18:21 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 236ms (Views: 236.0ms)
+
+
+Started GET "/entries" for ::1 at 2015-07-21 23:23:56 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 257ms (Views: 255.9ms)
+
+
+Started GET "/entries" for ::1 at 2015-07-21 23:24:20 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 249ms (Views: 248.2ms)
+
+
+Started GET "/entries" for ::1 at 2015-07-21 23:24:58 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 238ms (Views: 237.3ms)
+
+
+Started GET "/entries" for ::1 at 2015-07-21 23:25:44 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 239ms (Views: 238.1ms)
+
+
+Started GET "/entries" for ::1 at 2015-07-21 23:31:09 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 290ms (Views: 289.7ms)
+
+
+Started GET "/entries" for ::1 at 2015-07-21 23:31:39 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 270ms (Views: 269.5ms)
+
+
+Started GET "/entries" for ::1 at 2015-07-21 23:32:49 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 271ms (Views: 270.1ms)
+
+
+Started GET "/entries" for ::1 at 2015-07-21 23:33:54 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 273ms (Views: 272.3ms)
+
+
+Started GET "/entries" for ::1 at 2015-07-21 23:34:35 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 245ms (Views: 244.5ms)
+
+
+Started GET "/entries" for ::1 at 2015-07-21 23:34:49 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 245ms (Views: 244.0ms)
+
+
+Started GET "/entries" for ::1 at 2015-07-21 23:35:00 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 270ms (Views: 269.4ms)
+
+
+Started GET "/entries" for ::1 at 2015-07-21 23:35:08 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 246ms (Views: 245.8ms)
+
+
+Started GET "/" for ::1 at 2015-07-21 23:37:08 -0400
+DEPRECATION WARNING: Defining a route where `to` is a controller without an action is deprecated. Please change `to: 'entries/landing'` to `controller: 'entries/landing'`. (called from block in <top (required)> at /Users/Bill/Desktop/myApps/rubywithservice/config/routes.rb:8)
+
+ArgumentError (Missing :action key on routes definition, please check your routes.):
+  config/routes.rb:8:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.6ms)
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (78.8ms)
+
+
+Started GET "/" for ::1 at 2015-07-21 23:37:44 -0400
+DEPRECATION WARNING: Defining a route where `to` is a controller without an action is deprecated. Please change `to: '/landing'` to `controller: '/landing'`. (called from block in <top (required)> at /Users/Bill/Desktop/myApps/rubywithservice/config/routes.rb:8)
+
+ArgumentError ('/landing' is not a supported controller name. This can lead to potential routing problems. See http://guides.rubyonrails.org/routing.html#specifying-a-controller-to-use):
+  config/routes.rb:8:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.8ms)
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (65.8ms)
+DEPRECATION WARNING: Defining a route where `to` is a controller without an action is deprecated. Please change `to: 'entries/landing'` to `controller: 'entries/landing'`. (called from block in <top (required)> at /Users/Bill/Desktop/myApps/rubywithservice/config/routes.rb:8)
+
+
+Started GET "/" for ::1 at 2015-07-21 23:38:28 -0400
+DEPRECATION WARNING: Defining a route where `to` is a controller without an action is deprecated. Please change `to: 'entry/landing'` to `controller: 'entry/landing'`. (called from block in <top (required)> at /Users/Bill/Desktop/myApps/rubywithservice/config/routes.rb:8)
+
+ArgumentError (Missing :action key on routes definition, please check your routes.):
+  config/routes.rb:8:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.6ms)
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (73.3ms)
+
+
+Started GET "/" for ::1 at 2015-07-21 23:38:35 -0400
+DEPRECATION WARNING: Defining a route where `to` is a controller without an action is deprecated. Please change `to: '/landing'` to `controller: '/landing'`. (called from block in <top (required)> at /Users/Bill/Desktop/myApps/rubywithservice/config/routes.rb:8)
+
+ArgumentError ('/landing' is not a supported controller name. This can lead to potential routing problems. See http://guides.rubyonrails.org/routing.html#specifying-a-controller-to-use):
+  config/routes.rb:8:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.7ms)
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (72.8ms)
+DEPRECATION WARNING: Defining a route where `to` is a controller without an action is deprecated. Please change `to: '/landing'` to `controller: '/landing'`. (called from block in <top (required)> at /Users/Bill/Desktop/myApps/rubywithservice/config/routes.rb:8)
+
+
+Started GET "/" for ::1 at 2015-07-21 23:39:18 -0400
+DEPRECATION WARNING: Defining a route where `to` is a controller without an action is deprecated. Please change `to: '/'` to `controller: '/'`. (called from block in <top (required)> at /Users/Bill/Desktop/myApps/rubywithservice/config/routes.rb:8)
+
+ArgumentError ('/' is not a supported controller name. This can lead to potential routing problems. See http://guides.rubyonrails.org/routing.html#specifying-a-controller-to-use):
+  config/routes.rb:8:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.1ms)
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (67.2ms)
+
+
+Started GET "/" for ::1 at 2015-07-21 23:39:29 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 282ms (Views: 267.9ms)
+
+
+Started GET "/" for ::1 at 2015-07-21 23:40:30 -0400
+Processing by EntriesController#landing as HTML
+Completed 500 Internal Server Error in 6ms
+
+ActionView::MissingTemplate (Missing template entries/landing, application/landing with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/Bill/Desktop/myApps/rubywithservice/app/views"
+  * "/Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/twitter-bootstrap-rails-3.2.0/app/views"
+):
+  actionview (4.2.3) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.2.3) lib/action_view/lookup_context.rb:121:in `find'
+  actionview (4.2.3) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionview (4.2.3) lib/action_view/renderer/template_renderer.rb:40:in `determine_template'
+  actionview (4.2.3) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionview (4.2.3) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.2.3) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.2.3) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.3) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.3) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.3) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.3) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.3) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.3) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.3) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (4.2.3) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/2.2.0/benchmark.rb:303:in `realtime'
+  activesupport (4.2.3) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.3) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (4.2.3) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  actionpack (4.2.3) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  actionpack (4.2.3) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.2.3) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.2.3) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.3) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.3) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:115:in `call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:115:in `call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:553:in `block (2 levels) in compile'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:503:in `call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:503:in `call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:88:in `run_callbacks'
+  actionpack (4.2.3) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.3) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.3) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.3) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.3) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.3) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.3) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.3) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  actionpack (4.2.3) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.3) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.3) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.3) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.3) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.3) lib/action_dispatch/routing/route_set.rb:76:in `call'
+  actionpack (4.2.3) lib/action_dispatch/routing/route_set.rb:76:in `dispatch'
+  actionpack (4.2.3) lib/action_dispatch/routing/route_set.rb:45:in `serve'
+  actionpack (4.2.3) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.3) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.3) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.3) lib/action_dispatch/routing/route_set.rb:821:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:84:in `run_callbacks'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.3ms)
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.6ms)
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (68.8ms)
+
+
+Started GET "/" for ::1 at 2015-07-21 23:40:53 -0400
+Processing by EntriesController#landing as HTML
+  Rendered entries/landing.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 285ms (Views: 284.6ms)
+
+
+Started GET "/" for ::1 at 2015-07-21 23:41:20 -0400
+Processing by EntriesController#landing as HTML
+  Rendered entries/landing.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 242ms (Views: 241.9ms)
+
+
+Started GET "/" for ::1 at 2015-07-21 23:41:43 -0400
+Processing by EntriesController#landing as HTML
+  Rendered entries/landing.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 242ms (Views: 242.3ms)
+
+
+Started GET "/" for ::1 at 2015-07-21 23:41:50 -0400
+Processing by EntriesController#landing as HTML
+  Rendered entries/landing.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 232ms (Views: 231.3ms)
+
+
+Started GET "/" for ::1 at 2015-07-21 23:41:59 -0400
+Processing by EntriesController#landing as HTML
+  Rendered entries/landing.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 243ms (Views: 242.6ms)
+
+
+Started POST "/entries" for ::1 at 2015-07-21 23:42:02 -0400
+Processing by EntriesController#create as HTML
+  Parameters: {"authenticity_token"=>"EOZVbcgVyRgeEA6Ms9OVjnbZP0A93Br5nJG0oM9vvFssd6k3Tdp3rcRg/bnYMbhLX04Eo08E9IWYTYuPxA9BQw=="}
+Completed 500 Internal Server Error in 1ms
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/controllers/entries_controller.rb:18:in `create'
+
+
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.6ms)
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (64.7ms)
+
+
+Started POST "/entries" for ::1 at 2015-07-21 23:42:35 -0400
+Processing by EntriesController#create as HTML
+  Parameters: {"authenticity_token"=>"EOZVbcgVyRgeEA6Ms9OVjnbZP0A93Br5nJG0oM9vvFssd6k3Tdp3rcRg/bnYMbhLX04Eo08E9IWYTYuPxA9BQw=="}
+Completed 500 Internal Server Error in 1ms
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/controllers/entries_controller.rb:18:in `create'
+
+
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.7ms)
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (68.5ms)
+
+
+Started GET "/" for ::1 at 2015-07-21 23:42:59 -0400
+Processing by EntriesController#landing as HTML
+  Rendered entries/landing.html.erb within layouts/application (11.5ms)
+Completed 500 Internal Server Error in 17ms
+
+ActionView::Template::Error (undefined method `link_tag' for #<#<Class:0x007fdefaebe138>:0x007fdf02830818>):
+    3: 		<small>Personality insight v1.0</small></h1>
+    4:   <p style='color:white'>This project utilizes the IBM Watson's linguistic analytic algorithm to infer cognitive and social characteristics, including Big Five, Values, and Needs, from the quarterly earnigns call transcript of publically traded companies. By deriving cognitive and social preferences, the service helps users to understand the managers of these companies at a more personalized level.</p>
+    5:   <br>
+    6:   <p><%= link_tag 'Try Demo', entries_path, :class => 'btn btn-primary btn-lg' %></p>
+    7: </div>
+  app/views/entries/landing.html.erb:6:in `_app_views_entries_landing_html_erb__508896975228974678_70297894050540'
+
+
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.8ms)
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.9ms)
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (71.8ms)
+
+
+Started GET "/" for ::1 at 2015-07-21 23:43:18 -0400
+Processing by EntriesController#landing as HTML
+  Rendered entries/landing.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 236ms (Views: 235.9ms)
+
+
+Started GET "/entries" for ::1 at 2015-07-21 23:43:20 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 241ms (Views: 231.9ms)
+
+
+Started GET "/entries" for ::1 at 2015-07-21 23:43:27 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 277ms (Views: 276.1ms)
+
+
+Started GET "/entries" for ::1 at 2015-07-21 23:43:31 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 241ms (Views: 240.6ms)
+
+
+Started GET "/entries/new" for ::1 at 2015-07-21 23:43:34 -0400
+Processing by EntriesController#new as HTML
+  Rendered entries/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 238ms (Views: 237.6ms)
+
+
+Started GET "/entries" for ::1 at 2015-07-21 23:43:35 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 236ms (Views: 235.6ms)
+
+
+Started GET "/entries/new" for ::1 at 2015-07-21 23:43:38 -0400
+Processing by EntriesController#new as HTML
+  Rendered entries/new.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 237ms (Views: 236.1ms)
+
+
+Started GET "/entries" for ::1 at 2015-07-21 23:43:40 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 242ms (Views: 241.0ms)
+
+
+Started GET "/" for ::1 at 2015-07-21 23:44:25 -0400
+Processing by EntriesController#landing as HTML
+  Rendered entries/landing.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 241ms (Views: 240.1ms)
+
+
+Started GET "/entries" for ::1 at 2015-07-21 23:44:36 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 246ms (Views: 245.0ms)
+
+
+Started POST "/entries/new" for ::1 at 2015-07-21 23:44:41 -0400
+
+ActionController::RoutingError (No route matches [POST] "/entries/new"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.3ms)
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (90.1ms)
+
+
+Started POST "/entries/new" for ::1 at 2015-07-21 23:44:55 -0400
+
+ActionController::RoutingError (No route matches [POST] "/entries/new"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.6ms)
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.7ms)
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (95.7ms)
+
+
+Started GET "/" for ::1 at 2015-07-21 23:45:15 -0400
+Processing by EntriesController#landing as HTML
+  Rendered entries/landing.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 238ms (Views: 237.7ms)
+
+
+Started GET "/entries" for ::1 at 2015-07-21 23:45:16 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 241ms (Views: 240.8ms)
+
+
+Started GET "/entries/new" for ::1 at 2015-07-21 23:45:18 -0400
+Processing by EntriesController#new as HTML
+  Rendered entries/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 228ms (Views: 227.1ms)
+
+
+Started POST "/entries/upload" for ::1 at 2015-07-21 23:45:24 -0400
+Processing by EntriesController#upload as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AZv6yzv2rszj9UE2rYrDQ1cEcUrV0GtO8E8fXdapZ7U9CgaRvjkQeTmFsgPGaO6GfpNKqacIhTL0kyBy3cmarQ==", "file"=>#<ActionDispatch::Http::UploadedFile:0x007fdef955f048 @tempfile=#<Tempfile:/var/folders/04/b_scn3ms0nj9jnbm_y5b07w00000gn/T/RackMultipart20150721-42138-1sishaa.txt>, @original_filename="MPAC-Transcript-2012-10-31T17_30.txt", @content_type="text/plain", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"MPAC-Transcript-2012-10-31T17_30.txt\"\r\nContent-Type: text/plain\r\n">, "commit"=>"Upload"}
+  Rendered entries/_form.html.erb (3.8ms)
+  Rendered entries/new.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 248ms (Views: 244.2ms)
+
+
+Started POST "/entries" for ::1 at 2015-07-21 23:45:39 -0400
+Processing by EntriesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8/FCO1ELhbEgh8E4o1CcCWzMTpOmzwVNVgim/G2na8bPYL5h1MQ7BPr3Mg3IsrHMRVt1cNQX6zFS1JnTZseW3g==", "entry"=>{"company_name"=>"MPAC - MOD-PAC Corp", "event_name"=>"Q3 2012 Mod-Pac Corp Earnings Conference Call", "date"=>"October 31, 2012 / 05:30PM  GMT ", "speaker"=>"David Lupp,  MOD-PAC Corp. - COO, CFO", "wcount"=>"745", "transcript"=>"Thanks, Dan, and good afternoon, everyone. As Dan noted, we believe that our sales efforts, many of which have been focused on the private-label industry, are making progress and we remain intensely focused on growing our overall sales and continue to look for opportunities to increase efficiencies and reduce costs to improve our earnings. Looking at our product lines, sales of custom folding cartons were up 9.5% to a record $12.3 million, from $11.2 million in the prior-year third quarter, and also up approximately 10% over the trailing second quarter. The sales increase was attributable to incremental business from several existing customers, as we have done a good job in growing the percentage of available business from our existing customer base. The ramp up of sales originating from several newer large customers whose relationship was established with us last year. And, to a lesser extent, sales to new smaller customers which we secured during the quarter. The waste paperboard market remains weak, which resulted in lower waste sales that partially offset the increased volume in custom folding cartons. Stock packaging sales of $2.3 million in the second quarter were down slightly, as were the personalized print sales which were $702,000 in the quarter. Gross profit for the 2012 third quarter increased almost 17%, to $3.3 million from the prior-year period. In addition, our gross margin expanded to 21.5%, an increase of 180 basis points over the last year's third quarter and a significant increase compared with the first half of 2012. The margin expansion was due to increased leverage due to the higher sales volume, combined with cost-control measures in a stabilized paperboard market. SG&A expense in the third quarter was $1.9 million, an increase of $100,000, compared with the prior-year period. SG&A as a percent of total revenue is 12.4%, a slight improvement over 12.5% for the third quarter of 2011. Earnings before interest, taxes, depreciation and amortization and non-cash option expenses, or EBITDA, was $2.2 million in the third quarter, up more than 18% from $1.8 million in the 2011 third quarter. We believe that EBITDA, although not a generally accepted accounting principal measure, is a good indicator of our business performance, as it reflects our ability to generate cash from operations. Our third-quarter net income was up sharply to $895,000, or $0.27 per diluted share, compared with net income of $625,000 or $0.18 per diluted share in the 2011 third quarter. With the strong quarter, we now have positive income of $652,000 for the year. Looking at our balance sheet, the cash balance decreased to $1.6 million at the end of the third quarter from $3.9 million at the end of fiscal 2011. The change in cash primarily reflects the increase in capital expenditures. Throughout 2012, we have been investing significant dollars necessary to reconnect to the public utility electric power grid. Year-to-date capital expenditures were $4.3 million, which included approximately $1.1 million towards infrastructure improvements necessary to reconnect to the grid, and $2 million for a 7-color printing press. The grid project is complete, and we became operational this week. As a result of this initiative, we were awarded low-cost power through the Recharge New York and Expansion Power programs, which was designed to retain and create jobs through allocation of low-cost power. We expect that the conversion to the electric power grid will provide us with a more efficient, cost-effective source of power, as well as reduce expenses due to the ongoing repair and maintenance that was required with our co-generation plant. Capital spending in 2012 is expected to be between $5 million and $5.2 million, with the majority of the balance being spent on completing the grid project, and some other necessary infrastructure improvements. We have a $3 million revolving line of credit facility, of which $200,000 was in use through standby letters of credit at the end of the 2102 third quarter. We did not purchase any shares in the third quarter, though we currently have authorization to purchase up to 200,000 additional shares. Let me quickly review some highlights from the 2012 year-to-date period. Total revenue in the first nine months was $42.7 million, a 2.4% increase. Sales of custom folding cartons were $33.8 million year-to-date, up 3.9%, compared with the prior-year period. Stock packaging sales remained relatively flat at $6.5 million, while personalized print sales were down almost 8% to $2 million. That concludes my remarks, and I will now turn the call back to Dan."}, "commit"=>"Capture"}
+Redirected to http://localhost:3000/entries/55af11ec776966a49a000002
+Completed 302 Found in 8305ms
+
+
+Started GET "/entries/55af11ec776966a49a000002" for ::1 at 2015-07-21 23:45:48 -0400
+Processing by EntriesController#show as HTML
+  Parameters: {"id"=>"55af11ec776966a49a000002"}
+  Rendered entries/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 249ms (Views: 246.2ms)
+
+
+Started GET "/entries" for ::1 at 2015-07-21 23:46:39 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 253ms (Views: 252.0ms)
+
+
+Started GET "/entries/55af11ec776966a49a000002" for ::1 at 2015-07-21 23:46:42 -0400
+Processing by EntriesController#show as HTML
+  Parameters: {"id"=>"55af11ec776966a49a000002"}
+  Rendered entries/show.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 253ms (Views: 249.4ms)
+
+
+Started GET "/entries" for ::1 at 2015-07-21 23:46:47 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (13.2ms)
+Completed 200 OK in 248ms (Views: 247.1ms)
+
+
+Started GET "/entries/55aecf43776966a49a000000" for ::1 at 2015-07-21 23:46:52 -0400
+Processing by EntriesController#show as HTML
+  Parameters: {"id"=>"55aecf43776966a49a000000"}
+  Rendered entries/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 247ms (Views: 244.0ms)
+
+
+Started GET "/entries" for ::1 at 2015-07-21 23:46:55 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 248ms (Views: 247.1ms)
+
+
+Started GET "/" for ::1 at 2015-07-21 23:48:35 -0400
+Processing by EntriesController#landing as HTML
+  Rendered entries/landing.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 240ms (Views: 239.3ms)
+
+
+Started GET "/" for ::1 at 2015-07-21 23:48:36 -0400
+Processing by EntriesController#landing as HTML
+  Rendered entries/landing.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 248ms (Views: 247.7ms)
+
+
+Started GET "/entries" for ::1 at 2015-07-21 23:48:38 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 248ms (Views: 247.5ms)
+
+
+Started GET "/" for ::1 at 2015-07-21 23:48:39 -0400
+Processing by EntriesController#landing as HTML
+  Rendered entries/landing.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 239ms (Views: 238.8ms)
+
+
+Started GET "/" for ::1 at 2015-07-21 23:50:21 -0400
+Processing by EntriesController#landing as HTML
+  Rendered entries/landing.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 239ms (Views: 238.2ms)
+
+
+Started GET "/" for ::1 at 2015-07-21 23:50:30 -0400
+Processing by EntriesController#landing as HTML
+  Rendered entries/landing.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 233ms (Views: 232.9ms)
+
+
+Started GET "/entries" for ::1 at 2015-07-21 23:50:33 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 245ms (Views: 244.0ms)
+
+
+Started GET "/entries" for ::1 at 2015-07-21 23:51:37 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 242ms (Views: 241.6ms)
+
+
+Started GET "/entries/new" for ::1 at 2015-07-21 23:51:41 -0400
+Processing by EntriesController#new as HTML
+  Rendered entries/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 238ms (Views: 237.3ms)
+
+
+Started GET "/entries" for ::1 at 2015-07-21 23:51:46 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 268ms (Views: 267.1ms)
+
+
+Started GET "/entries/new" for ::1 at 2015-07-21 23:51:47 -0400
+Processing by EntriesController#new as HTML
+  Rendered entries/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 240ms (Views: 239.9ms)
+
+
+Started GET "/entries" for ::1 at 2015-07-21 23:51:50 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 235ms (Views: 234.7ms)
+
+
+Started GET "/entries" for ::1 at 2015-07-21 23:52:04 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 251ms (Views: 250.6ms)
+
+
+Started GET "/entries" for ::1 at 2015-07-21 23:52:09 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 247ms (Views: 246.7ms)
+
+
+Started GET "/entries/55af017d776966a49a000001" for ::1 at 2015-07-21 23:53:20 -0400
+Processing by EntriesController#show as HTML
+  Parameters: {"id"=>"55af017d776966a49a000001"}
+  Rendered entries/show.html.erb within layouts/application (1.9ms)
+Completed 500 Internal Server Error in 11ms
+
+ActionView::Template::Error (wrong number of arguments (0 for 1..3)):
+    2: <h3><%= @entry.event_name %> <small><%= @entry.date %></small></h3>
+    3: <label>Speaker: </label> <%= @entry.speaker %>
+    4: <label>Transcript: </label>
+    5: <%= text_area_tag %>
+    6: 
+    7: 
+    8: <%= @entry.insights %>
+  app/views/entries/show.html.erb:5:in `_app_views_entries_show_html_erb___207942259872652023_70297899127140'
+
+
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.2ms)
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (74.5ms)
+
+
+Started GET "/entries/55af017d776966a49a000001" for ::1 at 2015-07-21 23:54:48 -0400
+Processing by EntriesController#show as HTML
+  Parameters: {"id"=>"55af017d776966a49a000001"}
+  Rendered entries/show.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 265ms (Views: 253.1ms)
+
+
+Started GET "/entries/55af017d776966a49a000001" for ::1 at 2015-07-21 23:55:04 -0400
+Processing by EntriesController#show as HTML
+  Parameters: {"id"=>"55af017d776966a49a000001"}
+  Rendered entries/show.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 238ms (Views: 234.2ms)
+
+
+Started GET "/entries/55af017d776966a49a000001" for ::1 at 2015-07-21 23:55:57 -0400
+Processing by EntriesController#show as HTML
+  Parameters: {"id"=>"55af017d776966a49a000001"}
+  Rendered entries/show.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 247ms (Views: 242.9ms)
+
+
+Started GET "/entries/55af017d776966a49a000001" for ::1 at 2015-07-21 23:57:19 -0400
+Processing by EntriesController#show as HTML
+  Parameters: {"id"=>"55af017d776966a49a000001"}
+  Rendered entries/show.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 388ms (Views: 383.8ms)
+
+
+Started GET "/entries/55af017d776966a49a000001" for ::1 at 2015-07-21 23:57:50 -0400
+Processing by EntriesController#show as HTML
+  Parameters: {"id"=>"55af017d776966a49a000001"}
+  Rendered entries/show.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 238ms (Views: 233.3ms)
+
+
+Started GET "/entries/55af017d776966a49a000001" for ::1 at 2015-07-21 23:58:08 -0400
+Processing by EntriesController#show as HTML
+  Parameters: {"id"=>"55af017d776966a49a000001"}
+  Rendered entries/show.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 253ms (Views: 249.7ms)
+
+
+Started GET "/entries/55af017d776966a49a000001" for ::1 at 2015-07-21 23:58:53 -0400
+Processing by EntriesController#show as HTML
+  Parameters: {"id"=>"55af017d776966a49a000001"}
+  Rendered entries/show.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 251ms (Views: 247.3ms)
+
+
+Started GET "/entries/55af017d776966a49a000001" for ::1 at 2015-07-21 23:58:55 -0400
+Processing by EntriesController#show as HTML
+  Parameters: {"id"=>"55af017d776966a49a000001"}
+  Rendered entries/show.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 250ms (Views: 246.1ms)
+
+
+Started GET "/entries/55af017d776966a49a000001" for ::1 at 2015-07-21 23:59:19 -0400
+Processing by EntriesController#show as HTML
+  Parameters: {"id"=>"55af017d776966a49a000001"}
+  Rendered entries/show.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 253ms (Views: 249.2ms)
+
+
+Started GET "/entries/55af017d776966a49a000001" for ::1 at 2015-07-21 23:59:30 -0400
+Processing by EntriesController#show as HTML
+  Parameters: {"id"=>"55af017d776966a49a000001"}
+  Rendered entries/show.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 269ms (Views: 265.6ms)
+
+
+Started GET "/entries/55af017d776966a49a000001" for ::1 at 2015-07-22 00:00:15 -0400
+Processing by EntriesController#show as HTML
+  Parameters: {"id"=>"55af017d776966a49a000001"}
+  Rendered entries/show.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 256ms (Views: 252.7ms)
+
+
+Started GET "/entries/55af017d776966a49a000001" for ::1 at 2015-07-22 00:00:27 -0400
+Processing by EntriesController#show as HTML
+  Parameters: {"id"=>"55af017d776966a49a000001"}
+  Rendered entries/show.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 256ms (Views: 252.1ms)
+
+
+Started GET "/entries/55af017d776966a49a000001" for ::1 at 2015-07-22 00:00:51 -0400
+Processing by EntriesController#show as HTML
+  Parameters: {"id"=>"55af017d776966a49a000001"}
+  Rendered entries/show.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 241ms (Views: 238.4ms)
+
+
+Started GET "/entries/55af017d776966a49a000001" for ::1 at 2015-07-22 00:01:03 -0400
+Processing by EntriesController#show as HTML
+  Parameters: {"id"=>"55af017d776966a49a000001"}
+  Rendered entries/show.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 242ms (Views: 239.3ms)
+
+
+Started GET "/entries/55af017d776966a49a000001" for ::1 at 2015-07-22 00:01:59 -0400
+Processing by EntriesController#show as HTML
+  Parameters: {"id"=>"55af017d776966a49a000001"}
+  Rendered entries/show.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 234ms (Views: 231.0ms)
+
+
+Started GET "/entries" for ::1 at 2015-07-22 00:02:45 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 255ms (Views: 254.9ms)
+
+
+Started GET "/entries/new" for ::1 at 2015-07-22 00:02:48 -0400
+Processing by EntriesController#new as HTML
+  Rendered entries/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 237ms (Views: 236.4ms)
+
+
+Started POST "/entries/upload" for ::1 at 2015-07-22 00:03:03 -0400
+Processing by EntriesController#upload as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"thg0UH+Qn22/JgZiO7/uomClP38xXI+hDJYaauyUv8eKicgK+l8h2GVW9VdQXcNnSTIEnEOEYd0ISiVF5/RC3w==", "file"=>#<ActionDispatch::Http::UploadedFile:0x007fdef8edbe10 @tempfile=#<Tempfile:/var/folders/04/b_scn3ms0nj9jnbm_y5b07w00000gn/T/RackMultipart20150722-42138-xwoihm.txt>, @original_filename="H-Transcript-2012-10-31T15_30.txt", @content_type="text/plain", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"H-Transcript-2012-10-31T15_30.txt\"\r\nContent-Type: text/plain\r\n">, "commit"=>"Upload"}
+  Rendered entries/_form.html.erb (5.8ms)
+  Rendered entries/new.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 263ms (Views: 255.6ms)
+
+
+Started POST "/entries/upload" for ::1 at 2015-07-22 00:04:47 -0400
+Processing by EntriesController#upload as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"thg0UH+Qn22/JgZiO7/uomClP38xXI+hDJYaauyUv8eKicgK+l8h2GVW9VdQXcNnSTIEnEOEYd0ISiVF5/RC3w==", "file"=>#<ActionDispatch::Http::UploadedFile:0x007fdefebc2f98 @tempfile=#<Tempfile:/var/folders/04/b_scn3ms0nj9jnbm_y5b07w00000gn/T/RackMultipart20150722-42138-iaoot5.txt>, @original_filename="H-Transcript-2012-10-31T15_30.txt", @content_type="text/plain", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"H-Transcript-2012-10-31T15_30.txt\"\r\nContent-Type: text/plain\r\n">, "commit"=>"Upload"}
+  Rendered entries/_form.html.erb (4.6ms)
+  Rendered entries/new.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 383ms (Views: 375.6ms)
+
+
+Started GET "/" for ::1 at 2015-07-22 00:05:45 -0400
+Processing by EntriesController#landing as HTML
+  Rendered entries/landing.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 282ms (Views: 281.1ms)
+
+
+Started GET "/entries" for ::1 at 2015-07-22 00:05:49 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 248ms (Views: 247.3ms)
+
+
+Started GET "/entries/new" for ::1 at 2015-07-22 00:05:51 -0400
+Processing by EntriesController#new as HTML
+  Rendered entries/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 258ms (Views: 257.8ms)
+
+
+Started POST "/entries/upload" for ::1 at 2015-07-22 00:06:17 -0400
+Processing by EntriesController#upload as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tpGsNX2+ypleBwTilASspdrxhnXeFf2MvLs+HFXCe2GKAFBv+HF0LIR399f/5oFg82a9lqzNE/C4ZwEzXqKGeQ==", "file"=>#<ActionDispatch::Http::UploadedFile:0x007fdef95f6218 @tempfile=#<Tempfile:/var/folders/04/b_scn3ms0nj9jnbm_y5b07w00000gn/T/RackMultipart20150722-42138-y9y2ar.txt>, @original_filename="EBAY-Transcript-2012-10-17T21_00.txt", @content_type="text/plain", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"EBAY-Transcript-2012-10-17T21_00.txt\"\r\nContent-Type: text/plain\r\n">, "commit"=>"Upload"}
+  Rendered entries/_form.html.erb (6.4ms)
+  Rendered entries/new.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 253ms (Views: 246.7ms)
+
+
+Started GET "/" for ::1 at 2015-07-22 00:07:40 -0400
+Processing by EntriesController#landing as HTML
+  Rendered entries/landing.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 339ms (Views: 338.5ms)
+
+
+Started GET "/entries" for ::1 at 2015-07-22 00:07:42 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 233ms (Views: 232.3ms)
+
+
+Started GET "/entries/new" for ::1 at 2015-07-22 00:07:43 -0400
+Processing by EntriesController#new as HTML
+  Rendered entries/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 224ms (Views: 223.1ms)
+
+
+Started POST "/entries/upload" for ::1 at 2015-07-22 00:07:48 -0400
+Processing by EntriesController#upload as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JSqwTWPpv1GN4dAGL/4bZt43qHLXcwxD66oGvLXoaAEZu0wX5iYB5FeRIzNEHDaj96CTkaWr4j/vdjmTvoiVGQ==", "file"=>#<ActionDispatch::Http::UploadedFile:0x007fdefaf4d838 @tempfile=#<Tempfile:/var/folders/04/b_scn3ms0nj9jnbm_y5b07w00000gn/T/RackMultipart20150722-42138-1oc0gli.txt>, @original_filename="KND-Transcript-2012-10-30T14_00.txt", @content_type="text/plain", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"KND-Transcript-2012-10-30T14_00.txt\"\r\nContent-Type: text/plain\r\n">, "commit"=>"Upload"}
+  Rendered entries/_form.html.erb (5.8ms)
+  Rendered entries/new.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 254ms (Views: 245.8ms)
+
+
+Started GET "/" for ::1 at 2015-07-22 00:09:19 -0400
+Processing by EntriesController#landing as HTML
+  Rendered entries/landing.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 368ms (Views: 367.2ms)
+
+
+Started GET "/entries" for ::1 at 2015-07-22 00:09:21 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 244ms (Views: 243.6ms)
+
+
+Started GET "/entries/new" for ::1 at 2015-07-22 00:09:24 -0400
+Processing by EntriesController#new as HTML
+  Rendered entries/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 231ms (Views: 230.4ms)
+
+
+Started POST "/entries/upload" for ::1 at 2015-07-22 00:09:29 -0400
+Processing by EntriesController#upload as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"su+ZfTy7PMkbMOepZYyJTHRMFy+GeD0vmoSLgaMYesCOfmUnuXSCfMFAFJwObqSJXdsszPSg01OeWLSuqHiH2A==", "file"=>#<ActionDispatch::Http::UploadedFile:0x007fdf020498c0 @tempfile=#<Tempfile:/var/folders/04/b_scn3ms0nj9jnbm_y5b07w00000gn/T/RackMultipart20150722-42138-drsill.txt>, @original_filename="SFG-Transcript-2012-10-23T16_00.txt", @content_type="text/plain", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"SFG-Transcript-2012-10-23T16_00.txt\"\r\nContent-Type: text/plain\r\n">, "commit"=>"Upload"}
+  Rendered entries/_form.html.erb (6.7ms)
+  Rendered entries/new.html.erb within layouts/application (11.1ms)
+Completed 200 OK in 280ms (Views: 260.9ms)
+
+
+Started GET "/" for ::1 at 2015-07-22 00:10:50 -0400
+Processing by EntriesController#landing as HTML
+  Rendered entries/landing.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 351ms (Views: 350.6ms)
+
+
+Started GET "/" for ::1 at 2015-07-22 00:10:50 -0400
+Processing by EntriesController#landing as HTML
+  Rendered entries/landing.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 238ms (Views: 237.8ms)
+
+
+Started GET "/entries" for ::1 at 2015-07-22 00:10:52 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 235ms (Views: 234.2ms)
+
+
+Started GET "/entries/new" for ::1 at 2015-07-22 00:10:53 -0400
+Processing by EntriesController#new as HTML
+  Rendered entries/new.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 231ms (Views: 230.3ms)
+
+
+Started POST "/entries/upload" for ::1 at 2015-07-22 00:10:59 -0400
+Processing by EntriesController#upload as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pHei+stREAqpBQRjczCs6KlXToH6Jg4xj2t85hxRwUiY5l6gTp6uv3N191YY0oEtgMB1Yoj+4E2Lt0PJFzE8UA==", "file"=>#<ActionDispatch::Http::UploadedFile:0x007fdefeee8e70 @tempfile=#<Tempfile:/var/folders/04/b_scn3ms0nj9jnbm_y5b07w00000gn/T/RackMultipart20150722-42138-1fd7cn.txt>, @original_filename="AVB-Transcript-2012-10-25T17_00.txt", @content_type="text/plain", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"AVB-Transcript-2012-10-25T17_00.txt\"\r\nContent-Type: text/plain\r\n">, "commit"=>"Upload"}
+  Rendered entries/_form.html.erb (4.6ms)
+  Rendered entries/new.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 244ms (Views: 236.2ms)
+
+
+Started POST "/entries" for ::1 at 2015-07-22 00:11:08 -0400
+Processing by EntriesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+LHQLuhVEeCh7Tf/fXEEKHjjQVVe5Dq8CZ2x1MYhMMrEICx0bZqvVXudxMoWkyntUXR6tiw81MANQY77zUHN0g==", "entry"=>{"company_name"=>"AVB - AvalonBay Communities Inc", "event_name"=>"Q3 2012 AvalonBay Communities Earnings Conference Call", "date"=>"October 25, 2012 / 05:00PM  GMT ", "speaker"=>"Sean Breslin,  AvalonBay Communities Inc - EVP - Investments and Asset Management", "wcount"=>"1261", "transcript"=>"Thanks, Tim. As Tim mentioned, I will comment on portfolio performance during the quarter, current trends, and our investment in redevelopment activity, starting first with portfolio performance, same-store NOI increased 7.1% year-over-year. Revenues increased 5.6%, consisting of a 5.1% increase in rate, and 50-basis point increase in occupancy. Sequentially, revenues increased 2.4%, driven by a 1.9% increase in rate, and a 50-basis point increase in occupancy. Northern California and Seattle continues to outperform, posting year-over-year rental revenue growth of 10.5% and 10%, respectively. On a sequential basis, each region generated greater than 3% revenue gains. It's worth highlighting that year-over-year rental revenue growth in Seattle has now been north of 8% for four consecutive quarters. NOI was up nearly 20% year-over-year in Q3, and momentum remains healthy. Both Northern California and Seattle continue to benefit from job growth that remains well above the national average. In Northern California, the tech sector is driving unemployment gains, generating high quality jobs that support increased rent levels. New supply has not been a material issue in Northern California this year, but we are expecting more deliveries in San Jose as we move into 2013. In Seattle, the economy is also performing well, benefiting from growth in not only the tech sector, but also from retail trade, which is being driven partly by Amazon's expansion, and aircraft manufacturing at Boeing. New supply will come online next year in Seattle, but it is highly concentrated in the downtown, or near downtown submarkets, where we have very little presence. Metro New York, New Jersey, New England and Southern California all posted year-over-year revenue gains in the 4% to 5% range, with sequential growth of 2% to 2.5%. In the New York metro area, tech hiring is having a meaningful impact on apartment absorption, both in downtown and in northern New Jersey. Steady demand, coupled with modest new supply is supporting occupancy rates close to 97% and has provided a boost to pricing power. Boston is also benefiting from job creation along the 128 Corridor, where TripAdvisor, Google and others are adding jobs. Although new supply is on the horizon, particularly in the urban core, it is not impacting current fundamentals in the market. In Southern California, as job growth has accelerated, as Tim mentioned earlier, and is now running at an annualized rate of greater than 2%, San Diego, which lagged the region in job growth earlier this year, is now producing jobs at an annualized rate of about 2.5%, third strongest of any market in our footprint over the past six months. While some of the job gains are military related, the market is also benefiting from robust job growth in the leisure, hospitality, and warehouse distribution sectors. As job growth ramps up, the Southern California region will continue to benefit from very low levels of supply. In fact, the Southern California markets are projected to have the lowest level of supply of any of our markets over the next couple years. Moving lastly to the Mid-Atlantic, the region produced year-over-year revenue growth of 3.8%, 1.8% sequentially. It's no secret that reduced stimulus and fiscal uncertainties continue to limit job creation in the region as new supply comes online, impacting our ability to push [ramps]. As indicated in our earnings release, turnover was 65% in the quarter, down 200 basis points from Q3 2011. Move-outs due to home purchases increased about 20 basis points from Q2 to roughly 15% and remained well below the long-term average of 20%. Move-outs related to rent increase declined by about 200 basis points sequentially to 17%. As you might expect, we continue to see the highest move-out percentage due to rent increase in Northern California and Seattle, which is in the low 20% range, but we're clearly backfilling with new prospects, able to pay higher market rents. And these new residents don't appear to be stretched financially, since their average rent to income ratio remains consistent, with historical levels in our portfolio at 20%. Shifting to operating expenses, year-over-year expenses were up 2.6% during the quarter. As we have mentioned in the past, operating expenses can be somewhat lumpy from quarter-to-quarter, based on a number of factors, so judging operating expense growth on a year-to-date basis tends to give you a better picture of where we are headed. Year-to-date expenses have increased 1.4%, with property taxes putting the most pressure on overall expense growth. The most significant tax increases are occurring in the Mid-Atlantic, New York, New Jersey, and Pacific Northwest markets, which are seeing 8% to 10% bumps this year through both increased rate and assessments. We benefited from two successful tax appeals in Southern California, which contributed to the favorable year-to-date expense variance in the region. Overall rent change averaged about 4% during the third quarter, roughly 5% on renewals, and 3% on new move-ins, while we increased occupancy each month of the quarter, from 95.9% in July to 96.6% in September, and reduced availability. The portfolio is well positioned right now, with economic occupancy trending in the mid-96% range, a full 100 basis points above where we were at this time last year. Additionally, availability is about 5%, roughly 50 basis points below last October. October's committed renewals are in the high 4%s and given our healthy occupancy and low availability, November and December renewal offers went out in the low- to mid-6% range, which is similar to the offers we made in Q4 of 2011. Shifting to investment activity, we completed the purchase of our partner's 70% interest in Avalon Del Ray during the quarter. We developed the community in 2006 for approximately $70 million and as a result of the transaction, we gained control of an attractive asset on the west side of L.A., while unlocking the value of our $4.1 million promoted interest. Looking forward, we have several assets in our acquisition and disposition pipeline. On the disposition front, we currently have about $375 million of assets under contract, the majority of which are owned by Fund 1. With all the pending Fund 1 dispositions settling in Q4, we would have 10 assets remaining, or about half the fund's value to sell in the next couple of years. From an acquisition point of view, we have about $100 million under contract and in due diligence. Assuming the properties clear diligence, they would close in Q4. In terms of the transaction market, year-to-date trading volume is down about 15% in our markets. And the markets with increased volume, like Seattle, have not been targets for us. As a result of the reduced volume and healthy pricing, acquisition volume remains below our original plan for the year. Currently, we expect transaction activity to total approximately $950 million for the calendar year, which includes roughly $300 million in acquisitions, 80% of which is for the parent entity, and $650 million in dispositions, about 40% of which is for the parent entity, and 60% is for Fund 1. Moving finally to redevelopment activity, we completed five redevelopments during the third quarter for an incremental total capital investment of about $32 million. These five projects were all completed via our occupied turn program and outperformed our pro forma rent projections by about 5%, or $100 per home, resulting in a weighted average return on enhancements of roughly 20% as compared to our original expectations of 12%. Execution has been strong, as each project was completed on schedule and either in line or below our original capital budget. Now, I'll turn the call back to Tim for a few comments."}, "commit"=>"Capture"}
+Redirected to http://localhost:3000/entries/55af17e2776966a49a000003
+Completed 302 Found in 6384ms
+
+
+Started GET "/entries/55af17e2776966a49a000003" for ::1 at 2015-07-22 00:11:15 -0400
+Processing by EntriesController#show as HTML
+  Parameters: {"id"=>"55af17e2776966a49a000003"}
+  Rendered entries/show.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 239ms (Views: 236.2ms)
+
+
+Started GET "/entries/55af17e2776966a49a000003" for ::1 at 2015-07-22 00:14:35 -0400
+Processing by EntriesController#show as HTML
+  Parameters: {"id"=>"55af17e2776966a49a000003"}
+  Rendered entries/show.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 252ms (Views: 240.3ms)
+
+
+Started GET "/entries/55af17e2776966a49a000003" for ::1 at 2015-07-22 00:17:18 -0400
+Processing by EntriesController#show as HTML
+  Parameters: {"id"=>"55af17e2776966a49a000003"}
+  Rendered entries/show.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 265ms (Views: 259.6ms)
+
+
+Started GET "/entries/55af17e2776966a49a000003" for ::1 at 2015-07-22 00:17:58 -0400
+Processing by EntriesController#show as HTML
+  Parameters: {"id"=>"55af17e2776966a49a000003"}
+  Rendered entries/show.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 247ms (Views: 242.7ms)
+
+
+Started GET "/entries" for ::1 at 2015-07-22 00:18:07 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (9.9ms)
+Completed 200 OK in 251ms (Views: 250.0ms)
+
+
+Started GET "/" for ::1 at 2015-07-22 00:18:10 -0400
+Processing by EntriesController#landing as HTML
+  Rendered entries/landing.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 236ms (Views: 235.5ms)
+
+
+Started GET "/entries" for ::1 at 2015-07-22 00:18:14 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (10.2ms)
+Completed 200 OK in 249ms (Views: 248.0ms)
+
+
+Started GET "/entries/new" for ::1 at 2015-07-22 00:18:16 -0400
+Processing by EntriesController#new as HTML
+  Rendered entries/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 232ms (Views: 230.4ms)
+
+
+Started POST "/entries/upload" for ::1 at 2015-07-22 00:18:23 -0400
+Processing by EntriesController#upload as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RZhRVpBKj6/yiIuvBRGq2942TIW8yAYsEcEpJrxuu+B5Ca0MFYUxGij4eJpu84ce96F3Zs4Q6FAVHRYJtw5G+A==", "file"=>#<ActionDispatch::Http::UploadedFile:0x007fdf01155eb8 @tempfile=#<Tempfile:/var/folders/04/b_scn3ms0nj9jnbm_y5b07w00000gn/T/RackMultipart20150722-42138-9a0r3s.txt>, @original_filename="KKR-Transcript-2012-10-26T14_00.txt", @content_type="text/plain", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"KKR-Transcript-2012-10-26T14_00.txt\"\r\nContent-Type: text/plain\r\n">, "commit"=>"Upload"}
+  Rendered entries/_form.html.erb (3.8ms)
+  Rendered entries/new.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 250ms (Views: 242.4ms)
+
+
+Started POST "/entries" for ::1 at 2015-07-22 00:18:32 -0400
+Processing by EntriesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pduBaO6M+mHwteyrnIcFmsEnMPFtUFLj73TDBEAtQdqZSn0ya0NE1CrFH573ZShf6LALEh+IvJ/rqPwrS028wg==", "entry"=>{"company_name"=>"KKR - KKR & Co LP", "event_name"=>"Q3 2012 KKR & Co. L.P. Earnings Conference Call", "date"=>"October 26, 2012 / 02:00PM  GMT ", "speaker"=>"Bill Janetschek,  KKR & Co. - CFO", "wcount"=>"1578", "transcript"=>"Thanks, Craig. Good morning, everyone. We ended the third quarter with record assets under management at $66 billion, up 8% from last quarter and 13% from the same time last year. Investment appreciation contributed to a portion of the increase helping offset distributions to LPs in the quarter, but the majority of the AUM growth was due to the fact that we now include $6 billion of capital we have raised so far for NAXI. It is important to remember that these numbers do not factor in an additional $15 billion of committed capital, $8 billion from Prisma, $4 billion from Asia II, $1 billion of the Texas Teachers mandate that we have not yet allocated, and about $2 billion of capital in other vehicles that will be included in AUM once it is invested. As of September 30, our fee-paying AUM was also the highest we have reported totaling $50 billion and representing a 6% jump from last quarter. Similar to AUM, the addition of NAXI's third-party capital positively impacted our fee-paying AUM, which more than offset the reduction in fee-paying assets of our 2006 Fund as it transitioned into the post-investment period. We have been getting a lot of questions about fund roll-off so I wanted to spend some time on this. Let's walk through an example using the 2006 Fund and NAXI. As Craig mentioned, in September the investment period for the 2006 Fund ended and NAXI was activated. That said we are still able to make follow-on investments in the 2006 Fund portfolio. If you turn to page 20 of our press release, you will see $1.3 billion of uncalled commitments remaining in the 2006 Fund, and we plan to invest these funds in the future. Turning on NAXI impacts our fee-related earnings in two ways. First, we have raised $6.2 billion of capital so far, including our GP and employee commitments, and we are entitled to a management fee on the third-party portion of that capital. As you may recall, the blended fee rate for the 2006 Fund was about 125 basis points. The management fee we receive on NAXI is closer to 140 basis points based on the capital raised to date. Second, when NAXI turned on the 2006 Fund switched from the investment period to the post-investment period, and the management fee on the 2006 Fund is now based on invested, not committed, capital. As of September 30, the 2006 Fund had about $12 billion of remaining invested capital and we are now entitled to a fee of 75 basis points on remaining costs. Keep in mind, as we sell assets the remaining costs will go down and so will our management fees associated with the 2006 Fund. Turning to our segment results, in private markets fee-related earnings were $45 million, up 23% from last quarter and 8% from last year. Transaction fees, including the first closing of the Alliance Boots sale, helped to increase our fee-related earnings this quarter. For the first nine months of 2012 fee-related earnings were $119 million, down 30% from the $170 million we earned over the same time last year. This year-over-year decline was largely driven by two things. First, in 2011 we had substantial termination payments in the first quarter related to the IPOs of Nielsen and HCA, which amounted to net fee-related earnings of about $38 million. Second, the $2.9 billion of capital we invested in the first three quarters of 2011 resulted in greater transaction fees than the $1.8 billion of capital we have invested so far this year. This 6% write up in our private equity portfolio combined with higher fee-related earnings in the quarter translated into ENI of $214 million. This is up over 20% from the last quarter and year-to-date ENI is more than 2.5 times last year's figure. Moving to public markets, fee-related earnings were $23 million compared to $12 million in both the last quarter and last year. This growth is attributable to a significant incentive fees which contributed about $18 million to our earnings. Third-quarter ENI was $35 million, reflecting $12 million of net carried interest this quarter, primarily from our special sits accounts. This is the largest quarterly carry figure that we have reported in this segment. However, it is only beginning to reflect the true carry potential for this business. There is an opportunity for carry to become increasingly significant over time as we continue to put more capital to work in carry-eligible funds. Touching on capital markets and principal activities fee-related earnings were $23 million for the quarter, up 7% from last quarter but down 50% from the third quarter 2011, which benefited from over $800 million of syndicated capital. Third-quarter ENI in this segment was $261 million, driven by 5% appreciation on our balance sheet investments. Year-to-date our balance sheet investments are up 22%, significantly outpacing the 2.5% appreciation at this point last year. The continued growth of our balance sheet results in $9.82 of book value per share, up 6% from last quarter. This is another record quarter for our book value and in total our book value has increased 20% since the beginning of the year, including a 75% increased in unrealized carry to $733 million. On a cash basis, we had a strong quarter of realization driving total distributable earnings of $333 million for the quarter and a distribution of $0.24. Scott will review our exit activity in more detail later on but the Alliance Boots transaction and the sale of Unisteel lead to a record $0.15 of cash carry in the quarter. Looking to the fourth quarter, we expect two realizations to benefit the next quarterly distribution. First, the most recent Dollar General secondary settled just after quarter end and we anticipate the impact to the distribution from fee paying co-invest vehicles to be about $0.02. We also announced a $2.50 special dividend at HCA. Half of our investment is held in the Millennium Fund and it should result in cash carrying of about $0.01. Also, given the significant realizations that we have had so far this year, the accrued tax distribution is currently north of $0.35 per unit. The ultimate size of the tax distribution will depend on the results for the remainder of the year. Since cash carry remains a big focus for many of you, I wanted to provide an update on netting holes and the progress we have made since last quarter. As we have mentioned, we refer to the netting hole as the aggregate amount by which any private investment in a fund is marked below cost net of cash profits from sales of other investments in that same fund. We were able to pay out cash carry when investment is realized as long as the fund is marked above cost in total and the netting hole has been filled. It is important to remember that most of our active private equity funds are not subject to a preferred return with NAXI being the exception. Back in July we disclosed the size of the 2006 Fund netting holes. At the time of our call the domestic partnership netting hole stood at approximately $1 billion and the 2006 Fund overseas partnership netting hole was filled after factoring in the proceeds from the Boots transaction. Additionally, Europe II's netting hole, pro forma for Boots, was about $1 billion. Today the 2006 Fund continues to accrue carry because it is marked well above cost, 1.4 times cost at the end of the third quarter or 3 times on a realized and partially realized basis. When you adjust the netting hole at September 30 for the realization activity since the end of the third quarter, the 2006 Fund domestic partnership netting hole has decreased from $1 billion at the time of our last call to about $550 million today. As you will recall, netting holes can move in both directions and this was the case in the 2006 Domestic Fund this quarter. The overall reduction was driven by the realized gains from both the September Dollar General secondary and the HCA special dividend, but offset this was a markdown in Samson this quarter from cost to 0.8 times cost, which increased the netting hole by about $150 million. Turning to the 2006 Fund overseas partnership, this vehicle paid $0.10 of carry in the third quarter from profits associated with both Boots and the Unisteel transaction. Therefore, 2006 Fund overseas is in a cash carry position and currently has approximately $5.8 billion of remaining value. Moving on to Europe II. At the end of the third quarter Europe II is marked at 1.2 times cost and continues to accrue but not pay carry. As of September 30, the netting hole in this fund has been reduced from $1 billion to about $850 million. The big driver here was the write up of Kion where an expected infusion of capital from a strategic investor increased our valuation from 0.4 to 0.9 times cost. In summary, we feel really good about the progress across all of our funds, especially 2006. Today we are generally paying cash carry on $16.5 billion of private equity remaining value, which includes the $5.8 billion in 2006 overseas. We are also getting closer to paying cash carry on the other $20 billion and, remember, none of the historical private equity capital is subject to a preferred return. I will now pass it over to Scott."}, "commit"=>"Capture"}
+Redirected to http://localhost:3000/entries/55af1998776966a49a000004
+Completed 302 Found in 893ms
+
+
+Started GET "/entries/55af1998776966a49a000004" for ::1 at 2015-07-22 00:18:32 -0400
+Processing by EntriesController#show as HTML
+  Parameters: {"id"=>"55af1998776966a49a000004"}
+  Rendered entries/show.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 245ms (Views: 242.5ms)
