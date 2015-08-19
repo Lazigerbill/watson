@@ -5,6 +5,11 @@
 <div class="panel panel-info">
 	<div class="panel-heading"><%= @values["children"][0]["name"] %></div>
 		<table class="table table-bordered">
+			<thead>
+				<th></th>
+				<th>Percentage</th>
+				<th>Sampling Error</th>
+			</thead>
 			<% @values["children"][0]["children"].each do |eachvalue| %>
 				<tr>
 					<td class="col-md-6"><%= eachvalue["name"] %></td>

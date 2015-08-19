@@ -2,29 +2,29 @@
 <h3>Event details</h3>
 <p>*Please verify your input</p>
 <%= form_for @entry, :html => {:class => "form-group"} do |f| %>
-	<%= f.label :company_name %> <br>
-	<%= f.text_field :company_name, :class => "form-control" %> <br>
-	<%= f.label :event_name %> <br>
-	<%= f.text_field :event_name, :class => "form-control" %> <br>
-	<%= f.label :date %> <br>
-	<%= f.text_field :date, :class => "form-control" %> 
+<%= f.label :company_name %> <br>
+<%= f.text_field :company_name, :class => "form-control" %> <br>
+<%= f.label :event_name %> <br>
+<%= f.text_field :event_name, :class => "form-control" %> <br>
+<%= f.label :date %> <br>
+<%= f.text_field :date, :class => "form-control" %> 
 
 
-	<h3>Corporate Participants</h3>
-	<% @result.each do |person| %>
-		<%= f.radio_button(:speaker, person[0], :class => "speakerRadio") %>
-		<%= f.label(:speaker, person[0], :value => person[0]) %>
-		<br>
-	<% end %>	
+<h3>Corporate Participants</h3>
+<% @result.each do |person| %>
+<%= f.radio_button(:speaker_name, person[0], :class => "speakerRadio") %>
+<%= f.label(:speaker_name, person[0], :value => person[0]) %>
+<br>
+<% end %>	
 
-	
-	<%= tag("div", :id => "transcript", :"data-content" => @result.to_h.to_json) %>
 
-	<div style = "float:right">	
-		<%= f.label :wcount, "Word count:" %>
-		<%= f.text_field :wcount, :id => 'wcount' %>
-	</div>
-	<%= f.text_area :transcript, :class => "form-control transBox", :placeholder => "Please select speaker." %>
-	<br>
-	<%= f.submit "Capture", :id=>"submitButton", :class => "btn btn-success" %>
+<%= tag("div", :id => "transcript", :"data-content" => @result.to_h.to_json) %>
+
+<div style = "float:right">	
+	<label> Word count: </label>
+	<span id="wcount"></span>
+</div>
+<%= f.text_area :transcript, :class => "form-control transBox", :placeholder => "Please select speaker." %>
+<br>
+<%= f.submit "Capture", :id=>"submitButton", :class => "btn btn-success" %>
 <% end %>

@@ -6,6 +6,11 @@
 	<div class="panel panel-success">
 		<div class="panel-heading"><%= each5["name"] %></div>
 		<table class="table table-bordered">
+			<thead>
+				<th></th>
+				<th>Percentage</th>
+				<th>Sampling Error</th>
+			</thead>
 			<% each5["children"].each do |sub5| %>
 				<tr>
 					<td class="col-md-6"><%= sub5["name"] %></td>

@@ -49,7 +49,7 @@ class EntriesController < ApplicationController
     # extract event details
     @entry.company_name = data[2]
     @entry.event_name = data[3]
-    @entry.date = data[4]
+    @entry.date = DateTime.parse(data[4])
   
     # extract speaker and presentations
     parse_presentation(data)
@@ -69,7 +69,7 @@ private
   end
 
   def entry_params
-      params.require(:entry).permit(:company_name, :event_name, :date, :speaker, :transcript, :wcount)
+      params.require(:entry).permit(:company_name, :event_name, :date, :speaker_name, :speaker_title, :transcript)
     end
 
   def parse_presentation(data)

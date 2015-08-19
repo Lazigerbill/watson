@@ -5,6 +5,11 @@
 <div class="panel panel-warning">
 	<div class="panel-heading"><%= @needs["children"][0]["name"] %></div>
 		<table class="table table-bordered">
+				<thead>
+					<th></th>
+					<th>Percentage</th>
+					<th>Sampling Error</th>
+				</thead>
 			<% @needs["children"][0]["children"].each do |eachneed| %>
 				<tr>
 					<td class="col-md-6"><%= eachneed["name"] %></td>
