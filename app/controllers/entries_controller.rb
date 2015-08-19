@@ -8,6 +8,9 @@ class EntriesController < ApplicationController
 
   def show
     @entry = Entry.find(params[:id])
+    @big5 = @entry.insights["tree"]["children"][0]
+    @needs = @entry.insights["tree"]["children"][1]
+    @values = @entry.insights["tree"]["children"][2]
   end
 
   def new

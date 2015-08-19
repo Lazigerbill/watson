@@ -1,0 +1,18 @@
+<div class="page-header">
+  <h1><%= @big5["id"].upcase %> <small><%= @big5["name"] %></small></h1>
+</div>
+
+<% @big5["children"][0]["children"].each do |each5| %>
+	<div class="panel panel-success">
+		<div class="panel-heading"><%= each5["name"] %></div>
+		<table class="table table-bordered">
+			<% each5["children"].each do |sub5| %>
+				<tr>
+					<td class="col-md-6"><%= sub5["name"] %></td>
+					<td class="col-md-3"><%= sub5["percentage"].round(4) %></td>
+					<td class="col-md-3"><%= sub5["sampling_error"].round(4) %></td>
+				</tr>
+			<% end %>	
+		</table>
+	</div>
+<% end %>	

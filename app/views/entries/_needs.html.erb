@@ -1,0 +1,16 @@
+<div class="page-header">
+  <h1><%= @needs["id"].upcase %></h1>
+</div>
+
+<div class="panel panel-warning">
+	<div class="panel-heading"><%= @needs["children"][0]["name"] %></div>
+		<table class="table table-bordered">
+			<% @needs["children"][0]["children"].each do |eachneed| %>
+				<tr>
+					<td class="col-md-6"><%= eachneed["name"] %></td>
+					<td class="col-md-3"><%= eachneed["percentage"].round(4) %></td>
+					<td class="col-md-3"><%= eachneed["sampling_error"].round(4) %></td>
+				</tr>
+			<% end %>	
+		</table>
+	</div>

@@ -1,0 +1,16 @@
+<div class="page-header">
+  <h1><%= @values["id"].upcase %></h1>
+</div>
+
+<div class="panel panel-info">
+	<div class="panel-heading"><%= @values["children"][0]["name"] %></div>
+		<table class="table table-bordered">
+			<% @values["children"][0]["children"].each do |eachvalue| %>
+				<tr>
+					<td class="col-md-6"><%= eachvalue["name"] %></td>
+					<td class="col-md-3"><%= eachvalue["percentage"].round(4) %></td>
+					<td class="col-md-3"><%= eachvalue["sampling_error"].round(4) %></td>
+				</tr>
+			<% end %>	
+		</table>
+	</div>

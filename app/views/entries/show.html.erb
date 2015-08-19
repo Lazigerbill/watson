@@ -10,11 +10,23 @@
 <p class="text-right">word count: <span class="badge"><%= @entry.wcount %></span></p>
 <br>
 
+<div class ="row">
+	<div class="col-md-6">
+		<%= render partial: "big5" %>
+	</div>
+	<div class="col-md-6">
+		<%= render partial: "values" %>
+		<%= render partial: "needs" %>
+	</div>
+
+</div>
+
+
 <div class="panel panel-info">
-  <div class="panel-heading">
-    <h3 class="panel-title">Results from Watson in JSON</h3>
-  </div>
-  <div class="panel-body">
+	<div class="panel-heading">
+		<h3 class="panel-title">Results from Watson in JSON</h3>
+	</div>
+	<div class="panel-body">
 		<%= @entry.insights.to_json %>
-  </div>
+	</div>
 </div>
