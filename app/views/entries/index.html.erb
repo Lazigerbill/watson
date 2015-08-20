@@ -7,9 +7,12 @@
 	<thead>
 		<tr>
 			<td>Company</td>
+			<td>Ticker</td>
 			<td>Event</td>
 			<td>Date</td>
 			<td>Speaker</td>
+			<td>Title</td>
+			<td>Word count</td>
 			<td></td>
 			<td></td>
 		</tr>
@@ -18,9 +21,12 @@
 		<% @entries.each do |e| %>
 		<tr>
 				<td><%= e.company_name %></td>
+				<td><%= e.ticker %></td>
 				<td><%= e.event_name %></td>
-				<td><%= e.date %></td>
-				<td><%= e.speaker %></td>
+				<td><%= e.date.strftime('%A, %d %b %Y %l:%M %p') %></td>
+				<td><%= e.speaker_name %></td>
+				<td><%= e.speaker_title %></td>
+				<td><%= e.wcount %></td>
 				<td>
 					<%= button_to 'Show', entry_path(e.id), method: :get, :class => "btn btn-primary" %> 
 				</td>	
