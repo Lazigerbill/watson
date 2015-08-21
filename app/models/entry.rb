@@ -11,5 +11,6 @@ class Entry
   field :insights, type: Hash
 
   # validations
-  validates_presence_of :company_name, :event_name, :date, :speaker_name, :speaker_title, :transcript
+  validates_presence_of :company_name, :ticker, :event_name, :date, :speaker_name, :speaker_title, :wcount, :transcript
+  validates_uniqueness_of :ticker, :scope => :company_name
 end

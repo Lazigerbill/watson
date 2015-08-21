@@ -1,0 +1,43 @@
+<div class="page-header">
+	<h1>Edit event details</h1>
+</div>
+<%= form_for @entry, :html => {:class => "form-group"} do |f| %>
+	<div class= "col-lg-6">	
+		<%= f.label :company_name %> <br>
+		<%= f.text_field :company_name, :class => "form-control" %> <br>
+	</div>
+	<div class= "col-lg-6">
+		<%= f.label :ticker %> <br>
+		<%= f.text_field :ticker, :class => "form-control" %> <br>
+	</div>
+	<div class= "col-md-6">
+		<%= f.label :event_name %> <br>
+		<%= f.text_field :event_name, :class => "form-control" %> <br>
+	</div>
+	<div class= "col-md-6">
+		<%= f.label :date %> <br>
+		<%= f.text_field :date, :class => "form-control" %> <br>
+	</div>
+	<div class= "col-md-6">
+		<%= f.label :speaker_name %> <br>
+		<%= f.text_field :speaker_name, :class => "form-control" %> <br> 
+	</div>
+	<div class= "col-md-6">
+		<%= f.label :speaker_title %> <br>
+		<%= f.text_field :speaker_title, :class => "form-control" %> <br>
+	</div>
+	<div class= "col-md-12">
+		<%= f.label :wcount %> <br>
+		<%= f.text_field :wcount, :class => "form-control" %> <br>
+	</div>
+	<div class= "col-md-12">
+		<%= f.label :transcript %> <br>
+		<%= f.text_area :transcript, :class => "form-control transBox" %> <br>
+	</div>
+
+	<div class="form-group">
+	  <%= f.submit "Save", class: "btn btn-w-m btn-info" %>
+	  <%= link_to 'Delete', @entry, class: "btn btn-w-m btn-danger", method: :delete, data: { confirm: 'Are you sure?' } %>
+	  <%= link_to 'Cancel', entries_path, class: "btn btn-w-m btn-defaults" %>
+	</div>
+<% end %>

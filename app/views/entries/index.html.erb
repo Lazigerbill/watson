@@ -6,13 +6,13 @@
 <table class = 'table table-striped table-bordered'>
 	<thead>
 		<tr>
-			<td>Company</td>
+			<td>Company Name</td>
 			<td>Ticker</td>
-			<td>Event</td>
+			<td>Event Name</td>
 			<td>Date</td>
 			<td>Speaker</td>
 			<td>Title</td>
-			<td>Word count</td>
+			<td>Word Count</td>
 			<td></td>
 			<td></td>
 		</tr>
@@ -31,7 +31,7 @@
 					<%= button_to 'Show', entry_path(e.id), method: :get, :class => "btn btn-primary" %> 
 				</td>	
 				<td>
-					<%= button_to 'Delete', e, method: :delete, data: {confirm: 'Are you sure?'}, :class => "btn btn-danger" %>
+					<%= button_to 'Edit', edit_entry_path(e.id), method: :get, :class => "btn btn-default" %>
 				</td>
 		</tr>
 		<% end %>

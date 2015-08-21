@@ -34,6 +34,19 @@ class EntriesController < ApplicationController
   end
 
   def edit
+    @entry = Entry.find(params[:id])
+  end
+
+  def update
+    @entry = Entry.find(params[:id])
+    if @entry.update_attributes(entry_params)
+      redirect_to entries_path, :flash => { :success => "Record for #{@entry.company_name} updated Sucessfully." }
+    else
+      @entry.errors.full_messages.each do |msg|
+        flash.now[:error] = msg
+      end
+      render :edit 
+    end
   end
 
   def destroy 
@@ -72,7 +85,7 @@ def analyse(input)
 end
 
 def entry_params
-  params.require(:entry).permit(:company_name, :event_name, :date, :speaker_name, :speaker_title, :transcript)
+  params.require(:entry).permit(:company_name, :ticker, :event_name, :date, :speaker_name, :speaker_title, :wcount, :transcript)
 end
 
 def parse_presentation(data)
@@ -115,9 +128,14 @@ end
         @entry = Entry.new
         @entry.company_name = data[2].match(/-(.+?)$/)[1].strip
         @entry.ticker = data[2].match(/^(.+?)-/)[1].strip
-        data[3].gsub!(/[^0-9a-z ]/i, '')
-        data[3].slice! (@entry.company_name+ ' ')
+
+        #the following is to remove company name from Event title
+        data[3].gsub!(/[\.\,]/, '')
+        @entry.company_name.split.each do |w|
+          data[3].slice! (w+ ' ')
+        end  
         @entry.event_name = data[3]
+
         @entry.date = DateTime.parse(data[4])
         @entry.speaker_name = pres[0].match(/^(.+?),/)[1]
         @entry.speaker_title = pres[0].match(/,(.+?)$/)[1].strip
