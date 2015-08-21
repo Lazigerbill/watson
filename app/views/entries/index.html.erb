@@ -13,6 +13,7 @@
 			<td>Speaker</td>
 			<td>Title</td>
 			<td>Word Count</td>
+			<td>Analysed?</td>
 			<td></td>
 			<td></td>
 		</tr>
@@ -27,6 +28,13 @@
 				<td><%= e.speaker_name %></td>
 				<td><%= e.speaker_title %></td>
 				<td><%= e.wcount %></td>
+				<td>
+					<% if e.insights.nil? %>
+						No
+					<% else %>
+						Yes
+					<% end %>	
+				</td>
 				<td>
 					<%= button_to 'Show', entry_path(e.id), method: :get, :class => "btn btn-primary" %> 
 				</td>	

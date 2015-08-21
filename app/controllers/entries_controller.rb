@@ -8,13 +8,26 @@ class EntriesController < ApplicationController
 
   def show
     @entry = Entry.find(params[:id])
-    @big5 = @entry.insights["tree"]["children"][0]
-    @needs = @entry.insights["tree"]["children"][1]
-    @values = @entry.insights["tree"]["children"][2]
+    unless @entry.insights.nil?
+      @big5 = @entry.insights["tree"]["children"][0]
+      @needs = @entry.insights["tree"]["children"][1]
+      @values = @entry.insights["tree"]["children"][2]
+    end
   end
 
   def new
     @entry = Entry.new
+  end
+
+  def analyse
+    @entry = Entry.find(params[:id])
+    profile_api_url = "#{Figaro.env.bluemix_url}/v2/profile"
+    client = RestClient::Resource.new(profile_api_url, Figaro.env.bluemix_username, Figaro.env.bluemix_password)
+    insights = client.post @entry.transcript, :content_type => "text/plain;charset=utf-8"
+    if @entry.update_attribute(:insights, JSON.load(insights.body))
+      redirect_to entry_path(@entry.id), :flash => { :success => "Watson analytics updated sucessfully." }
+    end
+
   end
 
   def create
@@ -75,17 +88,17 @@ class EntriesController < ApplicationController
 end
 
 private
-def analyse(input)
-  profile_api_url = "#{Figaro.env.bluemix_url}/v2/profile"
+# def analyse(input)
+#   profile_api_url = "#{Figaro.env.bluemix_url}/v2/profile"
 
-  client = RestClient::Resource.new(profile_api_url, Figaro.env.bluemix_username, Figaro.env.bluemix_password)
-  insights = client.post input, :content_type => "text/plain;charset=utf-8"
+#   client = RestClient::Resource.new(profile_api_url, Figaro.env.bluemix_username, Figaro.env.bluemix_password)
+#   insights = client.post input, :content_type => "text/plain;charset=utf-8"
 
-  @watson_says = JSON.load(insights.body)
-end
+#   @watson_says = JSON.load(insights.body)
+# end
 
 def entry_params
-  params.require(:entry).permit(:company_name, :ticker, :event_name, :date, :speaker_name, :speaker_title, :wcount, :transcript)
+  params.require(:entry).permit(:company_name, :ticker, :event_name, :date, :speaker_name, :speaker_title, :wcount, :transcript, :insights)
 end
 
 def parse_presentation(data)
@@ -141,9 +154,9 @@ end
         @entry.speaker_title = pres[0].match(/,(.+?)$/)[1].strip
         @entry.transcript = pres[1]
         @entry.wcount = pres[1].split.count
-        if @entry.save!
+        if @entry.save
           @rcount += 1
-        else render :new, :alert => "Something went wrong..."
+        else render new_entry_path and return
         end
       end
     end

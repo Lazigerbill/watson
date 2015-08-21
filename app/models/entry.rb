@@ -12,5 +12,5 @@ class Entry
 
   # validations
   validates_presence_of :company_name, :ticker, :event_name, :date, :speaker_name, :speaker_title, :wcount, :transcript
-  validates_uniqueness_of :ticker, :scope => :company_name
+  validates_uniqueness_of :company_name, :scope => :speaker_name
 end

@@ -1,32 +1,43 @@
 <div class="page-header">
-	<h1><%= @entry.company_name %></h1>
+	<h1><%= @entry.speaker_name %> <small><%= @entry.speaker_title %></small></h1>
 </div>
-<h3><%= @entry.event_name %> <small><%= @entry.date %></small></h3>
-<label>Speaker: </label> <%= @entry.speaker %>
+<h3><%= @entry.company_name %> (<%= @entry.ticker %>) - <%= @entry.event_name %></h3>
+<h4><%= @entry.date.strftime('%A, %d %b %Y %l:%M %p %Z') %></h4>
 <br>
-<label>Transcript: </label>
+
+<% if @entry.insights != nil %>
+	<button class="btn btn-lg btn-primary" type="button" data-toggle="collapse" data-target="#collapseTranscript" aria-expanded="false" aria-controls="collapseTranscript">
+		Show Transcript <span class="badge"><%= @entry.wcount %> words</span>
+	</button>
+	<div class="collapse" id="collapseTranscript">
+		<div class="well">
+			<%= @entry.transcript %>
+		</div>
+	</div>
+	<button class="btn btn-lg btn-success" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+		Show raw JSON results from Watson
+	</button>
+	<div class="collapse" id="collapseExample">
+		<div class="well">
+			<%= @entry.insights %>
+		</div>
+	</div>
+	<div class ="row">
+		<div class="col-md-6">
+			<%= render partial: "big5" %>
+		</div>
+		<div class="col-md-6">
+			<%= render partial: "values" %>
+			<%= render partial: "needs" %>
+		</div>
+	</div>
+<% else %>
+	<label>Transcript: </label>
+	<br>
+	<%= text_area_tag 'transcript', @entry.transcript, :class => 'form-control transBox' %>
+	<p class="text-right">word count: <span class="badge"><%= @entry.wcount %></span></p>
+	<%= button_to "Run Watson Analytics", analyse_path(@entry), :class=> "btn btn-primary btn-lg" %>
+<% end %>
 <br>
-<%= text_area_tag 'transcript', @entry.transcript, :class => 'form-control transBox' %>
-<p class="text-right">word count: <span class="badge"><%= @entry.wcount %></span></p>
-
-<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-	Show raw JSON results from Watson
-</button>
-<div class="collapse" id="collapseExample">
-	<div class="well">
-		<%= @entry.insights %>
-	</div>
-</div>
-
-<div class ="row">
-	<div class="col-md-6">
-		<%= render partial: "big5" %>
-	</div>
-	<div class="col-md-6">
-		<%= render partial: "values" %>
-		<%= render partial: "needs" %>
-	</div>
-
-</div>
-
-
+<%= link_to "Back", entries_path, :class => "btn btn-default" %>
+<br>
