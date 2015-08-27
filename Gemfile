@@ -21,7 +21,7 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'spring',        group: :development
 
 gem 'rest-client'
-gem 'rails_12factor'
+gem 'rails_12factor', group: :production
 gem 'figaro'
 gem "mongoid", "~> 4.0.0"
 
@@ -34,4 +34,6 @@ gem "twitter-bootstrap-rails"
 
 gem 'quiet_assets', group: :development
 gem 'pry', group: :development
+
+gem 'rubyzip'
 
