@@ -6,5 +6,5 @@ $(document).on('page:load ready', function(){
 		// word count
 		$('#wcount').text($('.transBox').val().split(' ').length);
 	});
-
+	
 });

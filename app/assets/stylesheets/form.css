@@ -6,3 +6,11 @@
 	background-image: url("http://www.txmq.com/wp-content/uploads/2014/09/Watson_Planet.jpg");
 	background-size: cover;
 }
+
+#insight_logo{
+	height: 36px;
+}
+
+.align-center{
+	text-align: center;
+}

@@ -3,8 +3,8 @@
 </div>
 <h3><%= @entry.company_name %> (<%= @entry.ticker %>) - <%= @entry.event_name %></h3>
 <h4><%= @entry.date.strftime('%A, %d %b %Y %l:%M %p %Z') %></h4>
+<%= button_to 'Edit transcript', edit_entry_path(@entry), method: :get, :class => "btn btn-danger" %>
 <br>
-
 <% if @entry.insights != nil %>
 	<button class="btn btn-lg btn-primary" type="button" data-toggle="collapse" data-target="#collapseTranscript" aria-expanded="false" aria-controls="collapseTranscript">
 		Show Transcript <span class="badge"><%= @entry.wcount %> words</span>
@@ -38,6 +38,7 @@
 	<p class="text-right">word count: <span class="badge"><%= @entry.wcount %></span></p>
 	<%= button_to "Run Watson Analytics", analyse_path(@entry), :class=> "btn btn-primary btn-lg" %>
 <% end %>
+
 <br>
 <%= link_to "Back", entries_path, :class => "btn btn-default" %>
 <br>

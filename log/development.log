@@ -8895,3 +8895,375 @@ Started GET "/entries" for ::1 at 2015-08-31 12:23:55 -0400
 Processing by EntriesController#index as HTML
   Rendered entries/index.html.erb within layouts/application (531.0ms)
 Completed 200 OK in 750ms (Views: 749.1ms)
+
+
+Started GET "/entries?sorts[ticker]=1" for ::1 at 2015-08-31 15:44:44 -0400
+Processing by EntriesController#index as HTML
+  Parameters: {"sorts"=>{"ticker"=>"1"}}
+  Rendered entries/index.html.erb within layouts/application (461.0ms)
+Completed 200 OK in 1373ms (Views: 1347.5ms)
+
+
+Started GET "/entries?sorts[ticker]=1" for ::1 at 2015-08-31 15:46:59 -0400
+Processing by EntriesController#index as HTML
+  Parameters: {"sorts"=>{"ticker"=>"1"}}
+  Rendered entries/index.html.erb within layouts/application (466.2ms)
+Completed 200 OK in 1694ms (Views: 1668.1ms)
+
+
+Started GET "/entries?sorts[ticker]=1" for ::1 at 2015-08-31 15:47:42 -0400
+Processing by EntriesController#index as HTML
+  Parameters: {"sorts"=>{"ticker"=>"1"}}
+  Rendered entries/index.html.erb within layouts/application (483.2ms)
+Completed 200 OK in 789ms (Views: 788.4ms)
+
+
+Started GET "/" for ::1 at 2015-08-31 15:48:23 -0400
+Processing by EntriesController#landing as HTML
+  Rendered entries/landing.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 308ms (Views: 307.3ms)
+
+
+Started GET "/entries" for ::1 at 2015-08-31 15:48:33 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (469.3ms)
+Completed 200 OK in 821ms (Views: 820.0ms)
+
+
+Started GET "/entries" for ::1 at 2015-08-31 15:49:25 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (486.4ms)
+Completed 200 OK in 1092ms (Views: 1091.9ms)
+
+
+Started GET "/entries/55df7c7e77696621da000410" for ::1 at 2015-08-31 15:55:11 -0400
+Processing by EntriesController#show as HTML
+  Parameters: {"id"=>"55df7c7e77696621da000410"}
+  Rendered entries/show.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 354ms (Views: 351.5ms)
+
+
+Started GET "/entries" for ::1 at 2015-08-31 15:55:16 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (486.3ms)
+Completed 200 OK in 797ms (Views: 796.7ms)
+
+
+Started GET "/entries" for ::1 at 2015-08-31 15:56:18 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (478.5ms)
+Completed 200 OK in 796ms (Views: 796.0ms)
+
+
+Started GET "/entries/55df7c7c77696621da000359/edit" for ::1 at 2015-08-31 15:59:06 -0400
+Processing by EntriesController#edit as HTML
+  Parameters: {"id"=>"55df7c7c77696621da000359"}
+  Rendered entries/edit.html.erb within layouts/application (34.0ms)
+Completed 200 OK in 356ms (Views: 351.9ms)
+
+
+Started GET "/entries/55df7c7c77696621da000359" for ::1 at 2015-08-31 15:59:13 -0400
+Processing by EntriesController#show as HTML
+  Parameters: {"id"=>"55df7c7c77696621da000359"}
+  Rendered entries/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 313ms (Views: 311.5ms)
+
+
+Started GET "/entries" for ::1 at 2015-08-31 15:59:53 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (358.4ms)
+Completed 200 OK in 726ms (Views: 725.9ms)
+
+
+Started GET "/entries/55df7ad977696621da0001c2" for ::1 at 2015-08-31 16:00:11 -0400
+Processing by EntriesController#show as HTML
+  Parameters: {"id"=>"55df7ad977696621da0001c2"}
+  Rendered entries/_big5.html.erb (1.4ms)
+  Rendered entries/_values.html.erb (0.5ms)
+  Rendered entries/_needs.html.erb (0.9ms)
+  Rendered entries/show.html.erb within layouts/application (14.6ms)
+Completed 200 OK in 334ms (Views: 330.8ms)
+
+
+Started GET "/entries" for ::1 at 2015-08-31 16:00:16 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (353.1ms)
+Completed 200 OK in 655ms (Views: 654.3ms)
+
+
+Started GET "/entries" for ::1 at 2015-08-31 16:01:42 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (352.2ms)
+Completed 200 OK in 662ms (Views: 661.1ms)
+
+
+Started GET "/entries/55df7c7c77696621da000359" for ::1 at 2015-08-31 16:01:47 -0400
+Processing by EntriesController#show as HTML
+  Parameters: {"id"=>"55df7c7c77696621da000359"}
+  Rendered entries/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 312ms (Views: 309.6ms)
+
+
+Started GET "/entries/55df7c7c77696621da000359" for ::1 at 2015-08-31 16:02:26 -0400
+Processing by EntriesController#show as HTML
+  Parameters: {"id"=>"55df7c7c77696621da000359"}
+  Rendered entries/show.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 327ms (Views: 324.3ms)
+
+
+Started GET "/entries/55df7c7c77696621da000359" for ::1 at 2015-08-31 16:02:33 -0400
+Processing by EntriesController#show as HTML
+  Parameters: {"id"=>"55df7c7c77696621da000359"}
+  Rendered entries/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 319ms (Views: 317.9ms)
+
+
+Started GET "/entries/55df7c7c77696621da000359" for ::1 at 2015-08-31 16:02:52 -0400
+Processing by EntriesController#show as HTML
+  Parameters: {"id"=>"55df7c7c77696621da000359"}
+  Rendered entries/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 322ms (Views: 319.0ms)
+
+
+Started GET "/entries/55df7c7c77696621da000359/edit" for ::1 at 2015-08-31 16:02:56 -0400
+Processing by EntriesController#edit as HTML
+  Parameters: {"id"=>"55df7c7c77696621da000359"}
+  Rendered entries/edit.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 320ms (Views: 318.7ms)
+
+
+Started PATCH "/entries/55df7c7c77696621da000359" for ::1 at 2015-08-31 16:03:03 -0400
+Processing by EntriesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JcHUksJywPPfgsY/tJvXqruSOJ7JXUJWGjyD3IhaB9MZ9ZJyohYMbs2PqiKy4WON2YyOZZ/eJ/6s7q7RoETz1w==", "entry"=>{"company_name"=>"1-800-Flowers.Com Inc", "ticker"=>"FLWS", "event_name"=>"Q2 2012 1-800-FLOWERSCOM Earnings Conference Call", "date"=>"2012-01-26T16:00:00+00:00", "speaker_name"=>"Jim McCann", "speaker_title"=>"1-800-Flowers.Com Inc - CEO", "wcount"=>"1013", "transcript"=>"Good morning everyone. During the fiscal second quarter, we saw continuation of the positive trends that we have seen in our business since last year. In Consumer Floral, revenues continue to grow at a strong rate and gross margins increased further, as customers responded positively to our enhanced merchandising and marketing efforts. BloomNet grew at a double-digit pace benefiting from increased shop-to-shop order volume and further market penetration for our expanded suite of products and services. And, our Gourmet Food and Gift Basket business saw solid growth in E-commerce, which helped offset weakness in the wholesale baskets for the mass market channel which we describe to you in past calls. As a result of these factors and our continued focus on improving our operating expense ratio, we achieved enhanced bottom line results for the quarter. We also continue to strengthen our balance sheet finishing the quarter with more than $30 million in cash and net debt of approximately $7 million. Since our peak in fiscal 2008, we have paid down more than $90 million on our term debt despite a challenging economic environment. We believe this provides us with significant flexibility to grow our business using our multi-channel retailing strategy and emphasizing e-commerce, while concurrently seeking growth in local markets, where we primarily do it through our franchising initiatives. In wholesale, where we see increasing opportunities for our Gourmet Food and Gift Baskets brands, with leading department stores and mass accounts. And in BloomNet, where we continue to expand our offerings and deepen our relationships with our florists. And in the social and mobile media areas, where we have investments that we've made over the past several years, have positioned us as a leader in both mobile and social. Before I turn the call over to Bill, for his review of second quarter metrics, I'd like to touch on two specific topics. First, during the second quarter, we announced the 62-store franchise deal with Fannie May with GB Chocolates, a partnership that includes some of the preeminent franchise operators in the United States. The agreement includes development rights of 45 new stores to be opened over the next three years in several Midwest states, as well as specific cities in Florida and Ohio. The deal also included the sale of 17 of our existing Fannie May stores, located in areas outside of our core Chicago market. While the sale of these stores during Fannie May's biggest season reduced our revenues for the period, it provides us a solid platform for our new franchise partner to accelerate their growth plans while providing us with future revenue streams, through franchise and area development fees and product sales. As I noted in the past, at one time there were more than 500 Fannie May and Fannie Farmer stores stretching from the Midwest and East Coast. As a multi channel retailer, we believe that growing our local market presence through franchising is the most capital efficient way for us to expand Fannie May's footprint and brand awareness, and thereby drive both retail and e-commerce revenue growth. Second, in terms of our Gift Baskets business, while our 1-800-FlowersBaskets.com directed consumer brand, is performing well, our wholesale basket business continued to underperform. To address this area, we have installed a new management team that has put in place new processes, to improve the division sourcing, operating, and reporting infrastructure. In addition, we have hired new talent to lead our sales efforts with extensive experience in the mass channel. And, we have stepped up our efforts to expand the customer base to reduce dependencies and increase customer reach. We are confident that these changes and others under way will produce improved results in this category. I will now turn the call over to Bill for review of the financial and operating metrics for this quarter.Thanks Chris. Our customers continue to turn to us to help them deliver smiles. That's the business we are in, helping them connect and express themselves for all of their celebratory occasions, from the everyday to the once-in-a-lifetime. The strong results and the strong growth results we achieved in our second quarter and throughout the first half of our fiscal year, and the positive trends we are seeing for, frankly, more than a year now, attest to the fact that our messaging and positioning as a florist and gift shop is resonating. We are growing our business to our focus on providing truly original floral arrangements, as well as expanded offering of gourmet food and gift baskets, featuring highly relevant gift brands that our customers expect from us. We have a multi-channel business model that emphasizes e-commerce, while including our local retail presence. Our business philosophy is to engage directly with our customers, invite them behind the curtain, if you will, to work directly with us on the design and development of products and services and even our marketing and advertising programs. Towards this end, we have embraced early on the new social and the mobile tools to become the next-generation retailer. We have become a leader in our space and social and mobile commerce as a result of a strategy to invest in innovations for the future, and to embrace new technologies and modes of customer engagement that will help us develop and deepen those relationships. To wrap up, we are pleased with our second quarter and fiscal first-half results and the positive trends that we see continuing in all of our businesses. We are heartened by the recent reports of improvement in consumer confidence but we remain cognizant of the challenges in the global economic environment. As a result, we will continue to focus our efforts on managing those aspects of our business that we can control. Our relationships with our customers, our operating expenses, our financial strength and flexibility, and our growth initiatives. We believe this focus will enable us to continue to grow and create additional leverage within our business model and thereby drive good value creation. That concludes our formal remarks, and we will now open the call to your questions."}, "commit"=>"Save", "id"=>"55df7c7c77696621da000359"}
+Redirected to http://localhost:3000/entries
+Completed 302 Found in 4ms
+
+
+Started GET "/entries" for ::1 at 2015-08-31 16:03:03 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (353.2ms)
+Completed 200 OK in 667ms (Views: 666.6ms)
+
+
+Started GET "/entries/55df7c7c77696621da000359" for ::1 at 2015-08-31 16:03:08 -0400
+Processing by EntriesController#show as HTML
+  Parameters: {"id"=>"55df7c7c77696621da000359"}
+  Rendered entries/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 330ms (Views: 329.1ms)
+
+
+Started GET "/entries" for ::1 at 2015-08-31 16:03:19 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (353.6ms)
+Completed 200 OK in 711ms (Views: 710.4ms)
+
+
+Started GET "/" for ::1 at 2015-08-31 16:06:21 -0400
+Processing by EntriesController#landing as HTML
+  Rendered entries/landing.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 314ms (Views: 313.9ms)
+
+
+Started GET "/entries" for ::1 at 2015-08-31 16:06:22 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (345.0ms)
+Completed 200 OK in 651ms (Views: 650.7ms)
+
+
+Started GET "/entries" for ::1 at 2015-08-31 16:07:04 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (345.8ms)
+Completed 200 OK in 657ms (Views: 656.7ms)
+
+
+Started GET "/entries" for ::1 at 2015-08-31 16:07:17 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (353.9ms)
+Completed 200 OK in 661ms (Views: 660.1ms)
+
+
+Started GET "/entries" for ::1 at 2015-08-31 16:08:39 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (340.9ms)
+Completed 200 OK in 652ms (Views: 651.4ms)
+
+
+Started GET "/entries/55df7c7c77696621da000359" for ::1 at 2015-08-31 16:09:04 -0400
+Processing by EntriesController#show as HTML
+  Parameters: {"id"=>"55df7c7c77696621da000359"}
+  Rendered entries/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 329ms (Views: 326.7ms)
+
+
+Started GET "/entries" for ::1 at 2015-08-31 16:09:07 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (346.8ms)
+Completed 200 OK in 663ms (Views: 662.9ms)
+
+
+Started GET "/entries/55df7ad977696621da0001fc" for ::1 at 2015-08-31 16:09:11 -0400
+Processing by EntriesController#show as HTML
+  Parameters: {"id"=>"55df7ad977696621da0001fc"}
+  Rendered entries/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 322ms (Views: 321.0ms)
+
+
+Started GET "/entries" for ::1 at 2015-08-31 16:09:14 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (342.2ms)
+Completed 200 OK in 659ms (Views: 658.5ms)
+
+
+Started GET "/entries" for ::1 at 2015-08-31 16:09:41 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (343.0ms)
+Completed 200 OK in 666ms (Views: 665.7ms)
+
+
+Started GET "/entries/new" for ::1 at 2015-08-31 16:09:48 -0400
+Processing by EntriesController#new as HTML
+  Rendered entries/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 328ms (Views: 327.1ms)
+
+
+Started GET "/entries" for ::1 at 2015-08-31 16:09:51 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (379.0ms)
+Completed 200 OK in 718ms (Views: 717.0ms)
+
+
+Started GET "/entries/55df7c7c77696621da000371" for ::1 at 2015-08-31 16:10:26 -0400
+Processing by EntriesController#show as HTML
+  Parameters: {"id"=>"55df7c7c77696621da000371"}
+  Rendered entries/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 316ms (Views: 313.4ms)
+
+
+Started GET "/" for ::1 at 2015-08-31 16:10:29 -0400
+Processing by EntriesController#landing as HTML
+  Rendered entries/landing.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 308ms (Views: 307.6ms)
+
+
+Started GET "/entries" for ::1 at 2015-08-31 16:10:30 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (346.5ms)
+Completed 200 OK in 650ms (Views: 649.6ms)
+
+
+Started GET "/entries" for ::1 at 2015-08-31 16:11:57 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (362.2ms)
+Completed 200 OK in 978ms (Views: 977.4ms)
+
+
+Started GET "/entries" for ::1 at 2015-08-31 16:13:40 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (354.6ms)
+Completed 200 OK in 699ms (Views: 698.4ms)
+
+
+Started GET "/entries" for ::1 at 2015-08-31 16:13:53 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (335.9ms)
+Completed 200 OK in 687ms (Views: 686.6ms)
+
+
+Started GET "/entries" for ::1 at 2015-08-31 16:14:04 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (360.7ms)
+Completed 200 OK in 707ms (Views: 706.9ms)
+
+
+Started GET "/entries" for ::1 at 2015-08-31 16:15:25 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (359.3ms)
+Completed 200 OK in 701ms (Views: 700.2ms)
+
+
+Started GET "/entries" for ::1 at 2015-08-31 16:16:06 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (351.1ms)
+Completed 200 OK in 658ms (Views: 657.5ms)
+
+
+Started GET "/entries" for ::1 at 2015-08-31 16:16:56 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (352.8ms)
+Completed 200 OK in 660ms (Views: 659.3ms)
+
+
+Started GET "/entries" for ::1 at 2015-08-31 16:17:16 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (347.0ms)
+Completed 200 OK in 651ms (Views: 650.0ms)
+
+
+Started GET "/entries" for ::1 at 2015-08-31 16:17:28 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (385.4ms)
+Completed 200 OK in 720ms (Views: 719.7ms)
+
+
+Started GET "/entries" for ::1 at 2015-08-31 16:18:15 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (358.5ms)
+Completed 200 OK in 663ms (Views: 662.9ms)
+
+
+Started GET "/entries" for ::1 at 2015-08-31 16:18:48 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (359.0ms)
+Completed 200 OK in 699ms (Views: 698.8ms)
+
+
+Started GET "/entries" for ::1 at 2015-08-31 16:19:02 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (341.7ms)
+Completed 200 OK in 666ms (Views: 665.5ms)
+
+
+Started GET "/entries/55df7ad977696621da0001c2" for ::1 at 2015-08-31 16:19:14 -0400
+Processing by EntriesController#show as HTML
+  Parameters: {"id"=>"55df7ad977696621da0001c2"}
+  Rendered entries/_big5.html.erb (0.9ms)
+  Rendered entries/_values.html.erb (0.2ms)
+  Rendered entries/_needs.html.erb (0.3ms)
+  Rendered entries/show.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 329ms (Views: 325.6ms)
+
+
+Started GET "/entries/new" for ::1 at 2015-08-31 16:20:27 -0400
+Processing by EntriesController#new as HTML
+  Rendered entries/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 655ms (Views: 629.0ms)
+
+
+Started GET "/entries/new" for ::1 at 2015-08-31 16:20:29 -0400
+Processing by EntriesController#new as HTML
+  Rendered entries/new.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 310ms (Views: 309.7ms)
+
+
+Started GET "/entries/new" for ::1 at 2015-08-31 16:22:11 -0400
+Processing by EntriesController#new as HTML
+  Rendered entries/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 318ms (Views: 317.8ms)
+
+
+Started GET "/" for ::1 at 2015-08-31 16:23:42 -0400
+Processing by EntriesController#landing as HTML
+  Rendered entries/landing.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 314ms (Views: 313.5ms)
+
+
+Started GET "/entries" for ::1 at 2015-08-31 16:23:44 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (355.9ms)
+Completed 200 OK in 665ms (Views: 664.8ms)
+
+
+Started GET "/entries/new" for ::1 at 2015-08-31 16:23:53 -0400
+Processing by EntriesController#new as HTML
+  Rendered entries/new.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 313ms (Views: 312.1ms)

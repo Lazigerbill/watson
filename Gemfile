@@ -37,3 +37,5 @@ gem 'pry', group: :development
 
 gem 'rubyzip'
 
+gem 'jquery-datatables-rails', '~> 3.3.0'
+
