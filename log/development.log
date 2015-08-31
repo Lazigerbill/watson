@@ -9279,3 +9279,35 @@ Started GET "/entries" for ::1 at 2015-08-31 16:32:33 -0400
 Processing by EntriesController#index as HTML
   Rendered entries/index.html.erb within layouts/application (337.5ms)
 Completed 200 OK in 630ms (Views: 617.4ms)
+
+
+Started GET "/" for ::1 at 2015-08-31 17:09:23 -0400
+Processing by EntriesController#landing as HTML
+  Rendered entries/landing.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 648ms (Views: 637.6ms)
+
+
+Started GET "/entries" for ::1 at 2015-08-31 17:09:25 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (354.8ms)
+Completed 200 OK in 664ms (Views: 649.2ms)
+
+
+Started GET "/entries/55df7c7f77696621da000487" for ::1 at 2015-08-31 17:10:23 -0400
+Processing by EntriesController#show as HTML
+  Parameters: {"id"=>"55df7c7f77696621da000487"}
+  Rendered entries/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 308ms (Views: 305.4ms)
+
+
+Started GET "/entries/55df7c7f77696621da000487/edit" for ::1 at 2015-08-31 17:10:27 -0400
+Processing by EntriesController#edit as HTML
+  Parameters: {"id"=>"55df7c7f77696621da000487"}
+  Rendered entries/edit.html.erb within layouts/application (28.8ms)
+Completed 200 OK in 334ms (Views: 331.9ms)
+
+
+Started GET "/entries" for ::1 at 2015-08-31 17:10:35 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (342.6ms)
+Completed 200 OK in 690ms (Views: 689.5ms)
