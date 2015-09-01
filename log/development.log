@@ -9321,3 +9321,57 @@ Processing by EntriesController#show as HTML
   Rendered entries/_needs.html.erb (0.8ms)
   Rendered entries/show.html.erb within layouts/application (17.5ms)
 Completed 200 OK in 567ms (Views: 535.5ms)
+
+
+Started GET "/" for ::1 at 2015-08-31 22:48:23 -0400
+Processing by EntriesController#landing as HTML
+  Rendered entries/landing.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 648ms (Views: 638.6ms)
+
+
+Started GET "/entries" for ::1 at 2015-08-31 22:48:26 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (527.8ms)
+Completed 200 OK in 849ms (Views: 833.0ms)
+
+
+Started GET "/entries/new" for ::1 at 2015-08-31 22:48:32 -0400
+Processing by EntriesController#new as HTML
+  Rendered entries/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 313ms (Views: 312.5ms)
+
+
+Started GET "/" for ::1 at 2015-08-31 22:48:34 -0400
+Processing by EntriesController#landing as HTML
+  Rendered entries/landing.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 314ms (Views: 313.7ms)
+
+
+Started GET "/entries" for ::1 at 2015-08-31 22:48:36 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (345.0ms)
+Completed 200 OK in 664ms (Views: 663.0ms)
+
+
+Started GET "/entries/55df7ada77696621da000263" for ::1 at 2015-08-31 22:48:50 -0400
+Processing by EntriesController#show as HTML
+  Parameters: {"id"=>"55df7ada77696621da000263"}
+  Rendered entries/show.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 336ms (Views: 327.3ms)
+
+
+Started POST "/entries/55df7ada77696621da000263/analyse" for ::1 at 2015-08-31 22:48:51 -0400
+Processing by EntriesController#analyse as HTML
+  Parameters: {"authenticity_token"=>"eGffLhqIAJQqJWmWx6TxbRfR9jIGpIdJTCEfr4649EdEU5nOeuzMCTgoBYvB3kVKdc9AyVAn4uH68zKipqYAQw==", "id"=>"55df7ada77696621da000263"}
+Redirected to http://localhost:3000/entries/55df7ada77696621da000263
+Completed 302 Found in 5109ms
+
+
+Started GET "/entries/55df7ada77696621da000263" for ::1 at 2015-08-31 22:48:57 -0400
+Processing by EntriesController#show as HTML
+  Parameters: {"id"=>"55df7ada77696621da000263"}
+  Rendered entries/_big5.html.erb (1.4ms)
+  Rendered entries/_values.html.erb (0.9ms)
+  Rendered entries/_needs.html.erb (1.0ms)
+  Rendered entries/show.html.erb within layouts/application (14.9ms)
+Completed 200 OK in 327ms (Views: 324.7ms)
