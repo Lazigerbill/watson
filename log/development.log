@@ -9311,3 +9311,13 @@ Started GET "/entries" for ::1 at 2015-08-31 17:10:35 -0400
 Processing by EntriesController#index as HTML
   Rendered entries/index.html.erb within layouts/application (342.6ms)
 Completed 200 OK in 690ms (Views: 689.5ms)
+
+
+Started GET "/entries/55df7ad977696621da0001c2" for ::1 at 2015-08-31 17:32:27 -0400
+Processing by EntriesController#show as HTML
+  Parameters: {"id"=>"55df7ad977696621da0001c2"}
+  Rendered entries/_big5.html.erb (1.9ms)
+  Rendered entries/_values.html.erb (0.7ms)
+  Rendered entries/_needs.html.erb (0.8ms)
+  Rendered entries/show.html.erb within layouts/application (17.5ms)
+Completed 200 OK in 567ms (Views: 535.5ms)

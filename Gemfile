@@ -39,4 +39,7 @@ gem 'rubyzip'
 
 gem 'jquery-datatables-rails', '~> 3.3.0'
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> parent of 73c8fcf... added Puma gem
