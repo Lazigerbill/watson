@@ -9375,3 +9375,2560 @@ Processing by EntriesController#show as HTML
   Rendered entries/_needs.html.erb (1.0ms)
   Rendered entries/show.html.erb within layouts/application (14.9ms)
 Completed 200 OK in 327ms (Views: 324.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-02 22:38:32 -0400
+Processing by EntriesController#landing as HTML
+  Rendered entries/landing.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 889ms (Views: 880.5ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2015-09-02 22:38:42 -0400
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (4.1ms)
+  Rendered users/new.html.erb within layouts/application (8.3ms)
+Completed 500 Internal Server Error in 15ms
+
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: <%= form_for @user, :html => {:class => "form-group"} do |f| %>
+    2: 	<div class= "col-lg-6">	
+    3: 		<%= f.label :username %> <br>
+    4: 		<%= f.text_field :username, :class => "form-control" %> <br>
+  app/views/users/_form.html.erb:1:in `_app_views_users__form_html_erb__4309381864668404223_70357557943560'
+  app/views/users/new.html.erb:5:in `_app_views_users_new_html_erb___19578841806398681_70357620969060'
+
+
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.5ms)
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (78.3ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2015-09-02 22:40:48 -0400
+Processing by UsersController#new as HTML
+Completed 500 Internal Server Error in 3ms
+
+NoMethodError (undefined method `authenticates_with_sorcery!' for User:Class):
+  app/models/user.rb:2:in `<class:User>'
+  app/models/user.rb:1:in `<top (required)>'
+  app/controllers/users_controller.rb:4:in `new'
+
+
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.2ms)
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (72.6ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2015-09-02 22:41:08 -0400
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (29.8ms)
+  Rendered users/new.html.erb within layouts/application (31.0ms)
+Completed 200 OK in 366ms (Views: 351.2ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2015-09-02 22:43:21 -0400
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (3.4ms)
+  Rendered users/new.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 330ms (Views: 329.3ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2015-09-02 22:43:44 -0400
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (2.9ms)
+  Rendered users/new.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 359ms (Views: 358.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2015-09-02 22:43:46 -0400
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (2.2ms)
+  Rendered users/new.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 324ms (Views: 323.6ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2015-09-02 22:44:01 -0400
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (3.0ms)
+  Rendered users/new.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 332ms (Views: 331.8ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2015-09-02 22:44:20 -0400
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (3.0ms)
+  Rendered users/new.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 324ms (Views: 323.9ms)
+
+
+Started GET "/entries" for 127.0.0.1 at 2015-09-02 22:44:23 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (400.3ms)
+Completed 200 OK in 766ms (Views: 758.4ms)
+
+
+Started GET "/uers/new" for 127.0.0.1 at 2015-09-02 22:44:31 -0400
+
+ActionController::RoutingError (No route matches [GET] "/uers/new"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (2.13.4) lib/puma/server.rb:541:in `handle_request'
+  puma (2.13.4) lib/puma/server.rb:388:in `process_client'
+  puma (2.13.4) lib/puma/server.rb:270:in `block in run'
+  puma (2.13.4) lib/puma/thread_pool.rb:106:in `call'
+  puma (2.13.4) lib/puma/thread_pool.rb:106:in `block in spawn_thread'
+
+
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.2ms)
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.5ms)
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (103.4ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2015-09-02 22:44:44 -0400
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (2.6ms)
+  Rendered users/new.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 324ms (Views: 322.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-02 22:45:08 -0400
+Processing by EntriesController#landing as HTML
+  Rendered entries/landing.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 323ms (Views: 322.0ms)
+
+
+Started GET "/entries/new" for 127.0.0.1 at 2015-09-02 22:45:12 -0400
+Processing by EntriesController#new as HTML
+  Rendered entries/new.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 328ms (Views: 327.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-02 22:52:52 -0400
+Processing by EntriesController#landing as HTML
+  Rendered entries/landing.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 347ms (Views: 346.5ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2015-09-02 22:52:58 -0400
+
+SyntaxError (/Users/Bill/Desktop/myApps/rubywithservice/app/controllers/users_controller.rb:10: syntax error, unexpected ','
+...    redirect_to entries_path, , :notice => "User #{@user.use...
+...                               ^
+/Users/Bill/Desktop/myApps/rubywithservice/app/controllers/users_controller.rb:11: syntax error, unexpected keyword_else, expecting keyword_end
+/Users/Bill/Desktop/myApps/rubywithservice/app/controllers/users_controller.rb:36: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/controllers/users_controller.rb:10: syntax error, unexpected ','
+  app/controllers/users_controller.rb:11: syntax error, unexpected keyword_else, expecting keyword_end
+  app/controllers/users_controller.rb:36: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.6ms)
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (74.8ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2015-09-02 22:53:04 -0400
+
+SyntaxError (/Users/Bill/Desktop/myApps/rubywithservice/app/controllers/users_controller.rb:11: syntax error, unexpected keyword_else, expecting keyword_end
+/Users/Bill/Desktop/myApps/rubywithservice/app/controllers/users_controller.rb:36: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/controllers/users_controller.rb:11: syntax error, unexpected keyword_else, expecting keyword_end
+  app/controllers/users_controller.rb:36: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.4ms)
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (66.2ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2015-09-02 22:53:14 -0400
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (3.2ms)
+  Rendered users/new.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 335ms (Views: 325.8ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2015-09-02 22:53:39 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vnErUIph9dRkIYQx3cHJ0/9kU+ya3a70dUkWctMrVbazRPO9JyXmdYMRSR3Jmvbo6Otarkl4mgY+a6FJC/CGOg==", "user"=>{"username"=>"stinkyjj", "email"=>"jill.chau@test.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Submit"}
+Redirected to http://localhost:3000/entries
+Completed 302 Found in 82ms
+
+
+Started GET "/entries" for 127.0.0.1 at 2015-09-02 22:53:39 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (365.9ms)
+Completed 200 OK in 686ms (Views: 677.8ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2015-09-02 22:54:01 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 8ms
+
+ActionView::MissingTemplate (Missing template users/show, application/show with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/Bill/Desktop/myApps/rubywithservice/app/views"
+  * "/Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/twitter-bootstrap-rails-3.2.0/app/views"
+):
+  actionview (4.2.3) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.2.3) lib/action_view/lookup_context.rb:121:in `find'
+  actionview (4.2.3) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionview (4.2.3) lib/action_view/renderer/template_renderer.rb:40:in `determine_template'
+  actionview (4.2.3) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionview (4.2.3) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.2.3) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.2.3) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.3) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.3) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.3) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.3) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.3) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.3) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.3) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (4.2.3) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/2.2.0/benchmark.rb:303:in `realtime'
+  activesupport (4.2.3) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.3) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (4.2.3) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  actionpack (4.2.3) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  actionpack (4.2.3) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.2.3) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.2.3) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.3) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.3) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:115:in `call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:115:in `call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:553:in `block (2 levels) in compile'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:503:in `call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:503:in `call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:88:in `run_callbacks'
+  actionpack (4.2.3) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.3) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.3) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.3) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.3) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.3) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.3) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.3) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  actionpack (4.2.3) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.3) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.3) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.3) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.3) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.3) lib/action_dispatch/routing/route_set.rb:76:in `call'
+  actionpack (4.2.3) lib/action_dispatch/routing/route_set.rb:76:in `dispatch'
+  actionpack (4.2.3) lib/action_dispatch/routing/route_set.rb:45:in `serve'
+  actionpack (4.2.3) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.3) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.3) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.3) lib/action_dispatch/routing/route_set.rb:821:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:84:in `run_callbacks'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (2.13.4) lib/puma/server.rb:541:in `handle_request'
+  puma (2.13.4) lib/puma/server.rb:388:in `process_client'
+  puma (2.13.4) lib/puma/server.rb:270:in `block in run'
+  puma (2.13.4) lib/puma/thread_pool.rb:106:in `call'
+  puma (2.13.4) lib/puma/thread_pool.rb:106:in `block in spawn_thread'
+
+
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.5ms)
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (71.7ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2015-09-02 22:55:13 -0400
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (3.6ms)
+  Rendered users/new.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 332ms (Views: 325.8ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2015-09-02 22:55:15 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"S3fu4rv7oU+wkvsVSLsnIHosAnU4+CvwxZgoqFKR3XtGQjYPFr+y7leiNjlc4BgbbaMLN+tdHwKOup+TikoO9w==", "user"=>{"username"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Submit"}
+  Rendered users/_form.html.erb (3.2ms)
+  Rendered users/new.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 348ms (Views: 338.4ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2015-09-02 22:55:20 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EvgzF9btW1eC5xByzHPQSDuAdC0FsyBUqdS3nJjnrr8fzev6e6lI9mXX3V7YKO9zLA99b9YWFKbi9gCnQDx9Mw==", "user"=>{"username"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Submit"}
+  Rendered users/_form.html.erb (2.5ms)
+  Rendered users/new.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 331ms (Views: 326.1ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2015-09-02 22:55:24 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EXjoA/KrvA9NyG5oYfsXKI/EYkDitQFxMPxLtbnTZfccTTDuX++vrqr4o0R1oCgTmEtrAjEQNYN73vyOYQi2ew==", "user"=>{"username"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Submit"}
+  Rendered users/_form.html.erb (2.4ms)
+  Rendered users/new.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 417ms (Views: 342.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-02 22:58:19 -0400
+Processing by EntriesController#landing as HTML
+  Rendered entries/landing.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 337ms (Views: 336.5ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2015-09-02 22:58:22 -0400
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (2.6ms)
+  Rendered users/new.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 337ms (Views: 330.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2015-09-02 22:58:28 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cGbGvAbNvuU4nnEQVdAwqbmMbLNJ9H9cD3y64V6suxl9Ux5Rq4mtRN+uvDxBiw+SrgNl8ZpRS65EXg3ahndolQ==", "user"=>{"username"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Submit"}
+  Rendered users/_form.html.erb (2.3ms)
+  Rendered users/new.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 343ms (Views: 338.5ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2015-09-02 22:58:38 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WhWYQ7vvEB6+xldTl0Ok6rHbCJMDmUUrfkOGaU4LhapXIECuFqsDv1n2mn+DGJvRplQB0dA8cdk1YTFSltBWJg==", "user"=>{"username"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Submit"}
+  Rendered users/_form.html.erb (2.3ms)
+  Rendered users/new.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 403ms (Views: 328.9ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2015-09-02 22:58:43 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GRMTjzYXTIvK+/qxdSTEQvFx+2BCKwN2V9Oax+K0FooUJstim1NfKi3LN51hf/t55v7yIpGON4Qc8S38Om/FBg==", "user"=>{"username"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Submit"}
+Redirected to http://localhost:3000/entries
+Completed 302 Found in 77ms
+
+
+Started GET "/entries" for 127.0.0.1 at 2015-09-02 22:58:43 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (416.7ms)
+Completed 200 OK in 749ms (Views: 742.9ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2015-09-02 23:01:13 -0400
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (2.8ms)
+  Rendered users/new.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 327ms (Views: 320.5ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2015-09-02 23:01:15 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"smZ2Mtn/OU3w3gnWLdJUCNo71iXUi4ezW/IT9FtEeK2/U67fdLsq7BfuxPo5iWszzbTfZwcus0EQ0KTPg5+rIQ==", "user"=>{"username"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Submit"}
+  Rendered users/_form.html.erb (2.2ms)
+  Rendered users/new.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 328ms (Views: 320.6ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2015-09-02 23:03:08 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tL+VLIa0xD517K+9AGc9FY6hLaSrW8MucTb0npq5vym5ik3BK/DXn5LcYpEUPAIumS4k5nj+99w6FEOlQmJspQ==", "user"=>{"username"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Submit"}
+  Rendered users/_form.html.erb (3.3ms)
+  Rendered users/new.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 375ms (Views: 361.9ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2015-09-02 23:03:58 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tL+VLIa0xD517K+9AGc9FY6hLaSrW8MucTb0npq5vym5ik3BK/DXn5LcYpEUPAIumS4k5nj+99w6FEOlQmJspQ==", "user"=>{"username"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Submit"}
+  Rendered users/_form.html.erb (2.4ms)
+  Rendered users/new.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 345ms (Views: 330.1ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2015-09-02 23:04:13 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Eqn6gybwrzMjZflUlHCSNiWdbr5mt85KYGNfM59XU/0fnCJui7S8ksRVNHiAK60NMhJn/LUS+rgrQegIR4yAcQ==", "user"=>{"username"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Submit"}
+  Rendered users/_form.html.erb (2.9ms)
+  Rendered users/new.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 413ms (Views: 332.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2015-09-02 23:04:17 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OW29QnDty+6XlSOBlXzU1SAyMFktBsR8fZLbe+RzDuc0WGWv3anYT3Cl7q2BJ+vuN705G/6j8I42sGxAPKjdaw==", "user"=>{"username"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Submit"}
+  Rendered users/_form.html.erb (2.7ms)
+  Rendered users/new.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 415ms (Views: 337.5ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2015-09-02 23:04:22 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SIqO8qzM4D8HD5jf6Mzf4+jXSIxE5ejDJfIGjY7PHp9Fv1YfAYjznuA/VfP8l+DY/1hBzpdA3DFu0LG2VhTNEw==", "user"=>{"username"=>"123", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Submit"}
+  Rendered users/_form.html.erb (2.5ms)
+  Rendered users/new.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 405ms (Views: 328.9ms)
+
+
+Started GET "/entries" for 127.0.0.1 at 2015-09-02 23:04:24 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (380.5ms)
+Completed 200 OK in 752ms (Views: 743.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2015-09-02 23:04:35 -0400
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (2.8ms)
+  Rendered users/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 329ms (Views: 328.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2015-09-02 23:04:38 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kc4orgDgYMepxY8t/nqcdfxLoKmwIjl/mU9PKqcXFSGc+/BDraRzZk71QgHqIaNO68Sp62OHDY3SbfgRf8zGrQ==", "user"=>{"username"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Submit"}
+  Rendered users/_form.html.erb (2.4ms)
+  Rendered users/new.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 333ms (Views: 324.4ms)
+
+
+Started GET "/entries" for 127.0.0.1 at 2015-09-02 23:04:39 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (353.6ms)
+Completed 200 OK in 675ms (Views: 673.9ms)
+
+
+Started GET "/entries/55df7c7c77696621da000359" for 127.0.0.1 at 2015-09-02 23:04:43 -0400
+Processing by EntriesController#show as HTML
+  Parameters: {"id"=>"55df7c7c77696621da000359"}
+  Rendered entries/show.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 337ms (Views: 332.0ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2015-09-02 23:05:16 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 5ms
+
+ActionView::MissingTemplate (Missing template users/show, application/show with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/Bill/Desktop/myApps/rubywithservice/app/views"
+  * "/Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/twitter-bootstrap-rails-3.2.0/app/views"
+):
+  actionview (4.2.3) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.2.3) lib/action_view/lookup_context.rb:121:in `find'
+  actionview (4.2.3) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionview (4.2.3) lib/action_view/renderer/template_renderer.rb:40:in `determine_template'
+  actionview (4.2.3) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionview (4.2.3) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.2.3) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.2.3) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.3) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.3) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.3) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.3) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.3) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.3) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.3) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (4.2.3) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/2.2.0/benchmark.rb:303:in `realtime'
+  activesupport (4.2.3) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.3) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (4.2.3) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  actionpack (4.2.3) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  actionpack (4.2.3) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.2.3) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.2.3) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.3) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.3) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:115:in `call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:115:in `call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:553:in `block (2 levels) in compile'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:503:in `call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:503:in `call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:88:in `run_callbacks'
+  actionpack (4.2.3) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.3) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.3) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.3) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.3) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.3) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.3) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.3) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  actionpack (4.2.3) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.3) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.3) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.3) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.3) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.3) lib/action_dispatch/routing/route_set.rb:76:in `call'
+  actionpack (4.2.3) lib/action_dispatch/routing/route_set.rb:76:in `dispatch'
+  actionpack (4.2.3) lib/action_dispatch/routing/route_set.rb:45:in `serve'
+  actionpack (4.2.3) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.3) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.3) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.3) lib/action_dispatch/routing/route_set.rb:821:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:84:in `run_callbacks'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (2.13.4) lib/puma/server.rb:541:in `handle_request'
+  puma (2.13.4) lib/puma/server.rb:388:in `process_client'
+  puma (2.13.4) lib/puma/server.rb:270:in `block in run'
+  puma (2.13.4) lib/puma/thread_pool.rb:106:in `call'
+  puma (2.13.4) lib/puma/thread_pool.rb:106:in `block in spawn_thread'
+
+
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.0ms)
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (72.7ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2015-09-02 23:07:23 -0400
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (3.5ms)
+  Rendered users/new.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 685ms (Views: 677.1ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2015-09-02 23:07:27 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"lJidc9LshpGeqarK53ZOXyTmervj+rDMDpL9c7UqgYaZrUWef6iVMHmZZ+bzLXFkM2lz+TBfhD5FsEpIbfFSCg==", "user"=>{"username"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Submit"}
+  Rendered users/_form.html.erb (2.2ms)
+  Rendered users/new.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 353ms (Views: 332.4ms)
+
+
+Started GET "/entries" for 127.0.0.1 at 2015-09-02 23:07:29 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (425.5ms)
+Completed 200 OK in 746ms (Views: 739.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-02 23:16:18 -0400
+Processing by EntriesController#landing as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 11ms
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-02 23:16:18 -0400
+Processing by EntriesController#landing as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-02 23:16:18 -0400
+Processing by EntriesController#landing as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-02 23:16:18 -0400
+Processing by EntriesController#landing as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-02 23:16:18 -0400
+Processing by EntriesController#landing as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-02 23:16:18 -0400
+Processing by EntriesController#landing as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-02 23:16:18 -0400
+Processing by EntriesController#landing as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-02 23:16:18 -0400
+Processing by EntriesController#landing as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-02 23:16:18 -0400
+Processing by EntriesController#landing as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-02 23:16:18 -0400
+Processing by EntriesController#landing as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-02 23:16:18 -0400
+Processing by EntriesController#landing as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-02 23:16:18 -0400
+Processing by EntriesController#landing as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-02 23:16:18 -0400
+Processing by EntriesController#landing as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-02 23:16:18 -0400
+Processing by EntriesController#landing as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-02 23:16:18 -0400
+Processing by EntriesController#landing as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-02 23:16:18 -0400
+Processing by EntriesController#landing as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-02 23:16:18 -0400
+Processing by EntriesController#landing as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-02 23:16:18 -0400
+Processing by EntriesController#landing as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-02 23:16:18 -0400
+Processing by EntriesController#landing as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-02 23:16:18 -0400
+Processing by EntriesController#landing as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-02 23:16:18 -0400
+Processing by EntriesController#landing as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-02 23:16:18 -0400
+Processing by EntriesController#landing as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-02 23:16:18 -0400
+Processing by EntriesController#landing as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-02 23:16:18 -0400
+Processing by EntriesController#landing as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-02 23:16:18 -0400
+Processing by EntriesController#landing as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-02 23:16:18 -0400
+Processing by EntriesController#landing as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-02 23:16:18 -0400
+Processing by EntriesController#landing as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-02 23:16:18 -0400
+Processing by EntriesController#landing as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-02 23:16:18 -0400
+Processing by EntriesController#landing as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-02 23:16:18 -0400
+Processing by EntriesController#landing as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-02 23:16:18 -0400
+Processing by EntriesController#landing as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-02 23:16:18 -0400
+Processing by EntriesController#landing as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-02 23:16:18 -0400
+Processing by EntriesController#landing as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-02 23:16:18 -0400
+Processing by EntriesController#landing as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-02 23:16:18 -0400
+Processing by EntriesController#landing as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-02 23:16:18 -0400
+Processing by EntriesController#landing as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-02 23:16:18 -0400
+Processing by EntriesController#landing as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-02 23:16:18 -0400
+Processing by EntriesController#landing as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-02 23:16:18 -0400
+Processing by EntriesController#landing as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-02 23:16:18 -0400
+Processing by EntriesController#landing as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-02 23:16:18 -0400
+Processing by EntriesController#landing as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-02 23:16:18 -0400
+Processing by EntriesController#landing as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-02 23:16:20 -0400
+Processing by EntriesController#landing as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-02 23:16:20 -0400
+Processing by EntriesController#landing as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-02 23:16:20 -0400
+Processing by EntriesController#landing as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-02 23:16:20 -0400
+Processing by EntriesController#landing as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-02 23:16:20 -0400
+Processing by EntriesController#landing as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-02 23:16:20 -0400
+Processing by EntriesController#landing as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-02 23:16:20 -0400
+Processing by EntriesController#landing as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-02 23:16:20 -0400
+Processing by EntriesController#landing as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-02 23:16:20 -0400
+Processing by EntriesController#landing as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-02 23:16:20 -0400
+Processing by EntriesController#landing as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-02 23:16:20 -0400
+Processing by EntriesController#landing as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-02 23:16:20 -0400
+Processing by EntriesController#landing as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-02 23:16:20 -0400
+Processing by EntriesController#landing as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-02 23:16:20 -0400
+Processing by EntriesController#landing as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-02 23:16:20 -0400
+Processing by EntriesController#landing as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-02 23:16:20 -0400
+Processing by EntriesController#landing as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-02 23:16:20 -0400
+Processing by EntriesController#landing as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-02 23:16:20 -0400
+Processing by EntriesController#landing as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-02 23:16:20 -0400
+Processing by EntriesController#landing as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-02 23:16:20 -0400
+Processing by EntriesController#landing as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-02 23:16:20 -0400
+Processing by EntriesController#landing as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-02 23:16:37 -0400
+Processing by EntriesController#landing as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 11ms
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-02 23:16:37 -0400
+Processing by EntriesController#landing as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-02 23:16:37 -0400
+Processing by EntriesController#landing as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-02 23:16:37 -0400
+Processing by EntriesController#landing as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-02 23:16:37 -0400
+Processing by EntriesController#landing as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-02 23:16:37 -0400
+Processing by EntriesController#landing as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-02 23:16:37 -0400
+Processing by EntriesController#landing as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-02 23:16:37 -0400
+Processing by EntriesController#landing as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-02 23:16:37 -0400
+Processing by EntriesController#landing as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-02 23:16:37 -0400
+Processing by EntriesController#landing as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-02 23:16:37 -0400
+Processing by EntriesController#landing as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-02 23:16:37 -0400
+Processing by EntriesController#landing as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-02 23:16:37 -0400
+Processing by EntriesController#landing as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-02 23:16:37 -0400
+Processing by EntriesController#landing as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-02 23:16:37 -0400
+Processing by EntriesController#landing as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-02 23:16:37 -0400
+Processing by EntriesController#landing as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-02 23:16:37 -0400
+Processing by EntriesController#landing as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-02 23:16:37 -0400
+Processing by EntriesController#landing as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-02 23:16:37 -0400
+Processing by EntriesController#landing as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-02 23:16:37 -0400
+Processing by EntriesController#landing as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-02 23:16:37 -0400
+Processing by EntriesController#landing as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-02 23:17:28 -0400
+Processing by EntriesController#landing as HTML
+  Rendered entries/landing.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 642ms (Views: 640.8ms)
+
+
+Started GET "/entries" for 127.0.0.1 at 2015-09-02 23:17:31 -0400
+Processing by EntriesController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-02 23:17:31 -0400
+Processing by EntriesController#landing as HTML
+  Rendered entries/landing.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 351ms (Views: 350.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-02 23:18:10 -0400
+Processing by EntriesController#landing as HTML
+  Rendered entries/landing.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 327ms (Views: 326.1ms)
+
+
+Started GET "/entries" for 127.0.0.1 at 2015-09-02 23:18:12 -0400
+Processing by EntriesController#index as HTML
+Redirected to http://localhost:3000/login
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms
+
+
+Started GET "/login" for 127.0.0.1 at 2015-09-02 23:18:12 -0400
+Processing by UserSessionsController#new as HTML
+  Rendered user_sessions/_form.html.erb (2.1ms)
+  Rendered user_sessions/new.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 355ms (Views: 338.9ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2015-09-02 23:19:13 -0400
+Processing by UserSessionsController#new as HTML
+  Rendered user_sessions/_form.html.erb (0.7ms)
+  Rendered user_sessions/new.html.erb within layouts/application (1.8ms)
+Completed 500 Internal Server Error in 13ms
+
+SyntaxError (/Users/Bill/Desktop/myApps/rubywithservice/app/views/user_sessions/_form.html.erb:4: syntax error, unexpected ','
+...d=( text_field_tag :username, ,:class => "form-control" );@o...
+...                               ^
+/Users/Bill/Desktop/myApps/rubywithservice/app/views/user_sessions/_form.html.erb:8: syntax error, unexpected ','
+...d=( text_field_tag :password, ,:class => "form-control" );@o...
+...                               ^):
+  app/views/user_sessions/_form.html.erb:4: syntax error, unexpected ','
+  app/views/user_sessions/_form.html.erb:8: syntax error, unexpected ','
+  app/views/user_sessions/new.html.erb:5:in `_app_views_user_sessions_new_html_erb__1708999702799242603_70269205496940'
+
+
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (11.4ms)
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.6ms)
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (83.9ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2015-09-02 23:19:30 -0400
+Processing by UserSessionsController#new as HTML
+  Rendered user_sessions/_form.html.erb (1.3ms)
+  Rendered user_sessions/new.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 337ms (Views: 336.5ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2015-09-02 23:19:52 -0400
+Processing by UserSessionsController#new as HTML
+  Rendered user_sessions/_form.html.erb (0.8ms)
+  Rendered user_sessions/new.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 350ms (Views: 349.5ms)
+
+
+Started POST "/user_sessions" for 127.0.0.1 at 2015-09-02 23:19:56 -0400
+Processing by UserSessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jap4nOmFjHjCe06UeNfG7t/SDJ8M7BlN6s0WfUZv0HKAn6BxRMGf2SVLg7hsjPnVyF0F3d9JLb+h76FGnrQD/g==", "username"=>"", "password"=>"[FILTERED]", "commit"=>"Login"}
+  Rendered user_sessions/_form.html.erb (0.7ms)
+  Rendered user_sessions/new.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 330ms (Views: 329.2ms)
+
+
+Started GET "/entries" for 127.0.0.1 at 2015-09-02 23:19:58 -0400
+Processing by EntriesController#index as HTML
+Redirected to http://localhost:3000/login
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 2ms
+
+
+Started GET "/login" for 127.0.0.1 at 2015-09-02 23:19:58 -0400
+Processing by UserSessionsController#new as HTML
+  Rendered user_sessions/_form.html.erb (0.8ms)
+  Rendered user_sessions/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 348ms (Views: 347.3ms)
+
+
+Started GET "/entries" for 127.0.0.1 at 2015-09-02 23:20:01 -0400
+Processing by EntriesController#index as HTML
+Redirected to http://localhost:3000/login
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms
+
+
+Started GET "/login" for 127.0.0.1 at 2015-09-02 23:20:01 -0400
+Processing by UserSessionsController#new as HTML
+  Rendered user_sessions/_form.html.erb (1.1ms)
+  Rendered user_sessions/new.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 386ms (Views: 384.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-02 23:20:02 -0400
+Processing by EntriesController#landing as HTML
+  Rendered entries/landing.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 323ms (Views: 322.0ms)
+
+
+Started GET "/entries" for 127.0.0.1 at 2015-09-02 23:20:05 -0400
+Processing by EntriesController#index as HTML
+Redirected to http://localhost:3000/login
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms
+
+
+Started GET "/login" for 127.0.0.1 at 2015-09-02 23:20:05 -0400
+Processing by UserSessionsController#new as HTML
+  Rendered user_sessions/_form.html.erb (0.9ms)
+  Rendered user_sessions/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 344ms (Views: 343.4ms)
+
+
+Started GET "/entries" for 127.0.0.1 at 2015-09-02 23:20:07 -0400
+Processing by EntriesController#index as HTML
+Redirected to http://localhost:3000/login
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms
+
+
+Started GET "/login" for 127.0.0.1 at 2015-09-02 23:20:07 -0400
+Processing by UserSessionsController#new as HTML
+  Rendered user_sessions/_form.html.erb (0.6ms)
+  Rendered user_sessions/new.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 330ms (Views: 329.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-02 23:20:09 -0400
+Processing by EntriesController#landing as HTML
+  Rendered entries/landing.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 345ms (Views: 344.8ms)
+
+
+Started GET "/entries" for 127.0.0.1 at 2015-09-02 23:20:10 -0400
+Processing by EntriesController#index as HTML
+Redirected to http://localhost:3000/login
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms
+
+
+Started GET "/login" for 127.0.0.1 at 2015-09-02 23:20:10 -0400
+Processing by UserSessionsController#new as HTML
+  Rendered user_sessions/_form.html.erb (0.7ms)
+  Rendered user_sessions/new.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 329ms (Views: 328.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-02 23:20:12 -0400
+Processing by EntriesController#landing as HTML
+  Rendered entries/landing.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 343ms (Views: 342.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-02 23:20:52 -0400
+Processing by EntriesController#landing as HTML
+  Rendered entries/landing.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 330ms (Views: 329.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-02 23:35:59 -0400
+Processing by EntriesController#landing as HTML
+  Rendered entries/landing.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 557ms (Views: 551.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-02 23:36:20 -0400
+Processing by EntriesController#landing as HTML
+  Rendered entries/landing.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 361ms (Views: 360.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-02 23:37:10 -0400
+Processing by EntriesController#landing as HTML
+  Rendered entries/landing.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 387ms (Views: 386.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-02 23:37:26 -0400
+Processing by EntriesController#landing as HTML
+  Rendered entries/landing.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 346ms (Views: 345.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-02 23:37:28 -0400
+Processing by EntriesController#landing as HTML
+  Rendered entries/landing.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 330ms (Views: 329.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-02 23:38:30 -0400
+Processing by EntriesController#landing as HTML
+  Rendered entries/landing.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 338ms (Views: 337.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-02 23:38:44 -0400
+Processing by EntriesController#landing as HTML
+  Rendered entries/landing.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 348ms (Views: 347.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-02 23:39:52 -0400
+Processing by EntriesController#landing as HTML
+  Rendered entries/landing.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 330ms (Views: 329.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-02 23:40:31 -0400
+Processing by EntriesController#landing as HTML
+  Rendered entries/landing.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 333ms (Views: 332.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-02 23:40:47 -0400
+Processing by EntriesController#landing as HTML
+  Rendered entries/landing.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 337ms (Views: 336.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-02 23:40:50 -0400
+Processing by EntriesController#landing as HTML
+  Rendered entries/landing.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 335ms (Views: 334.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-02 23:40:56 -0400
+Processing by EntriesController#landing as HTML
+  Rendered entries/landing.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 344ms (Views: 343.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-02 23:41:19 -0400
+Processing by EntriesController#landing as HTML
+  Rendered entries/landing.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 345ms (Views: 344.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-02 23:41:29 -0400
+Processing by EntriesController#landing as HTML
+  Rendered entries/landing.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 368ms (Views: 367.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-02 23:41:39 -0400
+Processing by EntriesController#landing as HTML
+  Rendered entries/landing.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 341ms (Views: 340.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-02 23:41:51 -0400
+Processing by EntriesController#landing as HTML
+  Rendered entries/landing.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 339ms (Views: 338.6ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2015-09-02 23:41:53 -0400
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (34.0ms)
+  Rendered users/new.html.erb within layouts/application (36.1ms)
+Completed 200 OK in 397ms (Views: 396.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2015-09-02 23:41:55 -0400
+Processing by UserSessionsController#new as HTML
+  Rendered user_sessions/_form.html.erb (1.1ms)
+  Rendered user_sessions/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 343ms (Views: 342.5ms)
+
+
+Started POST "/user_sessions" for 127.0.0.1 at 2015-09-02 23:42:03 -0400
+Processing by UserSessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Zgbkp9jARvN3LNQRhOYJ4VCmDBBMWtnwj+Dqm0OBZXZrMzxKdYRVUpAcGT2QvTbaRykFUp//7QLEwl2gm1q2+g==", "username"=>"stinkyjj", "password"=>"[FILTERED]", "commit"=>"Login"}
+  Rendered user_sessions/_form.html.erb (0.6ms)
+  Rendered user_sessions/new.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 351ms (Views: 350.5ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2015-09-02 23:42:08 -0400
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (2.9ms)
+  Rendered users/new.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 403ms (Views: 402.3ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2015-09-02 23:42:18 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iApWJ5lZfKjRie0+DzvYu0xIrCuJ5bFCCHOkZ/zlwdCFP47KNB1vCTa5IBIbYOeAW8elaVpAhbBDURNcJD4SXA==", "user"=>{"username"=>"stinkyjj", "email"=>"jill.chau@test.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Submit"}
+  Rendered users/_form.html.erb (2.2ms)
+  Rendered users/new.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 429ms (Views: 351.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2015-09-02 23:42:21 -0400
+Processing by UserSessionsController#new as HTML
+  Rendered user_sessions/_form.html.erb (0.9ms)
+  Rendered user_sessions/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 331ms (Views: 330.5ms)
+
+
+Started POST "/user_sessions" for 127.0.0.1 at 2015-09-02 23:42:27 -0400
+Processing by UserSessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SF4gnccbAXeDAgwan4czOU+3P9FDB7DvZGbMcR2+DgdFa/hwal8S1mQywTaL3AwCWDg2k5CihB0vRHtKxWXdiw==", "username"=>"stinkyjj", "password"=>"[FILTERED]", "commit"=>"Login"}
+  Rendered user_sessions/_form.html.erb (0.8ms)
+  Rendered user_sessions/new.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 345ms (Views: 344.3ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2015-09-02 23:42:32 -0400
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (2.3ms)
+  Rendered users/new.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 337ms (Views: 336.4ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2015-09-02 23:44:08 -0400
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (6.5ms)
+  Rendered users/new.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 351ms (Views: 350.1ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2015-09-02 23:44:29 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"s+3HT0uZaWM8fogy2a7jEcKFDSzEAPqufu7iMNlCmpS+2B+i5t16wttORR7N9dwq1QoEbhelzlw1zFULAZlJGA==", "user"=>{"username"=>"chaubil1", "email"=>"bill.chau@utoronto.ca", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Submit"}
+Redirected to http://localhost:3000/entries
+Completed 302 Found in 76ms
+
+
+Started GET "/entries" for 127.0.0.1 at 2015-09-02 23:44:29 -0400
+Processing by EntriesController#index as HTML
+Redirected to http://localhost:3000/login
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms
+
+
+Started GET "/login" for 127.0.0.1 at 2015-09-02 23:44:29 -0400
+Processing by UserSessionsController#new as HTML
+  Rendered user_sessions/_form.html.erb (1.4ms)
+  Rendered user_sessions/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 337ms (Views: 336.6ms)
+
+
+Started POST "/user_sessions" for 127.0.0.1 at 2015-09-02 23:44:44 -0400
+Processing by UserSessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FtadfYa9yD7rfuCRHgMygnrKxXWH+yWqTDzRtONpeyEb40WQK/nbnwxOLb0KWA25bUXMN1ReEVgHHmaPO7KorQ==", "username"=>"chaubil1", "password"=>"[FILTERED]", "commit"=>"Login"}
+  Rendered user_sessions/_form.html.erb (0.7ms)
+  Rendered user_sessions/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 344ms (Views: 343.2ms)
+
+
+Started POST "/user_sessions" for 127.0.0.1 at 2015-09-02 23:47:05 -0400
+Processing by UserSessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Qi6NNmCeYM0B2mg+U34mqCcm7SK1yEKCOAanjawz5PdPG1XbzdpzbObqpRJHJRmTMKnkYGZtdnBzJBC2dOg3ew==", "username"=>"stinkyjj", "password"=>"[FILTERED]", "commit"=>"Login"}
+  Rendered user_sessions/_form.html.erb (0.7ms)
+  Rendered user_sessions/new.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 342ms (Views: 329.1ms)
+
+
+Started POST "/user_sessions" for 127.0.0.1 at 2015-09-02 23:47:14 -0400
+Processing by UserSessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+B0zmjUVRovY/fBsaL9MiZZUbWMretvRj24Bi2T2xJL1KOt3mFFVKj/NPUB85HOygdtkIfjf7yPETLawvC0XHg==", "username"=>"chaubil1", "password"=>"[FILTERED]", "commit"=>"Login"}
+  Rendered user_sessions/_form.html.erb (0.9ms)
+  Rendered user_sessions/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 351ms (Views: 347.9ms)
+
+
+Started POST "/user_sessions" for 127.0.0.1 at 2015-09-02 23:47:55 -0400
+Processing by UserSessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bu9sAokvw79X8DBBkNTRFimcNPxQ3hnGMNOj5RnBKf1j2rTvJGvQHrDA/W2Ej+4tPhM9voN7LTR78RTewRr6cQ==", "username"=>"jill.chau@test.com", "password"=>"[FILTERED]", "commit"=>"Login"}
+Redirected to http://localhost:3000/entries
+Completed 302 Found in 151ms
+
+
+Started GET "/entries" for 127.0.0.1 at 2015-09-02 23:47:56 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (411.7ms)
+Completed 200 OK in 774ms (Views: 764.7ms)
+
+
+Started GET "/users/55e7b63342696c10f1000000/edit" for 127.0.0.1 at 2015-09-02 23:47:59 -0400
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"55e7b63342696c10f1000000"}
+Completed 500 Internal Server Error in 8ms
+
+ActionView::MissingTemplate (Missing template users/edit, application/edit with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/Bill/Desktop/myApps/rubywithservice/app/views"
+  * "/Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/twitter-bootstrap-rails-3.2.0/app/views"
+):
+  actionview (4.2.3) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.2.3) lib/action_view/lookup_context.rb:121:in `find'
+  actionview (4.2.3) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionview (4.2.3) lib/action_view/renderer/template_renderer.rb:40:in `determine_template'
+  actionview (4.2.3) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionview (4.2.3) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.2.3) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.2.3) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.3) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.3) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.3) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.3) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.3) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.3) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.3) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (4.2.3) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/2.2.0/benchmark.rb:303:in `realtime'
+  activesupport (4.2.3) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.3) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (4.2.3) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  actionpack (4.2.3) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  actionpack (4.2.3) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.2.3) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.2.3) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.3) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.3) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:115:in `call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:115:in `call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:553:in `block (2 levels) in compile'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:503:in `call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:503:in `call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:88:in `run_callbacks'
+  actionpack (4.2.3) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.3) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.3) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.3) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.3) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.3) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.3) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.3) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  actionpack (4.2.3) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.3) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.3) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.3) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.3) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.3) lib/action_dispatch/routing/route_set.rb:76:in `call'
+  actionpack (4.2.3) lib/action_dispatch/routing/route_set.rb:76:in `dispatch'
+  actionpack (4.2.3) lib/action_dispatch/routing/route_set.rb:45:in `serve'
+  actionpack (4.2.3) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.3) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.3) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.3) lib/action_dispatch/routing/route_set.rb:821:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:84:in `run_callbacks'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (2.13.4) lib/puma/server.rb:541:in `handle_request'
+  puma (2.13.4) lib/puma/server.rb:388:in `process_client'
+  puma (2.13.4) lib/puma/server.rb:270:in `block in run'
+  puma (2.13.4) lib/puma/thread_pool.rb:106:in `call'
+  puma (2.13.4) lib/puma/thread_pool.rb:106:in `block in spawn_thread'
+
+
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.2ms)
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (11.1ms)
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (86.0ms)
+
+
+Started GET "/entries/new" for 127.0.0.1 at 2015-09-02 23:48:04 -0400
+Processing by EntriesController#new as HTML
+  Rendered entries/new.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 342ms (Views: 339.2ms)
+
+
+Started GET "/entries" for 127.0.0.1 at 2015-09-02 23:48:05 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (353.0ms)
+Completed 200 OK in 686ms (Views: 683.8ms)
+
+
+Started POST "/logout" for 127.0.0.1 at 2015-09-02 23:49:05 -0400
+Processing by UserSessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Q9gvmA+CDDKiXHNE8YcOikOD7RvFoKcds0AKFq6W47RO7fd1osYfk0Vsvmjl3DGxVAzkWRYFk+/4Yr0tdk0wOA=="}
+Redirected to http://localhost:3000/users
+Completed 302 Found in 17ms
+
+
+Started GET "/users" for 127.0.0.1 at 2015-09-02 23:49:06 -0400
+
+AbstractController::ActionNotFound (The action 'index' could not be found for UsersController):
+  actionpack (4.2.3) lib/abstract_controller/base.rb:132:in `process'
+  actionview (4.2.3) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.3) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.3) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.3) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.3) lib/action_dispatch/routing/route_set.rb:76:in `call'
+  actionpack (4.2.3) lib/action_dispatch/routing/route_set.rb:76:in `dispatch'
+  actionpack (4.2.3) lib/action_dispatch/routing/route_set.rb:45:in `serve'
+  actionpack (4.2.3) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.3) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.3) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.3) lib/action_dispatch/routing/route_set.rb:821:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:84:in `run_callbacks'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (2.13.4) lib/puma/server.rb:541:in `handle_request'
+  puma (2.13.4) lib/puma/server.rb:388:in `process_client'
+  puma (2.13.4) lib/puma/server.rb:270:in `block in run'
+  puma (2.13.4) lib/puma/thread_pool.rb:106:in `call'
+  puma (2.13.4) lib/puma/thread_pool.rb:106:in `block in spawn_thread'
+
+
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (0.5ms)
+
+
+Started POST "/logout" for 127.0.0.1 at 2015-09-02 23:50:05 -0400
+Processing by UserSessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Q9gvmA+CDDKiXHNE8YcOikOD7RvFoKcds0AKFq6W47RO7fd1osYfk0Vsvmjl3DGxVAzkWRYFk+/4Yr0tdk0wOA=="}
+Can't verify CSRF token authenticity
+Redirected to http://localhost:3000/login
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 2ms
+
+
+Started GET "/login" for 127.0.0.1 at 2015-09-02 23:50:05 -0400
+Processing by UserSessionsController#new as HTML
+  Rendered user_sessions/_form.html.erb (0.7ms)
+  Rendered user_sessions/new.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 344ms (Views: 337.1ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2015-09-02 23:50:06 -0400
+Processing by UserSessionsController#new as HTML
+  Rendered user_sessions/_form.html.erb (0.8ms)
+  Rendered user_sessions/new.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 348ms (Views: 347.2ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2015-09-02 23:51:13 -0400
+Processing by UserSessionsController#new as HTML
+  Rendered user_sessions/_form.html.erb (0.7ms)
+  Rendered user_sessions/new.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 414ms (Views: 407.7ms)
+
+
+Started POST "/user_sessions" for 127.0.0.1 at 2015-09-02 23:51:21 -0400
+Processing by UserSessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Jx8aW6ywfiluWV/CNDP8ri6ujoEK7CvUjOqRZ5VbOKzfSkQ5iDREKsaiHUltYECGEp3sUyw5ekuWskFRDYJgeg==", "username"=>"chaubil1", "password"=>"[FILTERED]", "commit"=>"Login"}
+  Rendered user_sessions/_form.html.erb (0.5ms)
+  Rendered user_sessions/new.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 354ms (Views: 351.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-02 23:54:22 -0400
+Processing by EntriesController#landing as HTML
+  Rendered entries/landing.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 345ms (Views: 344.8ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2015-09-02 23:54:25 -0400
+Processing by UserSessionsController#new as HTML
+  Rendered user_sessions/_form.html.erb (0.7ms)
+  Rendered user_sessions/new.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 338ms (Views: 337.5ms)
+
+
+Started POST "/user_sessions" for 127.0.0.1 at 2015-09-02 23:54:33 -0400
+Processing by UserSessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HtVggoqs9AuH7xM5eM+VtIOb1TkVNHiddlu/IgB+t7LmgD7grijOCC8UUbIhnCmcv6i36zPhKQJsA28UmKfvZA==", "username"=>"jill.chau@test.com", "password"=>"[FILTERED]", "commit"=>"Login"}
+Redirected to http://localhost:3000/users
+Completed 302 Found in 151ms
+
+
+Started GET "/users" for 127.0.0.1 at 2015-09-02 23:54:34 -0400
+
+AbstractController::ActionNotFound (The action 'index' could not be found for UsersController):
+  actionpack (4.2.3) lib/abstract_controller/base.rb:132:in `process'
+  actionview (4.2.3) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.3) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.3) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.3) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.3) lib/action_dispatch/routing/route_set.rb:76:in `call'
+  actionpack (4.2.3) lib/action_dispatch/routing/route_set.rb:76:in `dispatch'
+  actionpack (4.2.3) lib/action_dispatch/routing/route_set.rb:45:in `serve'
+  actionpack (4.2.3) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.3) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.3) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.3) lib/action_dispatch/routing/route_set.rb:821:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:84:in `run_callbacks'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (2.13.4) lib/puma/server.rb:541:in `handle_request'
+  puma (2.13.4) lib/puma/server.rb:388:in `process_client'
+  puma (2.13.4) lib/puma/server.rb:270:in `block in run'
+  puma (2.13.4) lib/puma/thread_pool.rb:106:in `call'
+  puma (2.13.4) lib/puma/thread_pool.rb:106:in `block in spawn_thread'
+
+
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (0.4ms)
+
+
+Started POST "/user_sessions" for 127.0.0.1 at 2015-09-02 23:54:38 -0400
+Processing by UserSessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HtVggoqs9AuH7xM5eM+VtIOb1TkVNHiddlu/IgB+t7LmgD7grijOCC8UUbIhnCmcv6i36zPhKQJsA28UmKfvZA==", "username"=>"jill.chau@test.com", "password"=>"[FILTERED]", "commit"=>"Login"}
+Redirected to http://localhost:3000/users
+Completed 302 Found in 147ms
+
+
+Started GET "/users" for 127.0.0.1 at 2015-09-02 23:54:38 -0400
+
+AbstractController::ActionNotFound (The action 'index' could not be found for UsersController):
+  actionpack (4.2.3) lib/abstract_controller/base.rb:132:in `process'
+  actionview (4.2.3) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.3) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.3) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.3) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.3) lib/action_dispatch/routing/route_set.rb:76:in `call'
+  actionpack (4.2.3) lib/action_dispatch/routing/route_set.rb:76:in `dispatch'
+  actionpack (4.2.3) lib/action_dispatch/routing/route_set.rb:45:in `serve'
+  actionpack (4.2.3) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.3) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.3) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.3) lib/action_dispatch/routing/route_set.rb:821:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:84:in `run_callbacks'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (2.13.4) lib/puma/server.rb:541:in `handle_request'
+  puma (2.13.4) lib/puma/server.rb:388:in `process_client'
+  puma (2.13.4) lib/puma/server.rb:270:in `block in run'
+  puma (2.13.4) lib/puma/thread_pool.rb:106:in `call'
+  puma (2.13.4) lib/puma/thread_pool.rb:106:in `block in spawn_thread'
+
+
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (0.4ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2015-09-02 23:55:20 -0400
+
+AbstractController::ActionNotFound (The action 'index' could not be found for UsersController):
+  actionpack (4.2.3) lib/abstract_controller/base.rb:132:in `process'
+  actionview (4.2.3) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.3) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.3) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.3) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.3) lib/action_dispatch/routing/route_set.rb:76:in `call'
+  actionpack (4.2.3) lib/action_dispatch/routing/route_set.rb:76:in `dispatch'
+  actionpack (4.2.3) lib/action_dispatch/routing/route_set.rb:45:in `serve'
+  actionpack (4.2.3) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.3) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.3) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.3) lib/action_dispatch/routing/route_set.rb:821:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:84:in `run_callbacks'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (2.13.4) lib/puma/server.rb:541:in `handle_request'
+  puma (2.13.4) lib/puma/server.rb:388:in `process_client'
+  puma (2.13.4) lib/puma/server.rb:270:in `block in run'
+  puma (2.13.4) lib/puma/thread_pool.rb:106:in `call'
+  puma (2.13.4) lib/puma/thread_pool.rb:106:in `block in spawn_thread'
+
+
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (0.6ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2015-09-02 23:55:24 -0400
+Processing by UserSessionsController#new as HTML
+  Rendered user_sessions/_form.html.erb (0.7ms)
+  Rendered user_sessions/new.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 358ms (Views: 350.9ms)
+
+
+Started POST "/user_sessions" for 127.0.0.1 at 2015-09-02 23:55:26 -0400
+Processing by UserSessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0Ow7536+2v1I+hJDnV4P1EvPKYIFUsDP/0JjvF/fg4oouWWFWjrg/uABUMjEDbP8d/xLUCOHkVDlGrOKxwbbXA==", "username"=>"chaukbill@gmail.com", "password"=>"[FILTERED]", "commit"=>"Login"}
+  Rendered user_sessions/_form.html.erb (0.8ms)
+  Rendered user_sessions/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 342ms (Views: 338.4ms)
+
+
+Started GET "/entries" for 127.0.0.1 at 2015-09-02 23:55:31 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (401.7ms)
+Completed 200 OK in 718ms (Views: 707.1ms)
+
+
+Started POST "/logout" for 127.0.0.1 at 2015-09-02 23:55:34 -0400
+Processing by UserSessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"LAxaq/DVnaZYkswvDxjv+/dAyl5DnOtleVwQ9ytslFjUWQTJ1FGnpfBpjqRWS1PTy3OojGVJuvpjBMDBs7XMjg=="}
+Redirected to 
+Completed 500 Internal Server Error in 12ms
+
+NoMethodError (undefined method `landing_url' for #<UserSessionsController:0x007fd1a34cdc78>):
+  app/controllers/user_sessions_controller.rb:19:in `destroy'
+
+
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.2ms)
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (77.2ms)
+
+
+Started POST "/logout" for 127.0.0.1 at 2015-09-02 23:56:01 -0400
+Processing by UserSessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"LAxaq/DVnaZYkswvDxjv+/dAyl5DnOtleVwQ9ytslFjUWQTJ1FGnpfBpjqRWS1PTy3OojGVJuvpjBMDBs7XMjg=="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 11ms
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-02 23:56:01 -0400
+Processing by EntriesController#landing as HTML
+  Rendered entries/landing.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 342ms (Views: 340.8ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2015-09-02 23:56:05 -0400
+Processing by UserSessionsController#new as HTML
+  Rendered user_sessions/_form.html.erb (0.7ms)
+  Rendered user_sessions/new.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 348ms (Views: 347.1ms)
+
+
+Started POST "/user_sessions" for 127.0.0.1 at 2015-09-02 23:56:14 -0400
+Processing by UserSessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"e0I3kZH5YqTXt+yLtpqm30HiMqtWdFCF11ttrMy204g2lPY8nY7Uwi0mx3RgQVU2fao5wVrLqeSRak1Fcuowfw==", "username"=>"jill.chau@test.com", "password"=>"[FILTERED]", "commit"=>"Login"}
+Redirected to http://localhost:3000/entries
+Completed 302 Found in 147ms
+
+
+Started GET "/entries" for 127.0.0.1 at 2015-09-02 23:56:14 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (323.9ms)
+Completed 200 OK in 705ms (Views: 697.3ms)
+
+
+Started GET "/entries" for 127.0.0.1 at 2015-09-02 23:56:55 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (401.2ms)
+Completed 200 OK in 699ms (Views: 693.4ms)
+
+
+Started GET "/users/55e7b63342696c10f1000000/edit" for 127.0.0.1 at 2015-09-02 23:56:59 -0400
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"55e7b63342696c10f1000000"}
+Completed 500 Internal Server Error in 8ms
+
+ActionView::MissingTemplate (Missing template users/edit, application/edit with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/Bill/Desktop/myApps/rubywithservice/app/views"
+  * "/Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/twitter-bootstrap-rails-3.2.0/app/views"
+):
+  actionview (4.2.3) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.2.3) lib/action_view/lookup_context.rb:121:in `find'
+  actionview (4.2.3) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionview (4.2.3) lib/action_view/renderer/template_renderer.rb:40:in `determine_template'
+  actionview (4.2.3) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionview (4.2.3) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.2.3) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.2.3) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.3) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.3) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.3) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.3) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.3) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.3) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.3) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (4.2.3) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/2.2.0/benchmark.rb:303:in `realtime'
+  activesupport (4.2.3) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.3) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (4.2.3) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  actionpack (4.2.3) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  actionpack (4.2.3) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.2.3) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.2.3) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.3) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.3) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:115:in `call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:115:in `call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:553:in `block (2 levels) in compile'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:503:in `call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:503:in `call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:88:in `run_callbacks'
+  actionpack (4.2.3) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.3) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.3) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.3) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.3) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.3) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.3) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.3) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  actionpack (4.2.3) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.3) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.3) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.3) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.3) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.3) lib/action_dispatch/routing/route_set.rb:76:in `call'
+  actionpack (4.2.3) lib/action_dispatch/routing/route_set.rb:76:in `dispatch'
+  actionpack (4.2.3) lib/action_dispatch/routing/route_set.rb:45:in `serve'
+  actionpack (4.2.3) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.3) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.3) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.3) lib/action_dispatch/routing/route_set.rb:821:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:84:in `run_callbacks'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (2.13.4) lib/puma/server.rb:541:in `handle_request'
+  puma (2.13.4) lib/puma/server.rb:388:in `process_client'
+  puma (2.13.4) lib/puma/server.rb:270:in `block in run'
+  puma (2.13.4) lib/puma/thread_pool.rb:106:in `call'
+  puma (2.13.4) lib/puma/thread_pool.rb:106:in `block in spawn_thread'
+
+
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.5ms)
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (75.3ms)
+
+
+Started POST "/logout" for 127.0.0.1 at 2015-09-02 23:57:01 -0400
+Processing by UserSessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"qko/wLWXnCsxGdLigUUjkdaf8ONJVTma9dpH4/xP0JrnnP5tueAqTcuI+R1XntB46tf7iUXqwPuz62cKQhMzbQ=="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-02 23:57:01 -0400
+Processing by EntriesController#landing as HTML
+  Rendered entries/landing.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 324ms (Views: 323.8ms)
+
+
+Started GET "/entries" for 127.0.0.1 at 2015-09-02 23:57:06 -0400
+Processing by EntriesController#index as HTML
+Redirected to http://localhost:3000/login
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms
+
+
+Started GET "/login" for 127.0.0.1 at 2015-09-02 23:57:06 -0400
+Processing by UserSessionsController#new as HTML
+  Rendered user_sessions/_form.html.erb (0.6ms)
+  Rendered user_sessions/new.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 333ms (Views: 332.5ms)
+
+
+Started POST "/user_sessions" for 127.0.0.1 at 2015-09-02 23:57:14 -0400
+Processing by UserSessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QfcX0gEX/8AwwdQXYzWa25MsybF8Z6eydFll3/fJ3Lq7uw8075I/xaGSg+zChO0hVJp799p49xTVGBK+Nj6rzw==", "username"=>"jill.chau@test.com", "password"=>"[FILTERED]", "commit"=>"Login"}
+Redirected to http://localhost:3000/entries
+Completed 302 Found in 145ms
+
+
+Started GET "/entries" for 127.0.0.1 at 2015-09-02 23:57:14 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (333.9ms)
+Completed 200 OK in 712ms (Views: 710.9ms)
+
+
+Started GET "/entries" for 127.0.0.1 at 2015-09-02 23:57:23 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (386.1ms)
+Completed 200 OK in 674ms (Views: 671.2ms)
+
+
+Started GET "/entries/new" for 127.0.0.1 at 2015-09-02 23:57:26 -0400
+Processing by EntriesController#new as HTML
+  Rendered entries/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 355ms (Views: 352.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-02 23:57:28 -0400
+Processing by EntriesController#landing as HTML
+  Rendered entries/landing.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 304ms (Views: 303.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-02 23:58:12 -0400
+Processing by EntriesController#landing as HTML
+  Rendered entries/landing.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 379ms (Views: 378.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-03 00:00:18 -0400
+Processing by EntriesController#landing as HTML
+  Rendered entries/landing.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 378ms (Views: 377.1ms)
+
+
+Started POST "/logout" for 127.0.0.1 at 2015-09-03 00:00:20 -0400
+Processing by UserSessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"YVcYCaWhb/ntl2TM0N7f5WWYBQfSF2dd3xZSwK6th8ebGwDvSySv/HzEMzdxb6gfoi63QXQIN/t+VyWhb1rwsg=="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 3ms
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-03 00:00:20 -0400
+Processing by EntriesController#landing as HTML
+  Rendered entries/landing.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 318ms (Views: 317.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-03 00:00:22 -0400
+Processing by EntriesController#landing as HTML
+  Rendered entries/landing.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 325ms (Views: 324.8ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2015-09-03 00:00:24 -0400
+Processing by UserSessionsController#new as HTML
+  Rendered user_sessions/_form.html.erb (0.9ms)
+  Rendered user_sessions/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 330ms (Views: 329.7ms)
+
+
+Started POST "/user_sessions" for 127.0.0.1 at 2015-09-03 00:00:34 -0400
+Processing by UserSessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0BOGz8MY1z+HatcfWGXX+C651wMSD/Kuk1l6GGeMTIBDF+6yws87VgeONCg8BYt6fdtYmwxcj4GA2CdZw3ZdHQ==", "username"=>"bill.chau@utoronto.ca", "password"=>"[FILTERED]", "commit"=>"Login"}
+Redirected to http://localhost:3000/entries
+Completed 302 Found in 148ms
+
+
+Started GET "/entries" for 127.0.0.1 at 2015-09-03 00:00:34 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (327.8ms)
+Completed 200 OK in 684ms (Views: 673.3ms)
+
+
+Started GET "/users/55e7c21d42696c1680000000/edit" for 127.0.0.1 at 2015-09-03 00:00:38 -0400
+
+SyntaxError (/Users/Bill/Desktop/myApps/rubywithservice/app/controllers/users_controller.rb:43: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/controllers/users_controller.rb:43: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.7ms)
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (73.4ms)
+
+
+Started GET "/users/55e7c21d42696c1680000000/edit" for 127.0.0.1 at 2015-09-03 00:00:58 -0400
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"55e7c21d42696c1680000000"}
+  Rendered users/_form.html.erb (2.5ms)
+  Rendered users/edit.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 349ms (Views: 337.4ms)
+
+
+Started PATCH "/users/55e7c21d42696c1680000000" for 127.0.0.1 at 2015-09-03 00:01:06 -0400
+
+AbstractController::ActionNotFound (The action 'update' could not be found for UsersController):
+  actionpack (4.2.3) lib/abstract_controller/base.rb:132:in `process'
+  actionview (4.2.3) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.3) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.3) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.3) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.3) lib/action_dispatch/routing/route_set.rb:76:in `call'
+  actionpack (4.2.3) lib/action_dispatch/routing/route_set.rb:76:in `dispatch'
+  actionpack (4.2.3) lib/action_dispatch/routing/route_set.rb:45:in `serve'
+  actionpack (4.2.3) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.3) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.3) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.3) lib/action_dispatch/routing/route_set.rb:821:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:38:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:84:in `run_callbacks'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (2.13.4) lib/puma/server.rb:541:in `handle_request'
+  puma (2.13.4) lib/puma/server.rb:388:in `process_client'
+  puma (2.13.4) lib/puma/server.rb:270:in `block in run'
+  puma (2.13.4) lib/puma/thread_pool.rb:106:in `call'
+  puma (2.13.4) lib/puma/thread_pool.rb:106:in `block in spawn_thread'
+
+
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-03 00:03:16 -0400
+Processing by EntriesController#landing as HTML
+  Rendered entries/landing.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 327ms (Views: 326.3ms)
+
+
+Started POST "/logout" for 127.0.0.1 at 2015-09-03 00:03:18 -0400
+Processing by UserSessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"O+uYKbIdLky4NBjx6Vc1M4GYUbJKWq/0aGQZZ9s1Tzyo7/BUs8rCJTjQ+8aNN2mx0vreKlQJ0tt75UQmf89eoQ=="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 3ms
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-03 00:03:18 -0400
+Processing by EntriesController#landing as HTML
+  Rendered entries/landing.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 339ms (Views: 338.1ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2015-09-03 00:03:20 -0400
+Processing by UserSessionsController#new as HTML
+  Rendered user_sessions/_form.html.erb (0.9ms)
+  Rendered user_sessions/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 335ms (Views: 333.8ms)
+
+
+Started POST "/user_sessions" for 127.0.0.1 at 2015-09-03 00:03:30 -0400
+Processing by UserSessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hnxx7L219p1br1d3gyC0/qJTCiftmHPS4BHYPu3oJHQwoC8WtqnykKasK13/wnCQGRsAL8/h8cPlQoz0JYQsDw==", "username"=>"jill.chau@test.com", "password"=>"[FILTERED]", "commit"=>"Login"}
+Redirected to http://localhost:3000/entries
+Completed 302 Found in 146ms
+
+
+Started GET "/entries" for 127.0.0.1 at 2015-09-03 00:03:30 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (336.4ms)
+Completed 200 OK in 668ms (Views: 660.3ms)
+
+
+Started GET "/users/55e7b63342696c10f1000000/edit" for 127.0.0.1 at 2015-09-03 00:03:34 -0400
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"55e7b63342696c10f1000000"}
+  Rendered users/_form.html.erb (2.9ms)
+  Rendered users/edit.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 333ms (Views: 330.1ms)
+
+
+Started PATCH "/users/55e7b63342696c10f1000000" for 127.0.0.1 at 2015-09-03 00:03:38 -0400
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xssiTfWDckXVdXoI5ykt8eBnUKoa2ZMiRq1rpiX2QGhwF3y3/p92SCh2BiKby+mfWy9aojigETND/j9s7ZpIEw==", "user"=>{"username"=>"", "email"=>"jill.chau@test.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Submit", "id"=>"55e7b63342696c10f1000000"}
+Completed 500 Internal Server Error in 3ms
+
+NoMethodError (undefined method `update_attributes' for nil:NilClass):
+  app/controllers/users_controller.rb:27:in `update'
+
+
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.1ms)
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (71.6ms)
+
+
+Started PATCH "/users/55e7b63342696c10f1000000" for 127.0.0.1 at 2015-09-03 00:04:15 -0400
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xssiTfWDckXVdXoI5ykt8eBnUKoa2ZMiRq1rpiX2QGhwF3y3/p92SCh2BiKby+mfWy9aojigETND/j9s7ZpIEw==", "user"=>{"username"=>"", "email"=>"jill.chau@test.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Submit", "id"=>"55e7b63342696c10f1000000"}
+  Rendered users/_form.html.erb (2.6ms)
+  Rendered users/edit.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 341ms (Views: 326.5ms)
+
+
+Started PATCH "/users/55e7b63342696c10f1000000" for 127.0.0.1 at 2015-09-03 00:04:24 -0400
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+8P7afNyEObhlkIvcx8hu4NICIdBFSJsuDq1fd7ozzpNH6WT+G4U6xyVPgUP/eXVOAACj2NsoH29aeG3FoTHQQ==", "user"=>{"username"=>"", "email"=>"jill.chau@test.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Submit", "id"=>"55e7b63342696c10f1000000"}
+  Rendered users/_form.html.erb (3.2ms)
+  Rendered users/edit.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 411ms (Views: 335.3ms)
+
+
+Started PATCH "/users/55e7b63342696c10f1000000" for 127.0.0.1 at 2015-09-03 00:04:32 -0400
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QnBQUPQ9LgQdjIN3dFWsbvS7zfkZCgDtvLlPE3NE35r0rA6q/yEqCeCP/10It2gAT/PH8Ttzgvy56hvZuyjX4Q==", "user"=>{"username"=>"stinkypachi", "email"=>"jill.chau@test.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Submit", "id"=>"55e7b63342696c10f1000000"}
+  Rendered users/_form.html.erb (2.9ms)
+  Rendered users/edit.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 336ms (Views: 331.0ms)
+
+
+Started PATCH "/users/55e7b63342696c10f1000000" for 127.0.0.1 at 2015-09-03 00:04:39 -0400
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vWkGLVhv5dVjngKyjo5gvA1ssEsSxoeBVYx+BUUG+2ILtVjXU3Ph2J6dfpjybKTStiS6QzC/BZBQ3yrPjWrzGQ==", "user"=>{"username"=>"stinkypachi", "email"=>"jill.chau@test.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Submit", "id"=>"55e7b63342696c10f1000000"}
+Redirected to http://localhost:3000/entries
+Completed 302 Found in 80ms
+
+
+Started GET "/entries" for 127.0.0.1 at 2015-09-03 00:04:39 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (338.3ms)
+Completed 200 OK in 675ms (Views: 666.7ms)
+
+
+Started GET "/users/55e7b63342696c10f1000000/edit" for 127.0.0.1 at 2015-09-03 00:04:43 -0400
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"55e7b63342696c10f1000000"}
+  Rendered users/_form.html.erb (2.4ms)
+  Rendered users/edit.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 327ms (Views: 324.5ms)
+
+
+Started GET "/entries" for 127.0.0.1 at 2015-09-03 00:04:45 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (347.4ms)
+Completed 200 OK in 672ms (Views: 669.1ms)
+
+
+Started GET "/users/55e7b63342696c10f1000000/edit" for 127.0.0.1 at 2015-09-03 00:04:49 -0400
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"55e7b63342696c10f1000000"}
+  Rendered users/_form.html.erb (2.1ms)
+  Rendered users/edit.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 338ms (Views: 335.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-03 00:04:53 -0400
+Processing by EntriesController#landing as HTML
+  Rendered entries/landing.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 316ms (Views: 314.9ms)
+
+
+Started GET "/entries" for 127.0.0.1 at 2015-09-03 00:04:55 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (332.9ms)
+Completed 200 OK in 671ms (Views: 667.9ms)
+
+
+Started GET "/entries/new" for 127.0.0.1 at 2015-09-03 00:04:57 -0400
+Processing by EntriesController#new as HTML
+  Rendered entries/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 320ms (Views: 317.3ms)
+
+
+Started GET "/entries" for 127.0.0.1 at 2015-09-03 00:04:59 -0400
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (343.2ms)
+Completed 200 OK in 653ms (Views: 650.9ms)
+
+
+Started POST "/logout" for 127.0.0.1 at 2015-09-03 00:05:54 -0400
+Processing by UserSessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"ixghrQnf19GmWWfiW+g9JS7eKX9y+oKaUMTewF8dMd49xH9XAsPT3FtaG8gnCvlLlZYjd1CDAItVl4oKl3E5pQ=="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 3ms
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-03 00:05:54 -0400
+Processing by EntriesController#landing as HTML
+  Rendered entries/landing.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 336ms (Views: 336.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2015-09-03 00:06:29 -0400
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (3.0ms)
+  Rendered users/new.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 322ms (Views: 321.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2015-09-03 00:06:43 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pE9gp955OWH93RkbICnqYtwkqD6PjK4By0Zbi5dcUkNiRBD39w4XOaCOO6mRMN49A2w3IPT3cVlq/66m2eMtRQ==", "user"=>{"username"=>"admin", "email"=>"admin@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Submit"}
+Redirected to http://localhost:3000/entries
+Completed 302 Found in 85ms
+
+
+Started GET "/entries" for 127.0.0.1 at 2015-09-03 00:06:43 -0400
+Processing by EntriesController#index as HTML
+Redirected to http://localhost:3000/login
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 1ms
+
+
+Started GET "/login" for 127.0.0.1 at 2015-09-03 00:06:43 -0400
+Processing by UserSessionsController#new as HTML
+  Rendered user_sessions/_form.html.erb (1.3ms)
+  Rendered user_sessions/new.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 339ms (Views: 338.2ms)

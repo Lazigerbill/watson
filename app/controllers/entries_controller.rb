@@ -1,5 +1,6 @@
 class EntriesController < ApplicationController
   include UploadHelper
+  skip_before_filter :require_login, only: [:landing]
   
   def landing
 

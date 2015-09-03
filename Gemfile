@@ -25,8 +25,6 @@ gem 'rails_12factor', group: :production
 gem 'figaro'
 gem "mongoid", "~> 4.0.0"
 
-# Use unicorn as the app server
-gem 'unicorn'
 gem 'rails_serve_static_assets'
 
 gem "jquery-fileupload-rails"
@@ -40,3 +38,5 @@ gem 'rubyzip'
 gem 'jquery-datatables-rails', '~> 3.3.0'
 
 gem 'puma'
+
+gem 'sorcery'
