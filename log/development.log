@@ -12690,3 +12690,51 @@ Started GET "/" for 127.0.0.1 at 2015-09-03 10:30:41 -0400
 Processing by EntriesController#landing as HTML
   Rendered entries/landing.html.erb within layouts/application (1.4ms)
 Completed 200 OK in 479ms (Views: 472.6ms)
+
+
+Started GET "/" for ::1 at 2015-09-09 14:36:51 -0400
+Processing by EntriesController#landing as HTML
+  Rendered entries/landing.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 687ms (Views: 677.8ms)
+
+
+Started GET "/images/favicon.ico" for ::1 at 2015-09-09 14:36:53 -0400
+
+ActionController::RoutingError (No route matches [GET] "/images/favicon.ico"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (2.13.4) lib/puma/server.rb:541:in `handle_request'
+  puma (2.13.4) lib/puma/server.rb:388:in `process_client'
+  puma (2.13.4) lib/puma/server.rb:270:in `block in run'
+  puma (2.13.4) lib/puma/thread_pool.rb:106:in `call'
+  puma (2.13.4) lib/puma/thread_pool.rb:106:in `block in spawn_thread'
+
+
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.3ms)
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (14.5ms)
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/Bill/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (130.3ms)
+
+
+Started GET "/" for ::1 at 2015-09-09 14:37:50 -0400
+Processing by EntriesController#landing as HTML
+  Rendered entries/landing.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 560ms (Views: 552.4ms)
