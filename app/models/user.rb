@@ -3,7 +3,7 @@ class User
   field :username
   field :email
   field :password
-  field :password_confirmation
+
   
   authenticates_with_sorcery!
   validates_presence_of :username, :email, :password, :password_confirmation
