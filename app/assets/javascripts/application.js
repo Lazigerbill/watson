@@ -17,4 +17,6 @@
 //= require jquery-fileupload
 //= require jquery-fileupload/basic-plus
 //= require twitter/bootstrap
-//= require_tree .
+//= require datatables
+//= require entry
+// require_tree .
