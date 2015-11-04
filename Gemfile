@@ -28,7 +28,7 @@ gem 'spring',        group: :development
 gem 'rest-client'
 gem 'rails_12factor', group: :production
 gem 'figaro'
-gem "mongoid", "~> 4.0.0"
+gem "mongoid"
 
 gem 'rails_serve_static_assets'
 
