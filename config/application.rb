@@ -32,7 +32,7 @@ module RailsStarter
     config.mongoid.logger = Logger.new($stdout, :warn)
     # config.mongoid.persist_in_safe_mode = true
     config.mongoid.preload_models = false
-    Mongoid.logger.level = Logger::DEBUG
-    Moped.logger.level = Logger::DEBUG
+    # Mongoid.logger.level = Logger::DEBUG
+    # Moped.logger.level = Logger::DEBUG
   end
 end
