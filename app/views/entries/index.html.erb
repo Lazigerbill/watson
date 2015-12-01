@@ -1,8 +1,13 @@
+<h1>Imported transcripts</h1>
 
-<div class = 'page-header'>
-	<h1>Imported transcripts</h1>
+<div class = 'pull-right linkedin_form'>
+	<%= form_tag(entries_linkedin_path,:method => :post) do %>
+		First Name: <%= text_field_tag(:firstname) %>
+		Last Name: <%= text_field_tag(:lastname) %>
+	  	<%= submit_tag("Linkedin Search", :class=>"btn btn-default") %>
+	<% end %>
 </div>
-
+<hr>
 <table class = 'table table-striped table-bordered table-condensed' id = 'allEntries'>
 	<thead>
 			<th class='col-md-1'>Company Name</th>

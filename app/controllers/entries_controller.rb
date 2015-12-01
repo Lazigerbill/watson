@@ -72,7 +72,15 @@ class EntriesController < ApplicationController
     #helper method defined in upload_helper.rb
     process_upload(params[:file])
   end
+
+  def linkedin
+    redirect_to "https://www.linkedin.com/pub/dir/?first=" + params[:firstname] + "&last="\
+    + params[:lastname] + "&search=Search"
+  end
+
 end
+
+
 
 private
 # def analyse(input)
@@ -85,6 +93,8 @@ private
 def entry_params
   params.require(:entry).permit(:company_name, :ticker, :event_name, :date, :speaker_name, :speaker_title, :wcount, :transcript, :insights)
 end
+
+
 
 
 

@@ -18,6 +18,7 @@ Rails.application.routes.draw do
   post 'entries/upload' => 'entries#upload'
   post 'entries/:id/analyse' => 'entries#analyse', as: :analyse
 
+  post 'entries/linkedin' => 'entries#linkedin'
   # Example of named route that can be invoked with purchase_url(id: product.id)
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
 

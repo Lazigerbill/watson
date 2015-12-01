@@ -47,3 +47,5 @@ gem 'puma'
 gem 'sorcery'
 
 gem 'tzinfo-data'
+
+gem 'linkedin'
