@@ -27,9 +27,9 @@ module UploadHelper
             save_into_db
         end
       end  
-      if @entry.errors.any?
-        redirect_to new_entry_path, :alert => "Error occurred when trying to save #{@company_name}. #{@entry.errors.full_messages}" 
-      else 
+      # if @entry.errors.any?
+      #   redirect_to new_entry_path, :alert => "Error occurred when trying to save #{@company_name}. #{@entry.errors.full_messages}" 
+      # else 
         redirect_to entries_path, :notice => "#{@rcount} #{'record'.pluralize(@rcount)} successfully saved!!"
       end
     else

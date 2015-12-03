@@ -33,6 +33,17 @@ class EntriesController < ApplicationController
     end
   end
 
+  def analyse_all
+    @multi_entry = Entry.find(params[:entries_ids])
+    @multi_entry.each do |entry|
+      profile_api_url = "#{Figaro.env.bluemix_url}/v2/profile"
+      client = RestClient::Resource.new(profile_api_url, Figaro.env.bluemix_username, Figaro.env.bluemix_password)
+      insights = client.post entry.transcript, :content_type => "text/plain;charset=utf-8"
+      entry.update_attribute(:insights, JSON.load(insights.body))
+    end
+    redirect_to entries_path, :flash => { :success => "Watson analytics updated sucessfully." }
+  end
+
   def create #this method is only used for manual upload, doesn't apply to batch upload.
     @input = params[:entry]["transcript"]
     #post request to Watson API

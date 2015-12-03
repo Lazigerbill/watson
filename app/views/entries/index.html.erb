@@ -8,40 +8,45 @@
 	<% end %>
 </div>
 <hr>
-<table class = 'table table-striped table-bordered table-condensed' id = 'allEntries'>
-	<thead>
+<%= form_tag analyse_all_path do %>
+	<table class = 'table table-striped table-bordered table-condensed' id = 'allEntries'>
+		<thead>
+			<th class='col-md-1'>ID</th>
 			<th class='col-md-1'>Company Name</th>
 			<th class='col-md-1'>Ticker</th>
-			<th class='col-md-3'>Event Name</th>
+			<th class='col-md-2'>Event Name</th>
 			<th class='col-md-1'>Date</th>
 			<th class='col-md-1'>Speaker</th>
 			<th class='col-md-2'>Title</th>
 			<th class='col-md-1'>Word Count</th>
 			<th class='col-md-1'>Analysed?</th>
 			<th class='col-md-1'></th>
-	</thead>
-	<tbody>
-		<% @entries.each do |e| %>
-		<tr>
-				<td><%= e.company_name %></td>
-				<td><%= e.ticker %></td>
-				<td><%= e.event_name %></td>
-				<td><%= e.date.strftime('%m/%d/%Y') %></td>
-				<td><%= e.speaker_name %></td>
-				<td><%= e.speaker_title %></td>
-				<td class='align-center'><%= e.wcount %></td>
-				<td class='align-center'>
-					<% if e.insights %>
-						<%= image_tag 'insight.png', id: 'insight_logo' %>
-					<% end %>	
-				</td>
-				<td class='align-center'>
-					<%= button_to 'Show', entry_path(e.id), method: :get, :class => "btn btn-primary" %> 
-				</td>	
-		</tr>
-		<% end %>
-	</tbody>
-</table>
+		</thead>
+		<tbody>
+			<% @entries.each do |e| %>
+				<tr>
+					<td><%= check_box_tag "entries_ids[]", e.id %></td>
+					<td><%= e.company_name %></td>
+					<td><%= e.ticker %></td>
+					<td><%= e.event_name %></td>
+					<td><%= e.date.strftime('%m/%d/%Y') %></td>
+					<td><%= e.speaker_name %></td>
+					<td><%= e.speaker_title %></td>
+					<td class='align-center'><%= e.wcount %></td>
+					<td class='align-center'>
+						<% if e.insights %>
+							<%= image_tag 'insight.png', id: 'insight_logo' %>
+						<% end %>	
+					</td>
+					<td class='align-center'>
+						<%= button_to 'Show', entry_path(e.id), method: :get, :class => "btn btn-primary" %> 
+					</td>	
+				</tr>
+			<% end %>
+		</tbody>
+	</table>
+	<p><%= submit_tag "Edit Checked" %></p>
+<% end %>
 
 <%= button_to 'Upload New File', new_entry_path, method: :get, :class => 'btn btn-primary btn-lg' %>
 <br>
