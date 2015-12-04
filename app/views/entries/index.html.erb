@@ -25,7 +25,7 @@
 		<tbody>
 			<% @entries.each do |e| %>
 				<tr>
-					<td><%= check_box_tag "entries_ids[]", e.id %></td>
+					<td class='align-center'><%= check_box_tag "entries_ids[]", e.id %></td>
 					<td><%= e.company_name %></td>
 					<td><%= e.ticker %></td>
 					<td><%= e.event_name %></td>
@@ -39,15 +39,15 @@
 						<% end %>	
 					</td>
 					<td class='align-center'>
-						<%= button_to 'Show', entry_path(e.id), method: :get, :class => "btn btn-primary" %> 
-					</td>	
+						<%= link_to 'Show', entry_path(e.id), method: :get, :class => "btn btn-primary" %> 
+					</td>
 				</tr>
 			<% end %>
 		</tbody>
 	</table>
-	<p><%= submit_tag "Edit Checked" %></p>
+	<%= submit_tag "Analyse Checked", :class => 'btn btn-primary btn-lg' %>
+	<%= button_to 'Upload New File', new_entry_path, method: :get, :class => 'btn btn-primary btn-lg' %>
 <% end %>
 
-<%= button_to 'Upload New File', new_entry_path, method: :get, :class => 'btn btn-primary btn-lg' %>
 <br>
 
