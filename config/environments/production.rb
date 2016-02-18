@@ -74,6 +74,20 @@ Rails.application.configure do
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new
 
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+    address:              'smtp.utoronto.ca',
+    port:                 587,
+    domain:               'utoronto.ca',
+    user_name:            Rails.application.secrets.mailer_username,
+    password:             Rails.application.secrets.mailer_password,
+    authentication:       'plain',
+    enable_starttls_auto: true  }
+  config.action_mailer.perform_deliveries = true
+  config.action_mailer.raise_delivery_errors = true
+  config.action_mailer.default_options = {from: 'financelab@utsc.utoronto.ca'}
+  config.action_mailer.default_url_options = { :host => 'http://mgfd40.mybluemix.net/' }
+
   # Do not dump schema after migrations.
   # config.active_record.dump_schema_after_migration = false
 end
