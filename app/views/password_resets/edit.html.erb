@@ -1,2 +1,41 @@
-<h1>PasswordResets#edit</h1>
-<p>Find me in app/views/password_resets/edit.html.erb</p>
+<div class="page-header">
+  <h1>Choose a new password</h1>
+</div>
+<%= form_for @user, :url => password_reset_path(@token), :html => {:method => :put, :class => "form-group"} do |f| %>
+<% if @user.errors.any? %>
+<div id="error_explanation">
+  <h2><%= pluralize(@user.errors.count, "error") %> prohibited this user from being saved:</h2>
+
+  <ul>
+    <% @user.errors.full_messages.each do |msg| %>
+    <li><%= msg %></li>
+    <% end %>
+  </ul>
+</div>
+<% end %>
+
+<div class='row'>
+  <div class="col-md-6 col-md-offset-3">
+    <%= f.label :email %></br>
+    <%= f.text_field :email, readonly: true,:class => "form-control" %>
+  </div>
+</div>
+<div class='row'>
+  <div class="col-md-6 col-md-offset-3">
+    <%= f.label :password %></br>
+    <%= f.password_field :password, :class => "form-control" %>
+  </div>
+</div>
+<div class='row'>  
+  <div class="col-md-6 col-md-offset-3">
+    <%= f.label :password_confirmation %></br>
+    <%= f.password_field :password_confirmation, :class => "form-control" %>
+  </div>
+</div>
+</br>
+<div class='row'>
+  <div class="col-md-6 col-md-offset-3">
+    <%= f.submit "Submit" ,class: "btn btn-w-m btn-info" %>
+  </div>
+</div>
+<% end %>
