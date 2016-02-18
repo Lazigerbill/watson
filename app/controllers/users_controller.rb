@@ -8,7 +8,7 @@ end
 def create
   @user = User.new(user_params)
   if @user.save
-    redirect_to login_path, :notice => "User #{@user.username} created!"
+    redirect_to(:users, notice: 'User was successfully created')
   else
     flash.now[:error] = @user.errors.full_messages.first 
     render :new
@@ -26,7 +26,7 @@ end
 def update
   @user = current_user
   if @user.update_attributes(user_params)
-    redirect_to entries_path, :flash => { :success => "User #{@user.username} updated!" }
+    redirect_to entries_path, :flash => { :success => "User profile updated!" }
   else
     @user.errors.full_messages.each do |msg|
       flash.now[:error] = msg
@@ -43,6 +43,6 @@ end
 private
 
   def user_params
-    params.require(:user).permit(:username, :email, :password, :password_confirmation)
+    params.require(:user).permit(:first_name, :last_name, :student_id, :email, :password, :password_confirmation)
   end
 end

@@ -1,7 +1,7 @@
 <%= form_tag user_sessions_path, :method => :post, :html => {:class => "form-group"} do |f| %>
 	<div class= "col-md-6 col-md-offset-3">	
-		<%= label_tag :username %> <br>
-		<%= text_field_tag :username, nil ,:class => "form-control" %> <br>
+		<%= label_tag :student_id, "Student Number" %> <br>
+		<%= text_field_tag :student_id, nil ,:class => "form-control" %> <br>
 	</div>
 	<div class= "col-md-6 col-md-offset-3">
 		<%= label_tag :password %> <br>
@@ -11,6 +11,6 @@
 	<div class="col-md-6 col-md-offset-3">
 	  <%= submit_tag "Login", class: "btn btn-w-m btn-info" %>
 
-	  <%= link_to 'Cancel', entries_path, class: "btn btn-w-m btn-defaults" %>
+	  <%= link_to 'Cancel', root_path, class: "btn btn-w-m btn-defaults" %>
 	</div>
 <% end %>
