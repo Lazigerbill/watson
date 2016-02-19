@@ -24,7 +24,7 @@ module UploadHelper
       @errors = []
       Zip::File.open(input.tempfile) do |zip_file| 
         zip_file.each do |entry|
-          next if entry.name =~ /__MACOSX/ or entry.name =~ /\.DS_Store/ #or !entry.file?
+          next if entry.name =~ /__MACOSX/ or entry.name =~ /\.DS_Store/ or !entry.file?
             @transcript_count += 1
           begin
             data = entry.get_input_stream.read.split(/[\r\n]+|\={2}|\-{2}/).reject{|s| s.empty?} 
@@ -46,8 +46,13 @@ module UploadHelper
   end
 
   def parse_presentation(data)
-    @company_name = data[2].match(/-(.+?)$/)[1].strip
-    @ticker = data[2].match(/^(.+?)-/)[1].strip
+    if data[2] =~ /-(.+?)$/
+      @company_name = data[2].match(/-(.+?)$/)[1].strip
+      @ticker = data[2].match(/^(.+?)-/)[1].strip
+    else 
+      @company_name = data[2]
+      @ticker = "NOTICKER"
+    end
 
     #the following is to remove company name from Event title
     data[3].gsub!(/[\.\,]/, '')
@@ -59,18 +64,27 @@ module UploadHelper
 
     @result = []
     # presentation will only contain the presentation section
-    data.shift(data.index("Presentation")+1)
+    if data.index("Presentation")
+      data.shift(data.index("Presentation")+1)
+    elsif data.index("Transcript")
+      data.shift(data.index("Transcript")+1)
+    end
     if data.include? "Questions and Answers" 
       presentation = data.take(data.index("Questions and Answers"))
     else
       presentation = data.take(data.index("Definitions"))
     end
     #create speaker index, starts at [0](usually operator)
-    speakers = presentation.select{|i| i.match(/\[[0-9]\]/)}
+    speakers = presentation.select{|i| i.match(/\[[0-9]+\]$/)}
     speaker_index = []
     speakers.each do |speaker|
-      speaker_index << presentation.index(speaker)
+      # presentation.each_index.select{|x| presentation[x] == speaker} !!This is in case where the Q&A is mixed into the presentation and the index number is repeated.
+      speaker_index << presentation.each_index.select{|x| presentation[x] == speaker}
     end
+
+    # The index could be duplicated and nested, so need below adjustment.
+    speaker_index.flatten!.sort!.uniq!
+
     #producing arrays of conversations, each element = [speaker, content], combining contents to unique speakers
     i = 0
     speaker_index.each do |sentence|
@@ -99,15 +113,20 @@ module UploadHelper
 
   def save_into_db
     @result.each do |pres|
-      if pres[1] != nil && pres[1].split.count > 200 #enter the minimum number of words here
+      if pres[1] != nil && pres[1].split.count > 300 #enter the minimum number of words here
         @entry = Entry.new
         @entry.company_name = @company_name
         @entry.ticker = @ticker
         @entry.event_name = @event_name
         @entry.date = @date
+        # binding.pry
         if pres[0] =~ /,/
           @entry.speaker_name = pres[0].match(/^(.+?),/)[1]
-          @entry.speaker_title = pres[0].match(/,(.+?)$/)[1].strip
+          if pres[0] =~ /,(.+?)$/
+            @entry.speaker_title = pres[0].match(/,(.+?)$/)[1].strip
+          else
+            @entry.speaker_title = "Unknown"
+          end
         else 
           @entry.speaker_name = pres[0].strip
         end
