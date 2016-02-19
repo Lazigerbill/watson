@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  company_name: MyString
+  ticker: MyString
+  event_name: MyString
+  date: 2016-02-18
+  speaker_name: MyString
+  speaker_title: MyString
+  wcount: 1
+  transcript: MyText
+  insights: 
+
+two:
+  company_name: MyString
+  ticker: MyString
+  event_name: MyString
+  date: 2016-02-18
+  speaker_name: MyString
+  speaker_title: MyString
+  wcount: 1
+  transcript: MyText
+  insights: 

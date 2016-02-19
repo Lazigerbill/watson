@@ -1,15 +1,8 @@
 source 'https://rubygems.org'
 ruby "2.2.3"
 gem 'rails', '>= 4.2.3'
-# Use sqlite3 as the database for Active Record
-# gem 'sqlite3'
-# Use SCSS for stylesheets
 gem 'sass-rails', '>= 5.0.3'
-# Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
-
-# change this gem because of windows issue. Revert the line coffee-rails back when on production.
-#gem 'coffee-script-source', '1.8.0'
 
 # Use CoffeeScript for .js.coffee assets and views
 gem 'coffee-rails', '>=4.1.0'
@@ -22,31 +15,28 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0',          group: :doc
-# Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
-gem 'spring',        group: :development
 
+gem 'pg', '~> 0.18.4'
 gem 'rest-client'
-gem 'rails_12factor', group: :production
 gem 'figaro'
-gem "mongoid"
-
 gem 'rails_serve_static_assets'
-
 gem "jquery-fileupload-rails"
 gem "twitter-bootstrap-rails"
-
-gem 'quiet_assets', group: :development
-gem 'pry', group: :development
-
 gem 'rubyzip'
 
 gem 'jquery-datatables-rails', '~> 3.3.0'
 gem 'ajax-datatables-rails', '0.1.2'
 
 gem 'puma'
-
 gem 'sorcery'
-
 gem 'tzinfo-data'
-
 gem 'linkedin'
+
+group :development do
+  # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
+  gem 'spring'    
+  gem 'rails_12factor'
+  gem 'quiet_assets'
+  gem 'pry'
+  gem 'hirb'
+end

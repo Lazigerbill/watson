@@ -1,0 +1,7 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: personality_insight_dev
+  pool: 5
+  # username: 
+  # password:
