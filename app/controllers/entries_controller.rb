@@ -10,9 +10,9 @@ class EntriesController < ApplicationController
     @entries = Entry.all
     respond_to do |format|
       format.html 
-      format.json { 
-        render json: @entries
-      }
+      # format.json { 
+      #   render json: EntryDatatable.new(view_context)
+      # }
     end
   end
 

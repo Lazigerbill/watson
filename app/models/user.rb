@@ -1,6 +1,8 @@
 class User < ActiveRecord::Base
   authenticates_with_sorcery!
 
+  has_many :entries
+
   validates_presence_of :first_name, :last_name, :student_id, :email, :password, :password_confirmation
   validates :email, :student_id, uniqueness: true
   validates :email, format: { with: /.utoronto.ca/ }

@@ -1,7 +1,7 @@
 class EntryDatatable < AjaxDatatablesRails::Base
   # uncomment the appropriate paginator module,
   # depending on gems available in your project.
-  # include AjaxDatatablesRails::Extensions::Kaminari
+  include AjaxDatatablesRails::Extensions::Kaminari
   # include AjaxDatatablesRails::Extensions::WillPaginate
   # include AjaxDatatablesRails::Extensions::SimplePaginator
 
@@ -22,6 +22,7 @@ class EntryDatatable < AjaxDatatablesRails::Base
   def data
     records.map do |record|
       [
+        record.company_name
         # comma separated list of the values for each cell of a table row
         # example: record.attribute,
       ]

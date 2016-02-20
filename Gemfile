@@ -26,6 +26,7 @@ gem 'rubyzip'
 
 gem 'jquery-datatables-rails', '~> 3.3.0'
 gem 'ajax-datatables-rails', '0.1.2'
+gem 'kaminari'
 
 gem 'puma'
 gem 'sorcery'

@@ -137,6 +137,7 @@ module UploadHelper
         end
         @entry.transcript = pres[1]
         @entry.wcount = pres[1].split.count
+        @entry.user = current_user
         @entry.save
       end
     end
