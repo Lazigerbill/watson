@@ -1,0 +1,44 @@
+<h1>Run Watson Analytics</h1>
+<hr>
+<%= form_tag :html => {:class => "form-group"} do %>
+	<div class='row'>	
+		<div class= "col-lg-6">	
+			<%= label_tag :company_name %> <br>
+			<%= text_field_tag :company_name, @multi_select.first.company_name, :class => "form-control" %> <br>
+		</div>
+		<div class= "col-lg-6">
+			<%= label_tag :ticker %> <br>
+			<%= text_field_tag :ticker, @multi_select.first.ticker, :class => "form-control" %> <br>
+		</div>
+		<div class= "col-md-6">
+			<%= label_tag :speaker_name %> <br>
+			<%= text_field_tag :speaker_name, @multi_select.first.speaker_name, :class => "form-control" %> <br> 
+		</div>
+		<div class= "col-md-6">
+			<%= label_tag :speaker_title %> <br>
+			<%= text_field_tag :speaker_title, @multi_select.first.speaker_title, :class => "form-control" %> <br>
+		</div>
+		<div class= "col-md-12">
+			<%= label_tag :wcount %> <br>
+			<%= text_field_tag :wcount, @multi_select.sum{|x| x.wcount}, :class => "form-control" %> <br>
+		</div>
+	</div>
+	<%= submit_tag "Run Watson Analytics", :class=> "btn btn-primary btn-lg" %>
+	<%= link_to "Back", :back, :class=> "btn btn-default btn-lg" %>
+<% end %>
+	<hr>
+	
+	<% @multi_select.each do |s| %>
+		<div class= "well well-sm col-md-5 col-md-offset-1">
+			<%= label_tag :event_name %> <br>
+			<%= text_field_tag :event_name, s.event_name, readonly: true, :class => "form-control" %> <br>
+			<%= label_tag :speaker_name %> <br>
+			<%= text_field_tag :speaker_name, s.speaker_name, readonly: true, :class => "form-control" %> <br> 
+			<%= label_tag :transcript %> <br>
+			<%= text_area_tag :transcript, s.transcript, readonly: true, :class => "form-control transBox" %> <br>
+			<p class="text-right">word count: <span class="badge"><%= s.wcount %></span></p>
+		</div>
+<%#= selection.speaker_name %>
+	<%#= render 'selection' %>
+	<% end %>
+

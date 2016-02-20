@@ -8,7 +8,9 @@
 	<%# end %>
 </div> -->
 <hr>
-<%= form_tag analyse_all_path do %>
+<!-- Below form_tag is for run Watson analytics on multiple selections -->
+<%#= form_tag analyse_all_path do %>
+<%= form_tag multi_select_path, method: :get do %>
 	<table class = 'table table-striped table-bordered table-condensed' id = 'allEntries'>
 		<thead>
 			<th class='col-md-1'></th>

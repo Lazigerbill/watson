@@ -39,6 +39,15 @@ class EntriesController < ApplicationController
     end
   end
 
+  def multi_select
+    if !!params[:entries_ids]
+      @multi_select = Entry.find(params[:entries_ids])
+    else
+      flash.now[:error] = "You didn't select any transcripts."
+      render :index
+    end
+  end
+
   def analyse_all
     @multi_entry = Entry.find(params[:entries_ids])
     @multi_entry.each do |entry|
