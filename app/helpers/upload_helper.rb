@@ -1,23 +1,16 @@
 require 'rubygems'
 require 'zip'
 
-
 module UploadHelper
-
   def process_upload(input)
     #check if upload file is txt or zip
     if File.extname(input.original_filename) == ".txt"
       # split of text files into array of sections
-      # begin
-        data = input.read.split(/[\r\n]+|\={2}|\-{2}/).reject{|s| s.empty?}
-        # extract speaker and presentations
-        parse_presentation(data)
-        save_into_db
-      # rescue => e
-        # flash[:error] = "Error occurred when trying to save #{@company_name}. #{e}"
-        # redirect_to entries_path
-      # end
-      redirect_to entries_path, :notice => "#{@rcount} #{'record'.pluralize(@rcount)} successfully saved!!"
+      data = input.read.split(/[\r\n]+|\={2}|\-{2}/).reject{|s| s.empty?}
+      # extract speaker and contents
+      parse_content(data)
+      save_into_db
+      redirect_to entries_path, :notice => "Transcript for #{@company_name} - #{@event_name} successfully uploaded!!"
     elsif File.extname(input.original_filename) == ".zip"
       @error_count = 0
       @transcript_count = 0
@@ -28,14 +21,14 @@ module UploadHelper
             @transcript_count += 1
           begin
             data = entry.get_input_stream.read.split(/[\r\n]+|\={2}|\-{2}/).reject{|s| s.empty?} 
-            # extract speaker and presentations
-            parse_presentation(data)
+            # extract speaker and contents
+            parse_content(data)
             save_into_db
+          # !!!Need a better way to show a collection of errors!!! Future improvement needed!!
           rescue => e
             @errors << e
             flash[:error] = "Error occurred when trying to save #{entry.name}. #{e}" 
-            @error_count += 1
-            # redirect_to entries_path  
+            @error_count += 1 
           end
         end  
       end
@@ -45,7 +38,7 @@ module UploadHelper
     end
   end
 
-  def parse_presentation(data)
+  def parse_content(data)
     if data[2] =~ /-(.+?)$/
       @company_name = data[2].match(/-(.+?)$/)[1].strip
       @ticker = data[2].match(/^(.+?)-/)[1].strip
@@ -63,63 +56,74 @@ module UploadHelper
     @date = DateTime.parse(data[4])
 
     @result = []
-    # presentation will only contain the presentation section
+
+    # <<<The following codes will carve out the presentation section only>>>
     if data.index("Presentation")
       data.shift(data.index("Presentation")+1)
     elsif data.index("Transcript")
       data.shift(data.index("Transcript")+1)
+    else
+      return
     end
     if data.include? "Questions and Answers" 
-      presentation = data.take(data.index("Questions and Answers"))
+      content = data.take(data.index("Questions and Answers"))
     else
-      presentation = data.take(data.index("Definitions"))
+      content = data.take(data.index("Definitions"))
     end
+
+    # <<<The following codes will carve out the Q&A section only>>>
+    # if data.index("Questions and Answers")
+    #   data.shift(data.index("Questions and Answers")+1)
+    # # elsif data.index("Transcript")
+    # #   data.shift(data.index("Transcript")+1)
+    # else
+    #   return
+    # end
+    # if data.include? "Questions and Answers" 
+    #   content = data.take(data.index("Questions and Answers"))
+    # else
+    #   content = data.take(data.index("Definitions"))
+    # end
+
     #create speaker index, starts at [0](usually operator)
-    speakers = presentation.select{|i| i.match(/\[[0-9]+\]$/)}
+    speakers = content.select{|i| i.match(/\[[0-9]+\]$/)}
     speaker_index = []
     speakers.each do |speaker|
-      # presentation.each_index.select{|x| presentation[x] == speaker} !!This is in case where the Q&A is mixed into the presentation and the index number is repeated.
-      speaker_index << presentation.each_index.select{|x| presentation[x] == speaker}
+      # content.each_index.select{|x| content[x] == speaker} !!This is in case where the Q&A is mixed into the presentation and the index number is repeated.
+      speaker_index << content.each_index.select{|x| content[x] == speaker}
     end
 
     # The index could be duplicated and nested, so need below adjustment.
     speaker_index.flatten!.sort!.uniq!
 
-    #producing arrays of conversations, each element = [speaker, content], combining contents to unique speakers
+    #producing arrays of conversations, each element = [speaker, sentence], combining sentences to unique speakers
     i = 0
     speaker_index.each do |sentence|
-      # begin
-        if i < speaker_index.count-1
-          if @result.assoc(presentation[sentence][/([^\[]+)/].strip!) 
-
-            #check here!!!!!!seems to be a bug here when parsing!!!!!Error when speaker[1]...repeats because Q&A section is not identified
-            @result[@result.index(@result.assoc(presentation[sentence][/([^\[]+)/].strip!))][1] << presentation[sentence+1..speaker_index[i+1]-1].join.strip!
-          else
-            @result << [presentation[sentence][/([^\[]+)/].strip!, presentation[sentence+1..speaker_index[i+1]-1].join.strip!]
-          end
-        else 
-          if @result.assoc(presentation[sentence][/([^\[]+)/].strip!)
-            @result[@result.index(@result.assoc(presentation[sentence][/([^\[]+)/].strip!))][1] << presentation[sentence+1..presentation.count-1].join.strip!
-          else
-            @result << [presentation[sentence][/([^\[]+)/].strip!, presentation[sentence+1..presentation.count-1].join.strip!]
-          end
+      if i < speaker_index.count-1
+        if @result.assoc(content[sentence][/([^\[]+)/].strip!) 
+          @result[@result.index(@result.assoc(content[sentence][/([^\[]+)/].strip!))][1] << content[sentence+1..speaker_index[i+1]-1].join.strip! if !!content[sentence+1] #This if statement check for blanks
+        else
+          @result << [content[sentence][/([^\[]+)/].strip!, content[sentence+1..speaker_index[i+1]-1].join.strip!]
         end
-        i+=1
-      # rescue NoMethodError => e
-      #   puts e
-      # end
+      else 
+        if @result.assoc(content[sentence][/([^\[]+)/].strip!)
+          @result[@result.index(@result.assoc(content[sentence][/([^\[]+)/].strip!))][1] << content[sentence+1..content.count-1].join.strip! if !!content[sentence+1] #This if statement check for blanks
+        else
+          @result << [content[sentence][/([^\[]+)/].strip!, content[sentence+1..content.count-1].join.strip!]
+        end
+      end
+      i+=1
     end
   end
 
   def save_into_db
     @result.each do |pres|
-      if pres[1] != nil && pres[1].split.count > 300 #enter the minimum number of words here
+      if pres[1] != nil && pres[1].split.count > 200 #enter the minimum number of words here
         @entry = Entry.new
         @entry.company_name = @company_name
         @entry.ticker = @ticker
         @entry.event_name = @event_name
         @entry.date = @date
-        # binding.pry
         if pres[0] =~ /,/
           @entry.speaker_name = pres[0].match(/^(.+?),/)[1]
           if pres[0] =~ /,(.+?)$/
@@ -136,5 +140,4 @@ module UploadHelper
       end
     end
   end
-
 end
