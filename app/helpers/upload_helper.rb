@@ -58,24 +58,10 @@ module UploadHelper
     @result = []
 
     # <<<The following codes will carve out the presentation section only>>>
-    if data.index("Presentation")
-      data.shift(data.index("Presentation")+1)
-    elsif data.index("Transcript")
-      data.shift(data.index("Transcript")+1)
-    else
-      return
-    end
-    if data.include? "Questions and Answers" 
-      content = data.take(data.index("Questions and Answers"))
-    else
-      content = data.take(data.index("Definitions"))
-    end
-
-    # <<<The following codes will carve out the Q&A section only>>>
-    # if data.index("Questions and Answers")
-    #   data.shift(data.index("Questions and Answers")+1)
-    # # elsif data.index("Transcript")
-    # #   data.shift(data.index("Transcript")+1)
+    # if data.index("Presentation")
+    #   data.shift(data.index("Presentation")+1)
+    # elsif data.index("Transcript")
+    #   data.shift(data.index("Transcript")+1)
     # else
     #   return
     # end
@@ -84,6 +70,18 @@ module UploadHelper
     # else
     #   content = data.take(data.index("Definitions"))
     # end
+
+    # <<<The following codes will carve out the Q&A section only>>>
+    if data.index("Questions and Answers")
+      data.shift(data.index("Questions and Answers")+1)
+    # elsif data.index("Transcript")
+    #   data.shift(data.index("Transcript")+1)
+    else
+      return
+    end
+    if data.include? "Definitions" 
+      content = data.take(data.index("Definitions"))
+    end
 
     #create speaker index, starts at [0](usually operator)
     speakers = content.select{|i| i.match(/\[[0-9]+\]$/)}
@@ -95,6 +93,9 @@ module UploadHelper
 
     # The index could be duplicated and nested, so need below adjustment.
     speaker_index.flatten!.sort!.uniq!
+    # Clean out the speaker index when the speaker has not spoke, i.e. consecutive speaker_index
+    speaker_index.delete_if{|x| x+1 == speaker_index[x+1]}
+
 
     #producing arrays of conversations, each element = [speaker, sentence], combining sentences to unique speakers
     i = 0
@@ -103,13 +104,13 @@ module UploadHelper
         if @result.assoc(content[sentence][/([^\[]+)/].strip!) 
           @result[@result.index(@result.assoc(content[sentence][/([^\[]+)/].strip!))][1] << content[sentence+1..speaker_index[i+1]-1].join.strip! if !!content[sentence+1] #This if statement check for blanks
         else
-          @result << [content[sentence][/([^\[]+)/].strip!, content[sentence+1..speaker_index[i+1]-1].join.strip!]
+          @result << [content[sentence][/([^\[]+)/].strip!, content[sentence+1..speaker_index[i+1]-1].join.strip!] if !!content[sentence+1]
         end
       else 
         if @result.assoc(content[sentence][/([^\[]+)/].strip!)
           @result[@result.index(@result.assoc(content[sentence][/([^\[]+)/].strip!))][1] << content[sentence+1..content.count-1].join.strip! if !!content[sentence+1] #This if statement check for blanks
         else
-          @result << [content[sentence][/([^\[]+)/].strip!, content[sentence+1..content.count-1].join.strip!]
+          @result << [content[sentence][/([^\[]+)/].strip!, content[sentence+1..content.count-1].join.strip!] if !!content[sentence+1]
         end
       end
       i+=1
