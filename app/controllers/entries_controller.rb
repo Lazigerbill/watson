@@ -47,7 +47,7 @@ class EntriesController < ApplicationController
       insights = client.post entry.transcript, :content_type => "text/plain;charset=utf-8"
       entry.update_attribute(:insights, JSON.load(insights.body))
     end
-    redirect_to entries_path, :flash => { :success => "Watson analytics updated sucessfully." }
+    redirect_to entries_path, :flash => { :success => "Watson analytics updated sucessfully on multiple selections." }
   end
 
   def create #this method is only used for manual upload, doesn't apply to batch upload.

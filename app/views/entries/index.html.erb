@@ -11,7 +11,7 @@
 <%= form_tag analyse_all_path do %>
 	<table class = 'table table-striped table-bordered table-condensed' id = 'allEntries'>
 		<thead>
-			<th class='col-md-1'>ID</th>
+			<th class='col-md-1'></th>
 			<th class='col-md-1'>Company Name</th>
 			<th class='col-md-1'>Ticker</th>
 			<th class='col-md-2'>Event Name</th>
@@ -46,7 +46,6 @@
 		</tbody>
 	</table>
 	<%= submit_tag "Analyse Checked", :class => 'btn btn-primary btn-lg' %>
-	<%= button_to 'Upload New File', new_entry_path, method: :get, :class => 'btn btn-primary btn-lg' %>
 <% end %>
 
 <br>

@@ -41,8 +41,8 @@ Rails.application.configure do
     address:              'smtp.utoronto.ca',
     port:                 587,
     domain:               'utoronto.ca',
-    user_name:            Rails.application.secrets.mailer_username,
-    password:             Rails.application.secrets.mailer_password,
+    user_name:            Figaro.env.mailer_username,
+    password:             Figaro.env.mailer_password,
     authentication:       'plain',
     enable_starttls_auto: true  }
   config.action_mailer.perform_deliveries = true

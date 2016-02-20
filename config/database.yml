@@ -1,7 +1,14 @@
-development:
+development: &default
   adapter: postgresql
   encoding: unicode
   database: personality_insight_dev
   pool: 5
   # username: 
   # password:
+
+production: 
+  adapter: postgresql
+  encoding: unicode
+  database: personality_insight_dev
+  pool: 5
+  uri: <%= Figaro.env.compose_uri %>
