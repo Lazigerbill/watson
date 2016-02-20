@@ -11,4 +11,4 @@ production:
   encoding: unicode
   database: personality_insight_dev
   pool: 5
-  uri: <%= Figaro.env.compose_uri %>
+  uri: <%= Figaro.env.elephant_uri %>
