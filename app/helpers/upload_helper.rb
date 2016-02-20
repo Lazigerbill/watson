@@ -119,7 +119,7 @@ module UploadHelper
 
   def save_into_db
     @result.each do |pres|
-      if pres[1] != nil && pres[1].split.count > 200 #enter the minimum number of words here
+      if pres[1] != nil && pres[1].split.count > 100 #enter the minimum number of words here
         @entry = Entry.new
         @entry.company_name = @company_name
         @entry.ticker = @ticker
