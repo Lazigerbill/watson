@@ -6,7 +6,6 @@ development: &default
 
 production: 
   adapter: postgresql
-  database: watson
   encoding: unicode
   pool: 5
   uri: <%= Figaro.env.elephant_uri %>
