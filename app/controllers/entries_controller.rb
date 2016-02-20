@@ -104,6 +104,20 @@ class EntriesController < ApplicationController
     + params[:lastname] + "&search=Search"
   end
 
+  def export_csv
+    # @entry = Entry.find(params[:id])
+    output = CSV.generate do |csv|
+      csv << ["row", "of", "CSV", "data"]
+      csv << ["another", "row"]
+    end
+
+    send_data output, :type => "text/plain", 
+               :filename=>"entries.csv",
+               :disposition => 'attachment'
+    
+  end
+
+
 end
 
 
