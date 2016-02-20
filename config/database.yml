@@ -1,14 +1,12 @@
-development:
+development: &default
   adapter: postgresql
   encoding: unicode
-  database: personality_insight_dev
+  host: localhost
   pool: 5
-  # username: 
-  # password:
 
 production: 
   adapter: postgresql
+  database: watson
   encoding: unicode
-  database: personality_insight_dev
   pool: 5
   uri: <%= Figaro.env.elephant_uri %>

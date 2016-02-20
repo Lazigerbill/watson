@@ -30,20 +30,6 @@ ActiveRecord::Schema.define(version: 20160220072222) do
     t.datetime "updated_at",    null: false
   end
 
-  create_table "transcripts", force: :cascade do |t|
-    t.string   "company_name"
-    t.string   "ticker"
-    t.string   "event_name"
-    t.date     "date"
-    t.string   "speaker_name"
-    t.string   "speaker_title"
-    t.integer  "wcount"
-    t.text     "transcript"
-    t.json     "insights"
-    t.datetime "created_at",    null: false
-    t.datetime "updated_at",    null: false
-  end
-
   create_table "users", force: :cascade do |t|
     t.string   "first_name"
     t.string   "last_name"

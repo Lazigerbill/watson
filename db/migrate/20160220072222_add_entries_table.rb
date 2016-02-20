@@ -1,6 +1,6 @@
 class AddEntriesTable < ActiveRecord::Migration
   def change
-    create_table :transcripts do |t|
+    create_table :entries do |t|
       t.string :company_name
       t.string :ticker
       t.string :event_name
