@@ -31,7 +31,8 @@
 			<%= render partial: "needs" %>
 		</div>
 	</div>
-	<%= link_to "Export", export_csv_path(@entry.id), method: :post, :class => "btn btn-primary" %>
+	<%= link_to "Export As CSV", export_csv_path(@entry.id), method: :post, :class => "btn btn-primary" %>
+	<br>
 <% else %>
 	<label>Transcript: </label>
 	<br>
@@ -41,5 +42,5 @@
 <% end %>
 
 <br>
-<%= link_to "Back", entries_path, :class => "btn btn-default" %>
+<%= link_to "Back", entries_path %>
 <br>
