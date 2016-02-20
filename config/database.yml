@@ -1,4 +1,4 @@
-development: &default
+development:
   adapter: postgresql
   encoding: unicode
   database: personality_insight_dev
