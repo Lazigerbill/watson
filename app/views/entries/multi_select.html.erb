@@ -19,7 +19,7 @@
 			<%= text_field_tag :speaker_title, @multi_select.first.speaker_title, :class => "form-control" %> <br>
 		</div>
 		<div class= "col-md-12">
-			<%= label_tag :wcount %> <br>
+			<%= label_tag :wcount, "Total word count" %> <small><i>NOTE:</i> Watson needs a minimum of 3,500, preferably 6,000 or more, to compute statistically significant estimates</small><br>
 			<%= text_field_tag :wcount, @multi_select.sum{|x| x.wcount}, :class => "form-control" %> <br>
 		</div>
 	</div>

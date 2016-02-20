@@ -17,6 +17,7 @@
 	<button class="btn btn-lg btn-success" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
 		Show raw JSON results from Watson
 	</button>
+	<%= link_to "Export As CSV", export_csv_path(@entry.id), method: :post, :class => "btn btn-lg btn-default" %>
 	<div class="collapse" id="collapseExample">
 		<div class="well">
 			<%= @entry.insights %>
@@ -31,7 +32,7 @@
 			<%= render partial: "needs" %>
 		</div>
 	</div>
-	<%= link_to "Export As CSV", export_csv_path(@entry.id), method: :post, :class => "btn btn-primary" %>
+
 	<br>
 <% else %>
 	<label>Transcript: </label>
@@ -41,6 +42,6 @@
 	<%= button_to "Run Watson Analytics", analyse_path(@entry), :class=> "btn btn-primary btn-lg" %>
 <% end %>
 
+<%= link_to "Back", :back, :class => "btn btn-default" %>
 <br>
-<%= link_to "Back", entries_path %>
 <br>
