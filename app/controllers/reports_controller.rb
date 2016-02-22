@@ -1,4 +1,6 @@
 class ReportsController < ApplicationController
+  include ReportsHelper
+
   def new
     @user = current_user
     @report = Report.new
@@ -18,6 +20,7 @@ class ReportsController < ApplicationController
   def create
     @user = current_user
     @report = @user.reports.build(report_params)
+    @report.watson = post_to_Watson(@report.combined_transcripts)
     if @report.save
       redirect_to user_report_path(current_user, @report.id), :notice => "Transcripts successfully analysed and saved!!"
     else
@@ -28,7 +31,19 @@ class ReportsController < ApplicationController
   def show
     @user = current_user
     @report = Report.find(params[:id])
+    unless @report.watson.nil?
+      @big5 = @report.watson["tree"]["children"][0]
+      @needs = @report.watson["tree"]["children"][1]
+      @values = @report.watson["tree"]["children"][2]
+    end
   end
+
+  def export_csv
+    #code in helper method ReportsHelper
+    @report = Report.find(params[:id])
+    convert_JSON_to_csv(@report)
+  end
+
 end
 
 private

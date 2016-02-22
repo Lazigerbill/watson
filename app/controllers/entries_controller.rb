@@ -91,48 +91,6 @@ class EntriesController < ApplicationController
     + params[:lastname] + "&search=Search"
   end
 
-  def export_csv
-    @entry = Entry.find(params[:id])
-    unless @entry.insights.nil?
-      @big5 = @entry.insights["tree"]["children"][0]
-      @needs = @entry.insights["tree"]["children"][1]
-      @values = @entry.insights["tree"]["children"][2]
-    end
-    @output = CSV.generate do |csv|
-      csv << ["","PERSONALITY"]
-      for i in 0..4
-        csv << [""]
-        csv << [@big5["children"][0]["children"][i]["name"],"Percentage","Sampling Error"]
-        @big5["children"][0]["children"][i]["children"].each do |each5|
-          csv << [each5["name"],each5["percentage"].round(4),each5["sampling_error"].round(4)]
-        end
-      end
-
-      csv << [""]
-      csv << ["","VALUES"]
-      csv << [""]
-      csv << [@values["children"][0]["name"],"Percentage","Sampling Error"]
-      @values["children"][0]["children"].each do |eachvalue|
-        csv << [eachvalue["name"],eachvalue["percentage"].round(4),eachvalue["sampling_error"].round(4)]
-      end
-      
-      csv << [""]
-      csv << ["","NEEDS"]
-      csv << [""]
-      csv << [@needs["children"][0]["name"],"Percentage","Sampling Error"]
-      @needs["children"][0]["children"].each do |eachneed|
-        csv << [eachneed["name"],eachneed["percentage"].round(4),eachneed["sampling_error"].round(4)]
-      end
-
-    end
-
-    send_data @output, :type => "text/plain", 
-               :filename=>  @entry.company_name + @entry.ticker + @entry.event_name + ".csv",
-               :disposition => 'attachment'
-
-  end
-
-
 end
 
 

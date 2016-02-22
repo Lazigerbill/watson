@@ -4,9 +4,34 @@
 <h3><%= @report.company_name %> (<%= @report.ticker %>)</h3>
 <h4>Report created at: <%= @report.created_at.strftime('%e %b %Y %H:%M:%S%p %Z') %></h4>
 <br>
+<button class="btn btn-lg btn-primary" type="button" data-toggle="collapse" data-target="#collapseTranscript" aria-expanded="false" aria-controls="collapseTranscript">
+	Show Transcript <span class="badge"><%= @report.wcount %> words</span>
+</button>
+<div class="collapse" id="collapseTranscript">
+	<div class="well">
+		<%= @report.combined_transcripts %>
+	</div>
+</div>
+<button class="btn btn-lg btn-success" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+	Show raw JSON results from Watson
+</button>
+<%= link_to "Export As CSV", export_csv_path(current_user, @report.id), method: :post, :class => "btn btn-lg btn-warning" %>
+<div class="collapse" id="collapseExample">
+	<div class="well">
+		<%= @report.watson %>
+	</div>
+</div>
 
+<div class ="row">
+	<div class="col-md-6">
+		<%= render partial: "big5" %>
+	</div>
+	<div class="col-md-6">
+		<%= render partial: "values" %>
+		<%= render partial: "needs" %>
+	</div>
+</div>
 
-
-<%= link_to "Back", :back, :class => "btn btn-default" %>
+<%= link_to "Back", :back, :class => "btn btn-lg btn-default" %>
 <br>
 <br>
