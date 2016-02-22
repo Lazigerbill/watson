@@ -22,6 +22,7 @@
 			<%= label_tag :wcount, "Total word count" %> <small><i>NOTE:</i> Watson needs a minimum of 3,500, preferably 6,000 or more, to compute statistically significant estimates</small><br>
 			<%= text_field_tag :wcount, @multi_select.sum{|x| x.wcount}, :class => "form-control" %> <br>
 		</div>
+		<%= f.hidden_field :transcript, value: @combined %>
 	</div>
 	<%= submit_tag "Run Watson Analytics", :class=> "btn btn-primary btn-lg" %>
 	<%= link_to "Back", :back, :class=> "btn btn-default btn-lg" %>

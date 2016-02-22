@@ -15,18 +15,19 @@ Rails.application.routes.draw do
   post 'entries/analyse_all' => 'entries#analyse_all', as: :analyse_all
   post 'entries/:id/export_csv' => 'entries#export_csv', as: :export_csv
 
-  get 'entries/multi_select' => 'entries#multi_select', as: :multi_select
+  # get 'entries/multi_select' => 'entries#multi_select', as: :multi_select
 
 
-  post 'entries/linkedin' => 'entries#linkedin'
+  # post 'entries/linkedin' => 'entries#linkedin'
   # Example of named route that can be invoked with purchase_url(id: product.id)
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
 
   # Example resource route (maps HTTP verbs to controller actions automatically):
   resources :entries
-  resources :user_sessions
-  resources :users
-
+  resources :users do
+    resources :reports
+  end
+  
   get 'login' => 'user_sessions#new', :as => :login
   post 'logout' => 'user_sessions#destroy', :as => :logout
 

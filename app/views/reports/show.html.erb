@@ -1,0 +1,12 @@
+<div class="page-header">
+	<h1><%= @report.speaker_name %> <small><%= @report.speaker_title %></small></h1>
+</div>
+<h3><%= @report.company_name %> (<%= @report.ticker %>)</h3>
+<h4>Report created at: <%= @report.created_at.strftime('%e %b %Y %H:%M:%S%p %Z') %></h4>
+<br>
+
+
+
+<%= link_to "Back", :back, :class => "btn btn-default" %>
+<br>
+<br>

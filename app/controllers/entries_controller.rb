@@ -59,19 +59,6 @@ class EntriesController < ApplicationController
     redirect_to entries_path, :flash => { :success => "Watson analytics updated sucessfully on multiple selections." }
   end
 
-  def create #this method is only used for manual upload, doesn't apply to batch upload.
-    @input = params[:entry]["transcript"]
-    #post request to Watson API
-    #analyse(@input)
-    @entry = Entry.new(entry_params)  
-    @entry.insights = @watson_says
-    if @entry.save
-      redirect_to entry_path(@entry.id), :notice => "Transcript successfully analysed and saved!!"
-    else
-      render :new, :alert => "booboo!"
-    end
-  end
-
   def edit
     @entry = Entry.find(params[:id])
   end

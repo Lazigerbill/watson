@@ -2,6 +2,7 @@ class User < ActiveRecord::Base
   authenticates_with_sorcery!
 
   has_many :entries
+  has_many :reports
 
   validates_presence_of :first_name, :last_name, :student_id, :email, :password, :password_confirmation
   validates :email, :student_id, uniqueness: true
