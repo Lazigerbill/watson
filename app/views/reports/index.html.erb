@@ -1,0 +1,28 @@
+<h1>My reports</h1>
+<hr>
+
+	<table class = 'table table-striped table-bordered' id = "allReports">
+		<thead>
+			<th>Speaker</th>
+			<th>Title</th>
+			<th>Word Count</th>
+			<th>Created at</th>
+			<th></th>
+		</thead>
+		<tbody>
+			<% current_user.reports.each do |r| %>
+				<tr>
+					<td><%= r.speaker_name %></td>
+					<td><%= r.speaker_title %></td>
+					<td class='align-center'><%= r.wcount %></td>
+					<td><%= r.created_at.strftime('%e %b %Y %H:%M %Z') %></td>
+					<td class='align-center'>
+						<%= link_to 'Show', user_report_path(current_user, r.id), method: :get, :class => "btn btn-primary" %> 
+					</td>
+				</tr>
+			<% end %>
+		</tbody>
+	</table>
+	<%= link_to "Back", entries_path, :class => "btn btn-lg btn-default" %>
+
+<br>

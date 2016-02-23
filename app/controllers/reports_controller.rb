@@ -38,6 +38,10 @@ class ReportsController < ApplicationController
     end
   end
 
+  def index
+    @reports = current_user.reports
+  end
+
   def export_csv
     #code in helper method ReportsHelper
     @report = Report.find(params[:id])

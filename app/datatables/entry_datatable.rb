@@ -8,13 +8,13 @@ class EntryDatatable < AjaxDatatablesRails::Base
   def sortable_columns
     # list columns inside the Array in string dot notation.
     # Example: 'users.email'
-    @sortable_columns ||= []
+    @sortable_columns ||= [@entries.company_name]
   end
 
   def searchable_columns
     # list columns inside the Array in string dot notation.
     # Example: 'users.email'
-    @searchable_columns ||= []
+    @searchable_columns ||= [@entries.company_name]
   end
 
   private
@@ -22,7 +22,6 @@ class EntryDatatable < AjaxDatatablesRails::Base
   def data
     records.map do |record|
       [
-        record.company_name
         # comma separated list of the values for each cell of a table row
         # example: record.attribute,
       ]
@@ -30,7 +29,7 @@ class EntryDatatable < AjaxDatatablesRails::Base
   end
 
   def get_raw_records
-    Entry.all
+
   end
 
   # ==== Insert 'presenter'-like methods below if necessary

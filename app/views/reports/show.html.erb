@@ -2,7 +2,7 @@
 	<h1><%= @report.speaker_name %> <small><%= @report.speaker_title %></small></h1>
 </div>
 <h3><%= @report.company_name %> (<%= @report.ticker %>)</h3>
-<h4>Report created at: <%= @report.created_at.strftime('%e %b %Y %H:%M:%S%p %Z') %></h4>
+<h4>Report created at: <%= @report.created_at.strftime('%e %b %Y %H:%M %Z') %></h4>
 <br>
 <button class="btn btn-lg btn-primary" type="button" data-toggle="collapse" data-target="#collapseTranscript" aria-expanded="false" aria-controls="collapseTranscript">
 	Show Transcript <span class="badge"><%= @report.wcount %> words</span>
@@ -32,6 +32,6 @@
 	</div>
 </div>
 
-<%= link_to "Back", :back, :class => "btn btn-lg btn-default" %>
+<%= link_to "Back", user_reports_path(current_user), :class => "btn btn-lg btn-default" %>
 <br>
 <br>
