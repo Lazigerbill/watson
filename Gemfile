@@ -40,4 +40,5 @@ group :development do
   gem 'quiet_assets'
   gem 'pry'
   gem 'hirb'
+  gem 'rails_real_favicon'
 end

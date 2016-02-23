@@ -1,0 +1,38 @@
+{
+    "master_picture": "app/assets/images/watson.png",
+    "favicon_design": {
+        "ios": {
+            "picture_aspect": "no_change"
+        },
+        "desktop_browser": [
+
+        ],
+        "windows": {
+            "picture_aspect": "no_change",
+            "background_color": "#da532c",
+            "on_conflict": "override"
+        },
+        "android_chrome": {
+            "picture_aspect": "background_and_margin",
+            "margin": "17%",
+            "background_color": "#000000",
+            "theme_color": "#ffffff",
+            "manifest": {
+                "name": "MGDF40",
+                "display": "browser",
+                "orientation": "not_set",
+                "on_conflict": "override",
+                "declared": true
+            }
+        },
+        "safari_pinned_tab": {
+            "picture_aspect": "black_and_white",
+            "threshold": 95.625,
+            "theme_color": "#5bbad5"
+        }
+    },
+    "settings": {
+        "scaling_algorithm": "Mitchell",
+        "error_on_image_too_small": false
+    }
+}
