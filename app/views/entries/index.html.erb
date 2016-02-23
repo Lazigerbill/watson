@@ -13,16 +13,15 @@
 <%= form_tag new_user_report_path(current_user), method: :get do %>
 	<table class = 'table table-striped table-bordered table-condensed' id = 'allEntries'>
 		<thead>
-			<th class='col-md-1'></th>
-			<th class='col-md-1'>Company Name</th>
-			<th class='col-md-1'>Ticker</th>
-			<th class='col-md-2'>Event Name</th>
-			<th class='col-md-1'>Date</th>
-			<th class='col-md-1'>Speaker</th>
-			<th class='col-md-2'>Title</th>
-			<th class='col-md-1'>Word Count</th>
-			<th class='col-md-1'></th>
-			<th class='col-md-1'></th>
+			<th ></th>
+			<th >Company Name</th>
+			<th >Ticker</th>
+			<th >Event Name</th>
+			<th >Date</th>
+			<th >Speaker</th>
+			<th >Title</th>
+			<th >Word Count</th>
+			<th ></th>
 		</thead>
 		<tbody>
 			<% current_user.entries.each do |e| %>
@@ -37,9 +36,6 @@
 					<td class='align-center'><%= e.wcount %></td>
 					<td class='align-center'>
 						<%= link_to 'Show', entry_path(e.id), method: :get, :class => "btn btn-primary" %> 
-					</td>
-					<td class='align-center'>
-						<%= link_to 'Delete', entry_path(e.id), method: :delete, :class => "btn btn-danger", data: { confirm: 'Are you sure?' } %>
 					</td>
 				</tr>
 			<% end %>
