@@ -87,7 +87,7 @@ Rails.application.configure do
   config.action_mailer.perform_deliveries = true
   config.action_mailer.raise_delivery_errors = true
   config.action_mailer.default_options = {from: 'financelab@utsc.utoronto.ca'}
-  config.action_mailer.default_url_options = { :host => 'http://mgfd40.mybluemix.net' }
+  config.action_mailer.default_url_options = { :host => 'https://mgfd40.herokuapp.com/' }
 
   # Do not dump schema after migrations.
   # config.active_record.dump_schema_after_migration = false
