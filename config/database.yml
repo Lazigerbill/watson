@@ -4,7 +4,7 @@ development:
   host: localhost
   pool: 5
 
-# No need to define production if using Heroku Postgres?
+# No need to define production if using Heroku Postgres
 production: 
   adapter: postgresql
   encoding: unicode
