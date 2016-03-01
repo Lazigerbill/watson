@@ -5,8 +5,8 @@ development:
   pool: 5
 
 # No need to define production if using Heroku Postgres
-production: 
-  adapter: postgresql
-  encoding: unicode
-  pool: 5
-  url: <%= Figaro.env.elephant_uri %>
+# production: 
+#   adapter: postgresql
+#   encoding: unicode
+#   pool: 5
+#   url: <%= Figaro.env.elephant_uri %>
