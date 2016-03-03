@@ -42,7 +42,7 @@
 		</tbody>
 	</table>
 	<%= submit_tag "Analyse Checked", :class => 'btn btn-primary btn-lg' %>
-        <%= link_to 'Delete', entry_path(["delete_all"]), method: :delete, :class => "btn btn-primary btn-lg", data: { confirm: 'Are you sure?' } %>
+        <%= link_to 'Delete Checked', entry_path(["delete_all"]), method: :delete, :class => "btn btn-danger btn-lg", data: { confirm: 'Are you sure?' } %>
 <% end %>
 
 <br>
