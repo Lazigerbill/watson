@@ -1,3 +1,4 @@
+require 'pry'
 class EntriesController < ApplicationController
   include UploadHelper
   skip_before_filter :require_login, only: [:landing]
@@ -76,8 +77,13 @@ class EntriesController < ApplicationController
   end
 
   def destroy 
-    @entry = Entry.find(params[:id])
-    @entry.delete
+    binding.pry
+    if params[:id] == "delete_all"
+      Entry.delete_all
+    else
+      @entry = Entry.find(params[:id])
+      @entry.delete
+    end
     redirect_to entries_path
   end
 
