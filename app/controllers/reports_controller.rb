@@ -19,12 +19,18 @@ class ReportsController < ApplicationController
 
   def create
     @user = current_user
-    @report = @user.reports.build(report_params)
-    @report.watson = post_to_Watson(@report.combined_transcripts)
-    if @report.save
-      redirect_to user_report_path(current_user, @report.id), :notice => "Transcripts successfully analysed and saved!!"
+    if @user.report_creations < 100
+      @report = @user.reports.build(report_params)
+      @report.watson = post_to_Watson(@report.combined_transcripts)
+      if @report.save
+        redirect_to user_report_path(current_user, @report.id), :notice => "Transcripts successfully analysed and saved!!"
+        @user.update_attribute(:report_creations, @user.report_creations + 1)
+      else
+        render :new, :alert => "Error(s) preventing transcripts to be saved!"
+      end
     else
-      render :new, :alert => "Error(s) preventing transcripts to be saved!"
+      flash.now[:error] = "You have exceeded maximum allowed analysis."
+      render :index
     end
   end
 
