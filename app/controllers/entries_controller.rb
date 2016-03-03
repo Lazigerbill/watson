@@ -76,8 +76,12 @@ class EntriesController < ApplicationController
   end
 
   def destroy 
-    @entry = Entry.find(params[:id])
-    @entry.delete
+    if params[:id] == "delete_all"
+      Entry.delete_all
+    else
+      @entry = Entry.find(params[:id])
+      @entry.delete
+    end
     redirect_to entries_path
   end
 
