@@ -46,6 +46,7 @@
           <ul class="nav navbar-nav navbar-right">
             <% if current_user %>
               <li><%= link_to "Login as: #{current_user.first_name} #{current_user.last_name}", edit_user_path(current_user.id) %></li>
+              <li><a href="">Reports generated: <strong><%= current_user.report_creations %>/100</strong></a></li>
               <li><%= link_to "Logout", :logout, method: :post %></li>
             <% else %>
               <li><%= link_to "Register", new_user_path %></li>

@@ -75,13 +75,15 @@ class EntriesController < ApplicationController
     end
   end
 
+  def delete_all
+    @entries = Entry.all.where(:user_id => current_user.id)
+    @entries.delete_all
+    redirect_to entries_path, :flash => { :warning => "All previously imported transcripts are removed." }
+  end
+
   def destroy 
-    if params[:id] == "delete_all"
-      Entry.delete_all
-    else
-      @entry = Entry.find(params[:id])
-      @entry.delete
-    end
+    @entry = Entry.find(params[:id])
+    @entry.delete
     redirect_to entries_path
   end
 

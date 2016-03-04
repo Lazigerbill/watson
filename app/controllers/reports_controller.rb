@@ -59,7 +59,6 @@ end
 private
 def report_params
   params.require(:report).permit(:company_name, :ticker, :speaker_name, :speaker_title, :wcount, :combined_transcripts, :watson_analytics)
-  
 end
 
 

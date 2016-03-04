@@ -14,6 +14,7 @@ Rails.application.routes.draw do
   post 'entries/:id/analyse' => 'entries#analyse', as: :analyse
   post 'entries/analyse_all' => 'entries#analyse_all', as: :analyse_all
   post 'users/:user_id/reports/:id/export_csv' => 'reports#export_csv', as: :export_csv
+  get 'entries/delete_all' => 'entries#delete_all'
 
   # get 'entries/multi_select' => 'entries#multi_select', as: :multi_select
 
