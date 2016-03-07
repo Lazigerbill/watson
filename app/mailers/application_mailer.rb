@@ -1,4 +1,4 @@
 class ApplicationMailer < ActionMailer::Base
-  default from: "financelab@utsc.utoronto.ca"
+  default from: "help@contrarianlabs.ca"
   layout 'mailer'
 end

@@ -77,17 +77,17 @@ Rails.application.configure do
 
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
-    address:              'smtp.utoronto.ca',
-    port:                 587,
-    domain:               'utoronto.ca',
+    address:              'smtp.zoho.com',
+    port:                 465,
+    domain:               'zoho.com',
     user_name:            Figaro.env.mailer_username,
     password:             Figaro.env.mailer_password,
     authentication:       'plain',
     enable_starttls_auto: true  }
   config.action_mailer.perform_deliveries = true
   config.action_mailer.raise_delivery_errors = true
-  config.action_mailer.default_options = {from: 'financelab@utsc.utoronto.ca'}
-  config.action_mailer.default_url_options = { :host => 'https://mgfd40.herokuapp.com' }
+  config.action_mailer.default_options = {from: 'help@contrarianlabs.ca'}
+  config.action_mailer.default_url_options = { :host => 'http://www.contrarianlabs.ca' }
 
   # Do not dump schema after migrations.
   # config.active_record.dump_schema_after_migration = false

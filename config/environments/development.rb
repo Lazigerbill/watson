@@ -38,16 +38,19 @@ Rails.application.configure do
 
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
-    address:              'smtp.utoronto.ca',
-    port:                 587,
-    domain:               'utoronto.ca',
+    address:              'smtp.zoho.com',
+    port:                 465,
+    domain:               'contrarianlabs.ca',
     user_name:            Figaro.env.mailer_username,
     password:             Figaro.env.mailer_password,
-    authentication:       'plain',
-    enable_starttls_auto: true  }
+    :authentication       => 'plain',
+    :ssl                  => true,
+    :tls                  => true,
+    :enable_starttls_auto => true  
+  }
   config.action_mailer.perform_deliveries = true
   config.action_mailer.raise_delivery_errors = true
-  config.action_mailer.default_options = {from: 'financelab@utsc.utoronto.ca'}
-  config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+  config.action_mailer.default_options = {from: 'help@contrarianlabs.ca'}
+  config.action_mailer.default_url_options = { :host => 'http://www.contrarianlabs.ca' }
 
 end

@@ -33,7 +33,7 @@
             <%= image_tag "favicon/favicon-16x16.png" %>
           </a>
         </div>
-        <%= link_to "MGFD40 Project", root_path, :class => "navbar-brand"  %>
+        <%= link_to "Contrarian Labs", root_path, :class => "navbar-brand"  %>
         <div class="navbar-collapse collapse navbar-responsive-collapse">
           <ul class="nav navbar-nav">
             <li><%= link_to "View Transcripts", entries_path  %></li>
@@ -70,4 +70,26 @@
     </div> <!-- /container -->
 
   </body>
+
+  <footer class="footer-distributed" id="footer">
+    <div class="container">
+      <div class="footer-right">
+        <a href="mailto:help@contrarianlabs.ca"><i class="fa fa-envelope"> Email us for help</i></a>
+      </div>
+      <div class="footer-left">
+        <p class="footer-links">
+          <%= link_to "Home", root_path  %>
+          ·
+          <%= link_to "View Transcripts", entries_path  %>
+          ·
+          <%= link_to "Upload new Transcripts", new_entry_path  %>
+          <% if current_user %>
+            ·
+            <%= link_to "My Reports", user_reports_path(current_user) %>
+          <% end %>
+        </p>
+        <p>Contrarian Labs Co. &copy; 2016</p>
+      </div>
+    </div>
+  </footer>
 </html>
