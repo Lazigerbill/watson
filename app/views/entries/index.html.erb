@@ -13,7 +13,7 @@
 <%= form_tag new_user_report_path(current_user), method: :get do %>
 	<table class = 'table table-striped table-bordered table-condensed' id = 'allEntries'>
 		<thead>
-			<th ></th>
+			<th class='align-center'><%= check_box_tag "select_all" %></th>
 			<th >Company Name</th>
 			<th >Ticker</th>
 			<th >Event Name</th>
