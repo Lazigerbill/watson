@@ -19,8 +19,7 @@ $(document).on('page:load ready', function(){
 			"order": [[ 2, 'asc' ], [ 4, 'asc' ]],
 			"columnDefs": [
 	                { "orderable": false, "targets": [0, 8]}
-	                ],
-                        stateSave: true
+	                ]
 		});
 
     //var allPages = table.fnGetNodes();
