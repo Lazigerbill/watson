@@ -33,6 +33,7 @@ gem 'sorcery'
 gem 'tzinfo-data'
 gem 'linkedin'
 gem 'newrelic_rpm'
+gem 'hirb'
 
 group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
@@ -40,6 +41,5 @@ group :development do
   gem 'rails_12factor'
   gem 'quiet_assets'
   gem 'pry'
-  gem 'hirb'
   gem 'rails_real_favicon'
 end
