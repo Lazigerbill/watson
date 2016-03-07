@@ -12,15 +12,21 @@ $(document).on('page:load ready', function(){
 		}
 	);
 
-		$("#allEntries").DataTable({
+		var table = $("#allEntries").DataTable({
 			// "serverSide": true,
 			// "ajax": "/entries.json",
 			// "processing": true
 			"order": [[ 2, 'asc' ], [ 4, 'asc' ]],
 			"columnDefs": [
-	    { "orderable": false, "targets": [0, 8]}
-	  ]
-			}
-		);
+	                { "orderable": false, "targets": [0, 8]}
+	                ],
+                        stateSave: true
+		});
 
+    //var allPages = table.fnGetNodes();
+    $('#select_all').on('click', function(){
+      // Check/uncheck all checkboxes in the table
+      var rows = table.rows({ 'search': 'applied' }).nodes();
+      $('input[type="checkbox"]', rows).prop('checked', this.checked);
+    });
 });
