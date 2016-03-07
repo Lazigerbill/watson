@@ -32,6 +32,7 @@ gem 'puma'
 gem 'sorcery'
 gem 'tzinfo-data'
 gem 'linkedin'
+gem 'newrelic_rpm'
 
 group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
