@@ -34,7 +34,7 @@ module UploadHelper
       end
       redirect_to entries_path, :notice => "#{@transcript_count - @error_count} out of #{@transcript_count} #{'record'.pluralize(@rcount)} successfully saved!!"
     else
-      redirect_to new_entry_path, :alert => "File type is not supoorted!  Please try again."
+      redirect_to new_entry_path, :alert => "File type is not supported!  Please try again."
     end
   end
 

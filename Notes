@@ -1,0 +1,6 @@
+Notes:
+1. Add user activation to ensure no dummy accounts
+2. User model add created at, updated at
+3. First day 3 users completed all 50 companies, should we add more work per user? (Ling said no, rather students focus more on the writing)
+4. Check and see if Hobby dyno is sufficient (more than enough for 40 students)
+5. Check and see if Hobby Postgres is sufficient (more than enough for 40 students)

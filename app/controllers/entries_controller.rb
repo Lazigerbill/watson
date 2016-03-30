@@ -89,7 +89,12 @@ class EntriesController < ApplicationController
 
   def upload
     #helper method defined in upload_helper.rb
-    process_upload(params[:file])
+    if !params[:file]
+      flash.now[:error] = "No file selected, please try again!" 
+      render :new
+    else
+      process_upload(params[:file])
+    end
   end
 
   def linkedin
