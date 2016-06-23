@@ -34,7 +34,9 @@ gem 'tzinfo-data'
 gem 'linkedin'
 gem 'newrelic_rpm'
 gem 'hirb'
+
 gem 'sidekiq'
+gem 'sinatra', :require => nil
 
 group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
