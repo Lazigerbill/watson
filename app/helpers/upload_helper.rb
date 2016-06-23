@@ -3,7 +3,7 @@ require 'zip'
 
 module UploadHelper
   def process_upload(input)
-    current_user.update_attribute(:failed_entries, current_user.failed_entries = "boo")
+    current_user.update_attribute(:failed_entries, current_user.failed_entries = "")
     #check if upload file is txt or zip
     if File.extname(input.original_filename) == ".txt"
       # split of text files into array of sections
