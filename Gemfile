@@ -23,18 +23,15 @@ gem 'rails_serve_static_assets'
 gem "jquery-fileupload-rails"
 gem "twitter-bootstrap-rails"
 gem 'rubyzip'
-
 gem 'jquery-datatables-rails', '~> 3.3.0'
 gem 'ajax-datatables-rails', '0.1.2'
 gem 'kaminari'
-
 gem 'puma'
 gem 'sorcery'
 gem 'tzinfo-data'
 gem 'linkedin'
 gem 'newrelic_rpm'
 gem 'hirb'
-
 gem 'sidekiq'
 gem 'sinatra', :require => nil
 
