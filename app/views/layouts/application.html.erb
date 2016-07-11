@@ -74,7 +74,10 @@
   <footer class="footer-distributed" id="footer">
     <div class="container">
       <div class="footer-right">
-        <a href="mailto:help@contrarianlabs.ca"><i class="fa fa-envelope"> Email us for help</i></a>
+        <%= link_to "mailto:help@contrarianlabs.ca" do %>
+          <i class="fa fa-envelope"> <span id="email-us">Email us for help</span></i>
+        <% end %>
+<!--         <a id="email-us" href="mailto:help@contrarianlabs.ca"><i class="fa fa-envelope"> Email us for help</i></a> -->
       </div>
       <div class="footer-left">
         <p class="footer-links">

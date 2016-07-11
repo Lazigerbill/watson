@@ -11,4 +11,10 @@ class UserMailer < ApplicationMailer
     mail(:to => @user.email,
          :subject => "MGFD40 Project: Your password has been reset")
   end
+
+  def completed_queue(user)
+    @user = User.find user.id
+    mail(:to => @user.email,
+         :subject => "MGFD40 Project: Your files have completed uploading")
+  end
 end

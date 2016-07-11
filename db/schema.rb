@@ -11,29 +11,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160317040611) do
+ActiveRecord::Schema.define(version: 20160620192053) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
-
-  create_table "delayed_jobs", force: :cascade do |t|
-    t.integer  "priority",         default: 0, null: false
-    t.integer  "attempts",         default: 0, null: false
-    t.text     "handler",                      null: false
-    t.text     "last_error"
-    t.datetime "run_at"
-    t.datetime "locked_at"
-    t.datetime "failed_at"
-    t.string   "locked_by"
-    t.string   "queue"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.string   "progress_stage"
-    t.integer  "progress_current", default: 0
-    t.integer  "progress_max",     default: 0
-  end
-
-  add_index "delayed_jobs", ["priority", "run_at"], name: "delayed_jobs_priority", using: :btree
 
   create_table "entries", force: :cascade do |t|
     t.string   "company_name"
@@ -74,6 +55,7 @@ ActiveRecord::Schema.define(version: 20160317040611) do
     t.string   "salt"
     t.string   "crypted_password"
     t.integer  "report_creations",                default: 0
+    t.string   "failed_entries"
   end
 
 end
