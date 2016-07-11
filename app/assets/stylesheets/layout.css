@@ -78,3 +78,8 @@ body {
 		line-height: 1.8;
 	}
 }
+
+#email-us {
+	font-family: 'ProperHelvetica', helvetica, sans-serif;
+	/*font: helvetica !important;*/
+}
