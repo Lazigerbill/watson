@@ -4,11 +4,7 @@
 # staging:
 #   :concurrency: 10
 production:
-<<<<<<< HEAD
   :concurrency: 10
-=======
-  :concurrency: 20
->>>>>>> d68e0d83199d92c7ab8b2eac55ceb881c13af447
 # :queues:
 #   - default
 #   - [myqueue, 2]
