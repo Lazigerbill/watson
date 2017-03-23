@@ -11,8 +11,8 @@ module UploadHelper
       # extract speaker and contents
       data.each { |x| x.force_encoding("UTF-8") }
       UploadWorker.perform_async(data, current_user.id, input.original_filename)
-      UserMailer.delay.completed_queue(current_user)
-      redirect_to entries_path, :notice => "Transcript currently uploading. An email will be sent when upload completes."
+      # UserMailer.delay.completed_queue(current_user)
+      redirect_to entries_path, :notice => "It may take a few minutes to upload your transcripts. Please refresh this page to view your uploads.  An email will be sent to you if there is any error."
     elsif File.extname(input.original_filename) == ".zip"
       @errors = []
       Zip::File.open(input.tempfile) do |zip_file| 
@@ -27,12 +27,13 @@ module UploadHelper
           # !!!Need a better way to show a collection of errors!!! Future improvement needed!!
           rescue => e
             @errors << e
+            # UserMailer.delay.error(current_user)
             flash[:error] = "Error occurred when trying to save #{entry.name}. #{e}" 
           end
         end  
       end
-      UserMailer.delay.completed_queue(current_user)
-      redirect_to entries_path, :notice => "Transcripts currently uploading. An email will be sent when uploads complete."
+      # UserMailer.delay.completed_queue(current_user)
+      redirect_to entries_path, :notice => "It may take a few minutes to upload your transcripts. Please refresh this page to view your uploads.  An email will be sent to you if there is any error."
     else
       redirect_to new_entry_path, :alert => "File type is not supported!  Please try again."
     end

@@ -17,4 +17,10 @@ class UserMailer < ApplicationMailer
     mail(:to => @user.email,
          :subject => "MGFD40 Project: Your files have completed uploading")
   end
+
+  def error(user)
+    @user = User.find user.id
+    mail(:to => @user.email,
+         :subject => "MGFD40 Project: Uploading error")
+  end
 end

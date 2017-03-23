@@ -109,6 +109,7 @@ class UploadWorker
     rescue Exception => e
       user = User.find(id)
       user.update_attribute(:failed_entries, user.failed_entries << " " << filename)
+      UserMailer.error(user).deliver_now   
     end
   end
 end
